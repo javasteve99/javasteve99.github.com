@@ -1,0 +1,37 @@
+@charset "utf-8";
+* {
+	margin: 0;
+	padding: 0;
+}#container {
+	width: 520px;
+	height: 700px;
+	margin: 0px auto 0px auto;
+	background-image: url(Top-Ten-Tab-bg.png);
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 15px;
+	color: #000000;
+}
+#leftColumn {
+	width: 330px;
+	padding-left: 7px;
+	float: left;
+	margin-top: -10px;
+}
+#rightColumn {
+	width: 171px;
+	float: right;
+}
+p {
+	margin: 0px 0px 10px 0px;
+}
+h2 {
+	font-weight: bold;
+	color: #00539F;
+	font-size: 11px;
+	display: inline;
+}
+em {
+	font-style: normal;
+	color: #D1005D;
+}

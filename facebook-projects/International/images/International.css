@@ -1,0 +1,163 @@
+@charset "utf-8";
+* {
+	margin: 0;
+	padding: 0;
+}
+#container {
+	width:516px;
+	height:626px;
+	padding:2px;
+	margin:0px auto 0px auto;
+	background-image:url(International-bg.png);
+	background-repeat:no-repeat;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#000000;
+}
+#map {
+	width:516px;
+	height:200px;
+	margin-top:1px;
+	background-image:url(International-map.png);
+	background-repeat:no-repeat;
+	position:relative;
+}
+#lists {margin:15px;}
+ul, li {display:block; padding:0px; margin:0px 0px 18px 0px;}
+li {margin:0px;}
+#listColumns {float:left; width:155px; margin:13px 9px 0px 16px; font-size:12px; line-height:18px;}
+.listHeading {font-size:14px; font-weight:bold; border-bottom:1px #bec3c5 solid; line-height:17px;}
+
+a.noFlag {color:#000000; text-decoration:none;}
+a.noFlag:hover {text-decoration:underline;}
+a.flag {padding-left:24px; color:#000000; text-decoration:none;}
+a.flag:hover {text-decoration:underline;}
+
+.UnitedStates {background-image:url(flag-UnitedStates.png); background-repeat:no-repeat; background-position:-1px 1px;}
+.Canada {background-image:url(flag-Canada.png); background-repeat:no-repeat; background-position:-1px 1px;}
+.Australia {background-image:url(flag-Australia.png); background-repeat:no-repeat; background-position:-1px 1px;}
+.NewZealand {background-image:url(flag-NewZealand.png); background-repeat:no-repeat; background-position:-1px 1px;}
+.Belgique {background-image:url(flag-Belgique.png); background-repeat:no-repeat; background-position:-1px 1px;}
+.CeskaRepublika {background-image:url(flag-CeskaRepublika.png); background-repeat:no-repeat; background-position:-1px 1px;}
+.Denmark {background-image:url(flag-Denmark.png); background-repeat:no-repeat; background-position:-1px 1px;}
+.Deutschland {background-image:url(flag-Deutschland.png); background-repeat:no-repeat; background-position:-1px 1px;}
+.Espana {background-image:url(flag-Espana.png); background-repeat:no-repeat; background-position:-1px 1px;}
+.EuropeanUnion {background-image:url(flag-EuropeanUnion.png); background-repeat:no-repeat; background-position:-1px 1px;}
+.France {background-image:url(flag-France.png); background-repeat:no-repeat; background-position:-1px 1px;}
+.Ireland {background-image:url(flag-Ireland.png); background-repeat:no-repeat; background-position:-1px 1px;}
+.Italia {background-image:url(flag-Italia.png); background-repeat:no-repeat; background-position:-1px 1px;}
+.Japan {background-image:url(flag-Japan.png); background-repeat:no-repeat; background-position:-1px 1px;}
+.Korea {background-image:url(flag-Korea.png); background-repeat:no-repeat; background-position:-1px 1px;}
+.Nederland {background-image:url(flag-Nederland.png); background-repeat:no-repeat; background-position:-1px 1px;}
+.Norge {background-image:url(flag-Norge.png); background-repeat:no-repeat; background-position:-1px 1px;}
+.Osterreich {background-image:url(flag-Osterreich.png); background-repeat:no-repeat; background-position:-1px 1px;}
+.Polska {background-image:url(flag-Polska.png); background-repeat:no-repeat; background-position:-1px 1px;}
+.Portugal {background-image:url(flag-Portugal.png); background-repeat:no-repeat; background-position:-1px 1px;}
+.Sverige {background-image:url(flag-Sverige.png); background-repeat:no-repeat; background-position:-1px 1px;}
+.Schweiz {background-image:url(flag-Schweiz.png); background-repeat:no-repeat; background-position:-1px 1px;}
+.Singapore {background-image:url(flag-Singapore.png); background-repeat:no-repeat; background-position:-1px 1px;}
+.Suomi {background-image:url(flag-Suomi.png); background-repeat:no-repeat; background-position:-1px 1px;}
+.UnitedKingdom {background-image:url(flag-UnitedKingdom.png); background-repeat:no-repeat; background-position:-1px 1px;}
+
+#AustraliaHover {width:22px; height:18px; position:absolute; left:418px; top:140px; background-image:url(flag-Australia.png);}
+#AustraliaHover:hover {background-image:url(flagHover-Australia.png); width:76px; z-index:1;}
+
+#CanadaHover {width:22px; height:18px; position:absolute; left:66px; top:30px; background-image:url(flag-Canada.png);}
+#CanadaHover:hover {background-image:url(flagHover-Canada.png); width:76px; z-index:1;}
+
+#CeskaRepublikaHover {width:22px; height:18px; position:absolute; left:290px; top:90px; background-image:url(flag-CeskaRepublika.png);}
+#CeskaRepublikaHover:hover {background-image:url(flagHover-CeskaRepublika.png); width:112px; z-index:1;}
+
+#EspanaHover {width:22px; height:18px; position:absolute; left:206px; top:134px; background-image:url(flag-Espana.png);}
+#EspanaHover:hover {background-image:url(flagHover-Espana.png); width:69px; z-index:1;}
+
+#ItaliaHover {width:22px; height:18px; position:absolute; left:280px; top:133px; background-image:url(flag-Italia.png);}
+#ItaliaHover:hover {background-image:url(flagHover-Italia.png); width:57px; z-index:1;}
+
+#SchweizHover {width:22px; height:18px; position:absolute; left:257px; top:108px; background-image:url(flag-Schweiz.png); background-position:-5px 0px;}
+#SchweizHover:hover {background-image:url(flagHover-Schweiz.png); width:67px; background-position:0px 0px; z-index:1;}
+
+#IrelandHover {width:22px; height:18px; position:absolute; left:183px; top:80px; background-image:url(flag-Ireland.png);}
+#IrelandHover:hover {background-image:url(flagHover-Ireland.png); width:65px; z-index:1;}
+
+#JapanHover {width:22px; height:18px; position:absolute; left:433px; top:26px; background-image:url(flag-Japan.png);}
+#JapanHover:hover {background-image:url(flagHover-Japan.png); width:62px; z-index:1;}
+
+#KoreaHover {width:22px; height:18px; position:absolute; left:399px; top:18px; background-image:url(flag-Korea.png);}
+#KoreaHover:hover {background-image:url(flagHover-Korea.png); width:62px; z-index:1;}
+
+#EuropeanUnionHover {width:22px; height:18px; position:absolute; left:192px; top:106px; background-image:url(flag-EuropeanUnion.png);}
+#EuropeanUnionHover:hover {background-image:url(flagHover-EuropeanUnion.png); width:110px; z-index:1;}
+
+#FranceHover {width:22px; height:18px; position:absolute; left:230px; top:101px; background-image:url(flag-France.png);}
+#FranceHover:hover {background-image:url(flagHover-France.png); width:67px; z-index:1;}
+
+#SverigeHover {width:22px; height:18px; position:absolute; left:297px; top:39px; background-image:url(flag-Sverige.png);}
+#SverigeHover:hover {background-image:url(flagHover-Sverige.png); width:70px; z-index:1;}
+
+#DenmarkHover {width:22px; height:18px; position:absolute; left:256px; top:52px; background-image:url(flag-Denmark.png);}
+#DenmarkHover:hover {background-image:url(flagHover-Denmark.png); width:76px; z-index:1;}
+
+#NederlandHover {width:22px; height:18px; position:absolute; left:254px; top:68px; background-image:url(flag-Nederland.png);}
+#NederlandHover:hover {background-image:url(flagHover-Nederland.png); width:82px; z-index:1;}
+
+#NorgeHover {width:22px; height:18px; position:absolute; left:243px; top:30px; background-image:url(flag-Norge.png);}
+#NorgeHover:hover {background-image:url(flagHover-Norge.png); width:62px; z-index:1;}
+
+#BelgiqueHover {width:22px; height:18px; position:absolute; left:242px; top:82px; background-image:url(flag-Belgique.png);}
+#BelgiqueHover:hover {background-image:url(flagHover-Belgique.png); width:76px; z-index:1;}
+
+#DeutschlandHover {width:22px; height:18px; position:absolute; left:275px; top:76px; background-image:url(flag-Deutschland.png);}
+#DeutschlandHover:hover {background-image:url(flagHover-Deutschland.png); width:91px; z-index:1;}
+
+#OsterreichHover {width:22px; height:18px; position:absolute; left:282px; top:104px; background-image:url(flag-Osterreich.png);}
+#OsterreichHover:hover {background-image:url(flagHover-Osterreich.png); width:80px; z-index:1;}
+
+#PolskaHover {width:22px; height:18px; position:absolute; left:304px; top:75px; background-image:url(flag-Polska.png);}
+#PolskaHover:hover {background-image:url(flagHover-Polska.png); width:65px; z-index:1;}
+
+#PortugalHover {width:22px; height:18px; position:absolute; left:180px; top:140px; background-image:url(flag-Portugal.png);}
+#PortugalHover:hover {background-image:url(flagHover-Portugal.png); width:75px; z-index:1;}
+
+#SingaporeHover {width:22px; height:18px; position:absolute; left:377px; top:93px; background-image:url(flag-Singapore.png);}
+#SingaporeHover:hover {background-image:url(flagHover-Singapore.png); width:82px; z-index:1;}
+
+#SuomiHover {width:22px; height:18px; position:absolute; left:325px; top:30px; background-image:url(flag-Suomi.png);}
+#SuomiHover:hover {background-image:url(flagHover-Suomi.png); width:65px; z-index:1;}
+
+#NewZealandHover {width:22px; height:18px; position:absolute; left:480px; top:170px; background-image:url(flag-NewZealand.png);}
+#NewZealandHover:hover {background-image:url(flagHover-NewZealand.png); width:95px; left:407px; z-index:1;}
+
+#UnitedKingdomHover {width:22px; height:18px; position:absolute; left:208px; top:69px; background-image:url(flag-UnitedKingdom.png);}
+#UnitedKingdomHover:hover {background-image:url(flagHover-UnitedKingdom.png); width:109px; z-index:1;}
+
+#UnitedStatesHover {width:22px; height:18px; position:absolute; left:93px; top:64px; background-image:url(flag-UnitedStates.png);}
+#UnitedStatesHover:hover {background-image:url(flagHover-UnitedStates.png); width:97px; z-index:1;}
+
+#preloadHoverImages {
+	display: none;
+	background-image: url(flagHover-UnitedStates.png);
+	background-image: url(flagHover-Canada.png);
+	background-image: url(flagHover-Australia.png);
+	background-image: url(flagHover-Japan.png);
+	background-image: url(flagHover-Korea.png);
+	background-image: url(flagHover-NewZealand.png);
+	background-image: url(flagHover-Singapore.png);
+	background-image: url(flagHover-Belgique.png);
+	background-image: url(flagHover-CeskaRepublika.png);
+	background-image: url(flagHover-Denmark.png);
+	background-image: url(flagHover-Deutschland.png);
+	background-image: url(flagHover-Espana.png);
+	background-image: url(flagHover-EuropeanUnion.png);
+	background-image: url(flagHover-France.png);
+	background-image: url(flagHover-Ireland.png);
+	background-image: url(flagHover-Italia.png);
+	background-image: url(flagHover-Nederland.png);
+	background-image: url(flagHover-Norge.png);
+	background-image: url(flagHover-Osterreich.png);
+	background-image: url(flagHover-Polska.png);
+	background-image: url(flagHover-Portugal.png);
+	background-image: url(flagHover-Sverige.png);
+	background-image: url(flagHover-Schweiz.png);
+	background-image: url(flagHover-Suomi.png);
+	background-image: url(flagHover-UnitedKingdom.png);
+}

@@ -1,0 +1,87 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+#container {
+	width: 520px;
+	margin: 0px auto;
+}
+#headerImage {
+	height: 100px;
+}
+#main {
+	background-image: url(Weddings-mainBG.png);
+	background-repeat: repeat-y;
+	min-height: 100px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 17px;
+	color: #000000;
+}
+#main p {
+	padding: 0px 52px 9px 156px;
+	text-align: justify;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+#sampleKit {
+	display: block;
+	width: 312px;
+	height: 25px;
+	padding-top: 186px;
+	margin-left: 156px;
+	margin-top: 10px;
+	background-image: url(Weddings-samples.jpg);
+	background-repeat: none;
+	text-align: center;
+	font-size: 14px;
+}
+#toolkit {
+	background-image: url(Weddings-toolkitBG.png);
+	background-repeat: repeat-y;
+	padding-top: 8px;
+}
+#toolkitLinks {
+	display: block;
+	width: 312px;
+	height: 108px;
+	margin: 0px 0px 0px 156px;
+	background-image: url(weddingIcons.png);
+	background-repeat: no-repeat;
+}
+#newsletters, #resourceCenter, #etiquette, #twitter {
+	height: 27px;
+	margin-left: 156px;
+	padding-left: 28px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	line-height: 27px;
+}
+#newsletters {
+	background-image: url(weddingIcons.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+}	
+#resourceCenter {
+	background-image: url(weddingIcons.png);
+	background-repeat: no-repeat;
+	background-position: 0px -27px;
+}
+#etiquette {
+	background-image: url(weddingIcons.png);
+	background-repeat: no-repeat;
+	background-position: 0px -54px;
+}
+#twitter {
+	background-image: url(weddingIcons.png);
+	background-repeat: no-repeat;
+	background-position: 0px -81px;
+}
+img {
+	border: 0px;
+}
+a {
+	font-weight: bold;
+	color: #D1005d;
+}

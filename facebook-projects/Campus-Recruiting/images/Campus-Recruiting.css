@@ -1,0 +1,58 @@
+@charset "utf-8";
+* {
+	margin: 0;
+	padding: 0;
+}
+#container {
+	width: 520px;
+	height: 675px;
+	margin: 0px auto 0px auto;
+	background-image: url(Campus-Recruiting-bg.jpg);
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 16px;
+	color: #000000;
+}
+#mainContent {
+	width: 475px;
+	margin: 0px 32px 0px 13px;
+}
+h2 {
+	margin: 0px 0px 10px 0px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #D1005D;
+}
+em {
+	font-size: 12px;
+	line-height: 16px;
+	color: #D1005D;
+	display: block;
+	font-style: normal;
+	padding: 0px
+}
+img {
+	border: 0px;
+}
+p {
+	margin: 0px 0px 10px 0px;
+}
+#button {
+	margin: 0px 0px 0px -9px;
+	display: block;
+}
+#hiring {
+	float: left;
+	font-size: 12px;
+	padding: 17px 0px 0px 13px;
+}
+h3 {
+	font-size: 14px;
+	font-weight: bold;
+	color: #D1005D;
+	margin: 0px 0px 10px 0px;
+}
+#testimonial {
+	float: right;
+	margin: 1px 15px 0px 0px;
+}
