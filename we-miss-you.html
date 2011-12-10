@@ -1,53 +1,48 @@
 <!DOCTYPE html>
 <head>
 <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="keywords" content="steve hickey, graphic designer, boston, freelance, logo and identity design, branding, typography, type design, web design, development, layout, HTML email, coding, publication, book design, layout" />
 <title>stevehickeydesign.com : 'we miss you' campaign</title>
-<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 <link href='http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="styles/stevehickeydesign.css" />
 <link rel="shortcut icon" href="images/favicon.ico" />
+<script src="js/libs/modernizr-2.0.6.min.js"></script>
 </head>
-
 <body>
-  <header>
-    <div class="center">
-      <h1>steve hickey design</h1>
-        <nav>
-        <ul>
-          <li><a href="index.html">home</a></li>
-          <li><a href="portfolio.html" class="current">portfolio</a></li>
-          <li><a href="resume.html">r&eacute;sum&eacute;</a></li>
-          <li><a href="links.html">links</a></li>
-        </ul>
-        </nav>
-      </div>
-  </header>
-  <article>
-      <h2>'we miss you' campaign</h2>
-      <img src="images/we-miss-you-01.jpg" />
-      <p>Copywriter Matina Dafoulas and I were tasked with creating an email campaign that would be sent to customers that had not opened one of our emails in the last year. These 'inactive' customers represented a large opportunity if we could figure out how to engage them. We decided that if we attempted to put a human face on the company we might be able to bring some of them back in. We took photos of actual employees and put them in the email. I intentionally didn't gloss the photos up in order to subtly enforce that they were legitimate.</p>
-      <p>By taking this approach and showcasing new products and new offers we were able to increase open rates, click-through rates and conversions.</p>
-      <p>You can view the coded HTML versions of <a href="we-miss-you/WeMissYou-Inactive-1.html" target="_blank">email 1</a>, <a href="we-miss-you/WeMissYou-Inactive-2.html" target="_blank">email 2</a> and <a href="we-miss-you/WeMissYou-Inactive-3-20.html" target="_blank">email 3</a> in a new tab/window.</p>
-  </article>
-  <footer>
-    &copy; 2010 Steve Hickey. All work is protected by a <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/us/">Creative Commons</a> license.
-  </footer>
+
+<header>
+	<div class="center">
+		<h1>steve hickey design</h1>
+		<nav>
+			<ul class="cf">
+				<li><a href="index.html">home</a></li>
+				<li><a href="portfolio.html" class="current">portfolio</a></li>
+				<li><a href="resume.html">r&eacute;sum&eacute;</a></li>
+				<li><a href="links.html">links</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+
+<section>
+	<h2>&ldquo;we miss you&rdquo; campaign</h2>
+	<img src="images/we-miss-you-01.jpg" />
+	<p>View the HTML versions of <a href="we-miss-you/WeMissYou-Inactive-1.html" target="_blank">email 1</a>, <a href="we-miss-you/WeMissYou-Inactive-2.html" target="_blank">email 2</a> and <a href="we-miss-you/WeMissYou-Inactive-3-20.html" target="_blank">email 3</a>.</p>
+	<p>Copywriter Matina Dafoulas and I were tasked with creating an email campaign that would be sent to customers that had not opened one of our emails in the last year. These 'inactive' customers represented a large opportunity if we could figure out how to engage them. We decided that if we attempted to put a human face on the company we might be able to bring some of them back in. We took photos of actual employees and put them in the email. I intentionally didn't gloss the photos up in order to subtly enforce that they were legitimate.</p>
+	<p>By taking this approach and showcasing new products and new offers we were able to increase open rates, click-through rates and conversions.</p>
+</section>
+	
+<footer>
+	&copy; 2011 Steve Hickey. All work is protected by a <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/us/">Creative Commons</a> license.
+</footer>
   
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-20633683-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
+<script>
+    window._gaq = [['_setAccount','UA-20633683-1'],['_trackPageview'],['_trackPageLoadTime']];
+    Modernizr.load({
+      load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+    });
 </script>
   
 </body>
-
 </html>
