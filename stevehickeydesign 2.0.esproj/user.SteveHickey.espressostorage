@@ -9,7 +9,7 @@
 		<key>ContentSize</key>
 		<string>{1444, 873}</string>
 		<key>ProjectURL</key>
-		<string>file://localhost/Users/SteveHickey/Desktop/Dropbox/Public/stevehickeydesign%202.0/stevehickeydesign%202.0.esproj/</string>
+		<string>file://localhost/Users/SteveHickey/Projects/javasteve99.github.com/stevehickeydesign%202.0.esproj/</string>
 		<key>StateType</key>
 		<string>ProjectWindow</string>
 		<key>TopLeftPoint</key>
@@ -21,7 +21,7 @@
 	<dict>
 		<key>ExpandedURLs</key>
 		<array>
-			<string>file://localhost/Users/SteveHickey/Desktop/Dropbox/Public/stevehickeydesign%202.0/styles</string>
+			<string>file://localhost/Users/SteveHickey/Projects/javasteve99.github.com</string>
 		</array>
 	</dict>
 	<key>com.macrabbit.Espresso.Publisher.DisclosureCollapsed</key>
@@ -32,151 +32,85 @@
 		<array>
 			<dict>
 				<key>DocumentURL</key>
-				<string>file://localhost/Users/SteveHickey/Desktop/Dropbox/Public/stevehickeydesign%202.0/portfolio.html</string>
+				<string>file://localhost/Users/SteveHickey/Projects/javasteve99.github.com/akin-1705-typeface.html</string>
 				<key>StateType</key>
 				<string>DefaultTab</string>
 			</dict>
 			<dict>
 				<key>DocumentURL</key>
-				<string>file://localhost/Users/SteveHickey/Desktop/Dropbox/Public/stevehickeydesign%202.0/hamilton-rg.html</string>
+				<string>file://localhost/Users/SteveHickey/Projects/javasteve99.github.com/baseline.html</string>
 				<key>StateType</key>
 				<string>DefaultTab</string>
 			</dict>
 			<dict>
 				<key>DocumentURL</key>
-				<string>file://localhost/Users/SteveHickey/Desktop/Dropbox/Public/stevehickeydesign%202.0/celebrate-the-work.html</string>
+				<string>file://localhost/Users/SteveHickey/Projects/javasteve99.github.com/celebrate-the-work.html</string>
 				<key>StateType</key>
 				<string>DefaultTab</string>
 			</dict>
 			<dict>
 				<key>DocumentURL</key>
-				<string>file://localhost/Users/SteveHickey/Desktop/Dropbox/Public/stevehickeydesign%202.0/the-electric-guitar.html</string>
+				<string>file://localhost/Users/SteveHickey/Projects/javasteve99.github.com/fall-river-signage.html</string>
 				<key>StateType</key>
 				<string>DefaultTab</string>
 			</dict>
 			<dict>
 				<key>DocumentURL</key>
-				<string>file://localhost/Users/SteveHickey/Desktop/Dropbox/Public/stevehickeydesign%202.0/the-electric-guitar/index.html</string>
+				<string>file://localhost/Users/SteveHickey/Projects/javasteve99.github.com/hamilton-rg.html</string>
 				<key>StateType</key>
 				<string>DefaultTab</string>
 			</dict>
 			<dict>
 				<key>DocumentURL</key>
-				<string>file://localhost/Users/SteveHickey/Desktop/Dropbox/Public/stevehickeydesign%202.0/akin-1705-typeface.html</string>
+				<string>file://localhost/Users/SteveHickey/Projects/javasteve99.github.com/links.html</string>
 				<key>StateType</key>
 				<string>DefaultTab</string>
 			</dict>
 			<dict>
 				<key>DocumentURL</key>
-				<string>file://localhost/Users/SteveHickey/Desktop/Dropbox/Public/stevehickeydesign%202.0/article.html</string>
+				<string>file://localhost/Users/SteveHickey/Projects/javasteve99.github.com/onomatopeia-video.html</string>
 				<key>StateType</key>
 				<string>DefaultTab</string>
 			</dict>
 			<dict>
 				<key>DocumentURL</key>
-				<string>file://localhost/Users/SteveHickey/Desktop/Dropbox/Public/stevehickeydesign%202.0/baseline.html</string>
+				<string>file://localhost/Users/SteveHickey/Projects/javasteve99.github.com/portfolio.html</string>
 				<key>StateType</key>
 				<string>DefaultTab</string>
 			</dict>
 			<dict>
 				<key>DocumentURL</key>
-				<string>file://localhost/Users/SteveHickey/Desktop/Dropbox/Public/stevehickeydesign%202.0/blog.html</string>
+				<string>file://localhost/Users/SteveHickey/Projects/javasteve99.github.com/resume.html</string>
 				<key>StateType</key>
 				<string>DefaultTab</string>
 			</dict>
 			<dict>
 				<key>DocumentURL</key>
-				<string>file://localhost/Users/SteveHickey/Desktop/Dropbox/Public/stevehickeydesign%202.0/definition-posters.html</string>
+				<string>file://localhost/Users/SteveHickey/Projects/javasteve99.github.com/stoltze-magazine-layout.html</string>
 				<key>StateType</key>
 				<string>DefaultTab</string>
 			</dict>
 			<dict>
 				<key>DocumentURL</key>
-				<string>file://localhost/Users/SteveHickey/Desktop/Dropbox/Public/stevehickeydesign%202.0/fall-river-signage.html</string>
+				<string>file://localhost/Users/SteveHickey/Projects/javasteve99.github.com/the-electric-guitar.html</string>
 				<key>StateType</key>
 				<string>DefaultTab</string>
 			</dict>
 			<dict>
 				<key>DocumentURL</key>
-				<string>file://localhost/Users/SteveHickey/Desktop/Dropbox/Public/stevehickeydesign%202.0/florida-photos.html</string>
+				<string>file://localhost/Users/SteveHickey/Projects/javasteve99.github.com/vistaprint-annual-report.html</string>
 				<key>StateType</key>
 				<string>DefaultTab</string>
 			</dict>
 			<dict>
 				<key>DocumentURL</key>
-				<string>file://localhost/Users/SteveHickey/Desktop/Dropbox/Public/stevehickeydesign%202.0/index.html</string>
+				<string>file://localhost/Users/SteveHickey/Projects/javasteve99.github.com/vistaprint-facebook-tabs.html</string>
 				<key>StateType</key>
 				<string>DefaultTab</string>
 			</dict>
 			<dict>
 				<key>DocumentURL</key>
-				<string>file://localhost/Users/SteveHickey/Desktop/Dropbox/Public/stevehickeydesign%202.0/links.html</string>
-				<key>StateType</key>
-				<string>DefaultTab</string>
-			</dict>
-			<dict>
-				<key>DocumentURL</key>
-				<string>file://localhost/Users/SteveHickey/Desktop/Dropbox/Public/stevehickeydesign%202.0/maine-photos.html</string>
-				<key>StateType</key>
-				<string>DefaultTab</string>
-			</dict>
-			<dict>
-				<key>DocumentURL</key>
-				<string>file://localhost/Users/SteveHickey/Desktop/Dropbox/Public/stevehickeydesign%202.0/onomatopeia-video.html</string>
-				<key>StateType</key>
-				<string>DefaultTab</string>
-			</dict>
-			<dict>
-				<key>DocumentURL</key>
-				<string>file://localhost/Users/SteveHickey/Desktop/Dropbox/Public/stevehickeydesign%202.0/project.html</string>
-				<key>StateType</key>
-				<string>DefaultTab</string>
-			</dict>
-			<dict>
-				<key>DocumentURL</key>
-				<string>file://localhost/Users/SteveHickey/Desktop/Dropbox/Public/stevehickeydesign%202.0/stoltze-magazine-layout.html</string>
-				<key>StateType</key>
-				<string>DefaultTab</string>
-			</dict>
-			<dict>
-				<key>DocumentURL</key>
-				<string>file://localhost/Users/SteveHickey/Desktop/Dropbox/Public/stevehickeydesign%202.0/styles/stevehickeydesign.css</string>
-				<key>StateType</key>
-				<string>DefaultTab</string>
-			</dict>
-			<dict>
-				<key>DocumentURL</key>
-				<string>file://localhost/Users/SteveHickey/Desktop/Dropbox/Public/stevehickeydesign%202.0/vistaprint-annual-report.html</string>
-				<key>StateType</key>
-				<string>DefaultTab</string>
-			</dict>
-			<dict>
-				<key>DocumentURL</key>
-				<string>file://localhost/Users/SteveHickey/Desktop/Dropbox/Public/stevehickeydesign%202.0/we-miss-you.html</string>
-				<key>StateType</key>
-				<string>DefaultTab</string>
-			</dict>
-			<dict>
-				<key>DocumentURL</key>
-				<string>file://localhost/Users/SteveHickey/Desktop/Dropbox/Public/stevehickeydesign%202.0/hamilton-rg/calendar.html</string>
-				<key>StateType</key>
-				<string>DefaultTab</string>
-			</dict>
-			<dict>
-				<key>DocumentURL</key>
-				<string>file://localhost/Users/SteveHickey/Desktop/Dropbox/Public/stevehickeydesign%202.0/resume.html</string>
-				<key>StateType</key>
-				<string>DefaultTab</string>
-			</dict>
-			<dict>
-				<key>DocumentURL</key>
-				<string>file://localhost/Users/SteveHickey/Desktop/Dropbox/Public/stevehickeydesign%202.0/vistaprint-facebook-tabs.html</string>
-				<key>StateType</key>
-				<string>DefaultTab</string>
-			</dict>
-			<dict>
-				<key>DocumentURL</key>
-				<string>file://localhost/Users/SteveHickey/Desktop/Dropbox/Public/stevehickeydesign%202.0/facebook-projects/index.html</string>
+				<string>file://localhost/Users/SteveHickey/Projects/javasteve99.github.com/we-miss-you.html</string>
 				<key>StateType</key>
 				<string>DefaultTab</string>
 			</dict>
