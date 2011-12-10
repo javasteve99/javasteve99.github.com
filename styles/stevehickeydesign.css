@@ -152,7 +152,7 @@ header {
 	height: 142px;
 	width: 100%;
 	display: block;
-	background: #094665;
+	background: red; //#094665
 }
 h1 {
 	width: 369px;
