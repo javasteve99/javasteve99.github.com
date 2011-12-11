@@ -7,13 +7,13 @@
 	<key>ESProjectWindowState</key>
 	<dict>
 		<key>ContentSize</key>
-		<string>{1444, 873}</string>
+		<string>{1685, 865}</string>
 		<key>ProjectURL</key>
 		<string>file://localhost/Users/SteveHickey/Projects/javasteve99.github.com/stevehickeydesign%202.0.esproj/</string>
 		<key>StateType</key>
 		<string>ProjectWindow</string>
 		<key>TopLeftPoint</key>
-		<string>{1978, 1073}</string>
+		<string>{172, 1058}</string>
 	</dict>
 	<key>com.macrabbit.Espresso.FileManager.DisclosureCollapsed</key>
 	<false/>
@@ -21,7 +21,7 @@
 	<dict>
 		<key>ExpandedURLs</key>
 		<array>
-			<string>file://localhost/Users/SteveHickey/Projects/javasteve99.github.com</string>
+			<string>file://localhost/Users/SteveHickey/Projects/javasteve99.github.com/styles</string>
 		</array>
 	</dict>
 	<key>com.macrabbit.Espresso.Publisher.DisclosureCollapsed</key>
@@ -111,6 +111,18 @@
 			<dict>
 				<key>DocumentURL</key>
 				<string>file://localhost/Users/SteveHickey/Projects/javasteve99.github.com/we-miss-you.html</string>
+				<key>StateType</key>
+				<string>DefaultTab</string>
+			</dict>
+			<dict>
+				<key>DocumentURL</key>
+				<string>file://localhost/Users/SteveHickey/Projects/javasteve99.github.com/index.html</string>
+				<key>StateType</key>
+				<string>DefaultTab</string>
+			</dict>
+			<dict>
+				<key>DocumentURL</key>
+				<string>file://localhost/Users/SteveHickey/Projects/javasteve99.github.com/styles/stevehickeydesign.scss</string>
 				<key>StateType</key>
 				<string>DefaultTab</string>
 			</dict>
