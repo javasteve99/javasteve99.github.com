@@ -125,7 +125,9 @@ figure {
 body {
   background: #fff;
   color: #333;
-  font: 18px/24px "Crimson Text", arial, serif;
+  font: 18px/24px minion-pro, georgia, sans-serif;
+  font-style: normal;
+  font-weight: 400;
   margin: 0 auto;
   text-shadow: 0 1px 1px #dbdbdb; }
 
