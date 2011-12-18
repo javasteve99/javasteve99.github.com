@@ -13,7 +13,7 @@
 		<key>StateType</key>
 		<string>ProjectWindow</string>
 		<key>TopLeftPoint</key>
-		<string>{172, 1058}</string>
+		<string>{21, 1058}</string>
 	</dict>
 	<key>com.macrabbit.Espresso.FileManager.DisclosureCollapsed</key>
 	<false/>
@@ -123,6 +123,18 @@
 			<dict>
 				<key>DocumentURL</key>
 				<string>file://localhost/Users/SteveHickey/Projects/javasteve99.github.com/styles/stevehickeydesign.scss</string>
+				<key>StateType</key>
+				<string>DefaultTab</string>
+			</dict>
+			<dict>
+				<key>DocumentURL</key>
+				<string>file://localhost/Users/SteveHickey/Projects/javasteve99.github.com/README</string>
+				<key>StateType</key>
+				<string>DefaultTab</string>
+			</dict>
+			<dict>
+				<key>DocumentURL</key>
+				<string>file://localhost/Users/SteveHickey/Projects/javasteve99.github.com/thoughtbot-playbook.html</string>
 				<key>StateType</key>
 				<string>DefaultTab</string>
 			</dict>

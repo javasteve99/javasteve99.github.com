@@ -1,0 +1,6 @@
+Portfolio website, can be accessed at:
+	stevehickeydesign.com
+	stevehickey.com
+
+Start Sass:
+	sass --watch styles/stevehickeydesign.scss:styles/stevehickeydesign.css
