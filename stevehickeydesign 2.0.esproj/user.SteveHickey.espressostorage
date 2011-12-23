@@ -21,6 +21,7 @@
 	<dict>
 		<key>ExpandedURLs</key>
 		<array>
+			<string>file://localhost/Users/SteveHickey/Projects/javasteve99.github.com/_layouts</string>
 			<string>file://localhost/Users/SteveHickey/Projects/javasteve99.github.com/styles</string>
 		</array>
 	</dict>
@@ -135,6 +136,18 @@
 			<dict>
 				<key>DocumentURL</key>
 				<string>file://localhost/Users/SteveHickey/Projects/javasteve99.github.com/thoughtbot-playbook.html</string>
+				<key>StateType</key>
+				<string>DefaultTab</string>
+			</dict>
+			<dict>
+				<key>DocumentURL</key>
+				<string>file://localhost/Users/SteveHickey/Projects/javasteve99.github.com/_layouts/default.html</string>
+				<key>StateType</key>
+				<string>DefaultTab</string>
+			</dict>
+			<dict>
+				<key>DocumentURL</key>
+				<string>file://localhost/Users/SteveHickey/Projects/javasteve99.github.com/_config.yml</string>
 				<key>StateType</key>
 				<string>DefaultTab</string>
 			</dict>

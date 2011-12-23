@@ -307,15 +307,21 @@ header {
         -ms-box-shadow: inset 0 2px 1px 0 #0c4066;
         -o-box-shadow: inset 0 2px 1px 0 #0c4066;
         box-shadow: inset 0 2px 1px 0 #0c4066; }
-      header nav li a.current {
-        background: #1f6292;
-        -webkit-box-shadow: inset 0 1px 0 0 #0c4066;
-        -moz-box-shadow: inset 0 1px 0 0 #0c4066;
-        -ms-box-shadow: inset 0 1px 0 0 #0c4066;
-        -o-box-shadow: inset 0 1px 0 0 #0c4066;
-        box-shadow: inset 0 1px 0 0 #0c4066; }
-      header nav li a.current:hover {
-        background: #2b74a8; }
+
+body.portfolio a.portfolio-nav,
+body.resume a.resume-nav,
+body.links a.links-nav {
+  background: #1f6292;
+  -webkit-box-shadow: inset 0 1px 0 0 #0c4066;
+  -moz-box-shadow: inset 0 1px 0 0 #0c4066;
+  -ms-box-shadow: inset 0 1px 0 0 #0c4066;
+  -o-box-shadow: inset 0 1px 0 0 #0c4066;
+  box-shadow: inset 0 1px 0 0 #0c4066; }
+
+body.portfolio a.portfolio-nav:hover,
+body.resume a.resume-nav:hover,
+body.links a.links-nav:hover {
+  background: #2b74a8; }
 
 /* ========== Home page ========== */
 section.home-page {
