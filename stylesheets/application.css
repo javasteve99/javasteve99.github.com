@@ -204,7 +204,7 @@ figure {
 body {
   background: #fff;
   color: #333;
-  font: 18px/24px minion-pro, georgia, sans-serif;
+  font: 16px/24px ff-meta-serif-web-pro, georgia, sans-serif;
   font-style: normal;
   font-weight: 400;
   margin: 0 auto;
@@ -288,7 +288,7 @@ header {
     header nav li {
       display: block;
       float: left;
-      font-size: 24px;
+      font-size: 20px;
       margin-right: 20px;
       text-shadow: 0 1px 0px #000; }
       header nav li a {
