@@ -2,8 +2,9 @@ Portfolio website
 -----------------
 
 Can be accessed at these domains:
-*stevehickeydesign.com
-*stevehickey.com
+
+* stevehickeydesign.com
+* stevehickey.com
 
 
 Start Sass and include Bourbon
@@ -15,5 +16,5 @@ sass --watch stylesheets/sass:stylesheets -r ./stylesheets/sass/bourbon/lib/bour
 Start the Jekyll server
 -----------------------
 
-*jekyll --server --auto
-*You can view your running application at http://localhost:4000
+* jekyll --server --auto
+* You can view your running application at http://localhost:4000
