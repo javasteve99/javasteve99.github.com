@@ -178,13 +178,20 @@ section.home-page {
 }
 
 /* ========== Resume page ========== */
-.skills {
-	margin: -12px 0px 24px 0px;
+body.resume {
 
-	li {
-		list-style-type: none;
-		text-indent: 16px;
-	}
+  ul {
+    list-style-type: none;
+    margin: 0 0 24px 0;
+  }
+
+  ul.skills {
+    margin-top: -12px;
+
+    li {
+      text-indent: 16px;
+    }
+  }
 }
 
 /* ========== Portfolio page ========== */

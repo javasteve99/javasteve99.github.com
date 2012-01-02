@@ -370,10 +370,12 @@ section.home-page {
     padding-left: 38px; }
 
 /* ========== Resume page ========== */
-.skills {
-  margin: -12px 0px 24px 0px; }
-  .skills li {
-    list-style-type: none;
+body.resume ul {
+  list-style-type: none;
+  margin: 0 0 24px 0; }
+body.resume ul.skills {
+  margin-top: -12px; }
+  body.resume ul.skills li {
     text-indent: 16px; }
 
 /* ========== Portfolio page ========== */
