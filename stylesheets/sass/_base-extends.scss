@@ -1,6 +1,6 @@
 /* ========== Base Extends ========== */
 .button {
-	background: $main-color;
+	background: $blue;
 	@include border-radius(3px);
 	@include box-shadow(0 2px 4px #ccc);
 	color: #fff;
@@ -15,7 +15,7 @@
 	@include transition(background-color, .25s);
 
   &:hover {
-    background: $main-color-alt;
+    background: lighten($primary, 10%);
     @include box-shadow(0 3px 4px #ccc);
     @include transform(translateY(-1px));
   }

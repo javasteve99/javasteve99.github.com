@@ -27,12 +27,12 @@ img {
 }
 
 a {
-	color: $main-color;
+	color: $blue;
 	text-decoration: underline;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	color: $main-color;
+	color: $blue;
 	font-weight: 400;
 	margin: 0;
 	padding: 0;
@@ -77,7 +77,7 @@ section img {
 
 /* ========== Header ========== */
 header {
-	background: $main-color;
+	background: $blue;
 	height: 160px;
 	width: 100%;
 
@@ -129,12 +129,12 @@ header {
 			}
 		
 			a:hover {
-				background: $main-color-alt;
-				@include box-shadow(inset 0 1px 0 0 $main-color-dark);
+				background: lighten($primary, 10%);
+				@include box-shadow(inset 0 1px 0 0 darken($primary, 10%));
 			}
 		
 			a:active {
-				@include box-shadow(inset 0 2px 1px 0 $main-color-dark);
+				@include box-shadow(inset 0 2px 1px 0 darken($primary, 10%));
 			}
 		}
 	}
@@ -143,14 +143,14 @@ header {
 body.portfolio a.portfolio-nav,
 body.resume a.resume-nav,
 body.links a.links-nav {
-	background: $main-color-mid;
-	@include box-shadow(inset 0 1px 0 0 $main-color-dark);
+	background: lighten($primary, 6%);
+	@include box-shadow(inset 0 1px 0 0 darken($primary, 10%));
 }
 
 body.portfolio a.portfolio-nav:hover ,
 body.resume a.resume-nav:hover ,
 body.links a.links-nav:hover {
-	background: $main-color-alt;
+	background: lighten($primary, 10%);
 }
 
 /* ========== Home page ========== */
@@ -209,7 +209,7 @@ a.project-thumbnail {
 
 /* ========== Footer ========== */
 footer {
-	border-top: 1px solid $main-color;
+	border-top: 1px solid $blue;
 	color: #808080;
 	display: block;
 	font-size: 12px;
