@@ -1,181 +1,181 @@
 /* ========== Global styles ========== */
 
 body {
-	background: #fff;
-	color: #333;
-	font: 16px/24px ff-meta-serif-web-pro, georgia, sans-serif;
-	font-style: normal;
-	font-weight: 400;
-	margin: 0 auto;
-	text-shadow: 0 1px 1px $text-shadow;
+  background: #fff;
+  color: #333;
+  font: 16px/24px ff-meta-serif-web-pro, georgia, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0 auto;
+  text-shadow: 0 1px 1px $text-shadow;
 }
 
 .center {
-	margin: 0 auto;
-	padding: 0px 10px;
-	width: 600px;
+  margin: 0 auto;
+  padding: 0px 10px;
+  width: 600px;
 }
 
 section {
-	margin: 0 auto;
-	padding: 80px 0 50px 0;
-	width: 600px;
+  margin: 0 auto;
+  padding: 80px 0 50px 0;
+  width: 600px;
 }
 
 img {
-	border: none;
+  border: none;
 }
 
 a {
-	color: $blue;
-	text-decoration: underline;
+  color: $blue;
+  text-decoration: underline;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	color: $blue;
-	font-weight: 400;
-	margin: 0;
-	padding: 0;
+  color: $blue;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
 }
 
 h1, h2 {
-	font-size: 48px;
-	margin-bottom: 30px;
+  font-size: 48px;
+  margin-bottom: 30px;
 }
 
 h3 {
-	font-size: 24px;
-	margin-bottom: 8px;
-	
-  a { 
+  font-size: 24px;
+  margin-bottom: 8px;
+
+  a {
     text-decoration: none; 
   }
 
-	a:hover { 
+  a:hover {
     text-decoration: underline; 
   }
 }
 
 h4 {
-	font-size: 16px;
-	color: #000;
-	font-weight: 700;
+  font-size: 16px;
+  color: #000;
+  font-weight: 700;
 }
 
 p {
-	margin: 0 0 24px 0;
-	text-shadow: 1px 1px 0px #ededed;
+  margin: 0 0 24px 0;
+  text-shadow: 1px 1px 0px #ededed;
 }
 
 p.first {
-	padding-top: 24px;
+  padding-top: 24px;
 }
 
 section img {
-	padding-bottom: 8px;
+  padding-bottom: 8px;
 }
 
 /* ========== Header ========== */
 header {
-	background: $blue;
-	height: 160px;
-	width: 100%;
+  background: $blue;
+  height: 160px;
+  width: 100%;
 
-	div.logo a {
-		background: url('../images/logo.png') no-repeat left 40px;
-		display: block;
-		height: 71px;
-		margin: 0 auto;
-		padding-top: 40px;
-		text-indent: -9999px;
-		width: 600px;
-	}
-	
-	div.logo a:hover {
-		background: url('../images/logo-hover.png') no-repeat left 39px;
-	}
-	
-	div.logo a:active {
-		background: url('../images/logo.png') no-repeat left 40px;
-	}
+  div.logo a {
+    background: url('../images/logo.png') no-repeat left 40px;
+    display: block;
+    height: 71px;
+    margin: 0 auto;
+    padding-top: 40px;
+    text-indent: -9999px;
+    width: 600px;
 
-	nav {
-		display: block;
-		height: 28px;
-		margin: 0 auto;
-		padding-top: 7px;
-		width: 600px;
-		
-		ul {
-			margin: 0 0 0 -10px;
+    &:hover {
+      background: url('../images/logo-hover.png') no-repeat left 39px;
+    }
+
+    &:active {
+      background: url('../images/logo.png') no-repeat left 40px;
+    }
+  }
+
+  nav {
+    display: block;
+    height: 28px;
+    margin: 0 auto;
+    padding-top: 7px;
+    width: 600px;
+
+    ul {
+      margin: 0 0 0 -10px;
       padding: 0;
-		}
+    }
 
-		li {
-			display: block;
-			float: left;
-			font-size: 20px;
-			margin-right: 20px;
-			text-shadow: 0 1px 0px #000;
-		
-			a {
-				@include border-radius(3px);
-				color: #fff;
-				display: block;
-				height: 30px;
-				line-height: 32px;
-				padding: 0 10px;
-				text-decoration: none;
-				@include transition(background-color, .25s);
-			}
-		
-			a:hover {
-				background: lighten($primary, 10%);
-				@include box-shadow(inset 0 1px 0 0 darken($primary, 10%));
-			}
-		
-			a:active {
-				@include box-shadow(inset 0 2px 1px 0 darken($primary, 10%));
-			}
-		}
-	}
+    li {
+      display: block;
+      float: left;
+      font-size: 20px;
+      margin-right: 20px;
+      text-shadow: 0 1px 0px #000;
+
+      a {
+        @include border-radius(3px);
+        color: #fff;
+        display: block;
+        height: 30px;
+        line-height: 32px;
+        padding: 0 10px;
+        text-decoration: none;
+        @include transition(background-color, .25s);
+
+        &:hover {
+          background: lighten($primary, 10%);
+          @include box-shadow(inset 0 1px 0 0 darken($primary, 10%));
+        }
+
+        &:active {
+          @include box-shadow(inset 0 2px 1px 0 darken($primary, 10%));
+        }
+      }
+    }
+  }
 }
 
 body.portfolio a.portfolio-nav,
 body.resume a.resume-nav,
 body.links a.links-nav {
-	background: lighten($primary, 6%);
-	@include box-shadow(inset 0 1px 0 0 darken($primary, 10%));
+  background: lighten($primary, 6%);
+  @include box-shadow(inset 0 1px 0 0 darken($primary, 10%));
 }
 
 body.portfolio a.portfolio-nav:hover ,
 body.resume a.resume-nav:hover ,
 body.links a.links-nav:hover {
-	background: lighten($primary, 10%);
+  background: lighten($primary, 10%);
 }
 
 /* ========== Home page ========== */
 section.home-page {
-	background: url(../images/home-page-bg.jpg) no-repeat right 57px;
-	padding: 320px 0 100px 0;
+  background: url(../images/home-page-bg.jpg) no-repeat right 57px;
+  padding: 320px 0 100px 0;
 
-	.button {
-		float: left;
-	}
+  .button {
+    float: left;
+  }
 
-	.email {
-		background-image: url('../images/email-icon.png');
-		background-position: 10px center;
-		background-repeat: no-repeat;
-		padding-left: 44px;
-	}
+  .email {
+    background-image: url('../images/email-icon.png');
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    padding-left: 44px;
+  }
 
-	.twitter {
-		background-image: url('../images/twitter-icon.png');
-		background-position: 7px center;
-		background-repeat: no-repeat;
-		padding-left: 38px;
-	}
+  .twitter {
+    background-image: url('../images/twitter-icon.png');
+    background-position: 7px center;
+    background-repeat: no-repeat;
+    padding-left: 38px;
+  }
 }
 
 /* ========== Resume page ========== */
@@ -184,6 +184,7 @@ body.resume {
   ul {
     list-style-type: none;
     margin: 0 0 24px 0;
+    padding: 0;
   }
 
   ul.skills {
@@ -197,25 +198,37 @@ body.resume {
 
 /* ========== Portfolio page ========== */
 a.project-thumbnail {
-	font-size: 20px;
-	height: 132px;
-	margin: 0 0 24px 0;
-	padding: 5px;
-	text-decoration: none;
-	
-	img {
-		padding: 0;
-	}
+  height: 132px;
+  margin: 0 0 24px 0;
+  padding: 5px;
+  text-decoration: none;
+
+  img {
+    margin: 0;
+    padding: 0;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
+  h3 {
+    color: #fff;
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: -5px;
+  }
 }
 
 /* ========== Footer ========== */
 footer {
-	border-top: 1px solid $blue;
-	color: #808080;
-	display: block;
-	font-size: 12px;
-	height: 34px;
-	margin: 0 auto;
-	text-align: center;
-	width: 600px;
+  border-top: 1px solid $blue;
+  color: #808080;
+  display: block;
+  font-size: 12px;
+  height: 34px;
+  margin: 0 auto;
+  text-align: center;
+  width: 600px;
 }

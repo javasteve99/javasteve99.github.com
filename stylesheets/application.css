@@ -259,10 +259,10 @@ header {
     padding-top: 40px;
     text-indent: -9999px;
     width: 600px; }
-  header div.logo a:hover {
-    background: url("../images/logo-hover.png") no-repeat left 39px; }
-  header div.logo a:active {
-    background: url("../images/logo.png") no-repeat left 40px; }
+    header div.logo a:hover {
+      background: url("../images/logo-hover.png") no-repeat left 39px; }
+    header div.logo a:active {
+      background: url("../images/logo.png") no-repeat left 40px; }
   header nav {
     display: block;
     height: 28px;
@@ -310,19 +310,19 @@ header {
         -ms-transition-delay: 0;
         -o-transition-delay: 0;
         transition-delay: 0; }
-      header nav li a:hover {
-        background: #1b6da9;
-        -webkit-box-shadow: inset 0 1px 0 0 #0d3551;
-        -moz-box-shadow: inset 0 1px 0 0 #0d3551;
-        -ms-box-shadow: inset 0 1px 0 0 #0d3551;
-        -o-box-shadow: inset 0 1px 0 0 #0d3551;
-        box-shadow: inset 0 1px 0 0 #0d3551; }
-      header nav li a:active {
-        -webkit-box-shadow: inset 0 2px 1px 0 #0d3551;
-        -moz-box-shadow: inset 0 2px 1px 0 #0d3551;
-        -ms-box-shadow: inset 0 2px 1px 0 #0d3551;
-        -o-box-shadow: inset 0 2px 1px 0 #0d3551;
-        box-shadow: inset 0 2px 1px 0 #0d3551; }
+        header nav li a:hover {
+          background: #1b6da9;
+          -webkit-box-shadow: inset 0 1px 0 0 #0d3551;
+          -moz-box-shadow: inset 0 1px 0 0 #0d3551;
+          -ms-box-shadow: inset 0 1px 0 0 #0d3551;
+          -o-box-shadow: inset 0 1px 0 0 #0d3551;
+          box-shadow: inset 0 1px 0 0 #0d3551; }
+        header nav li a:active {
+          -webkit-box-shadow: inset 0 2px 1px 0 #0d3551;
+          -moz-box-shadow: inset 0 2px 1px 0 #0d3551;
+          -ms-box-shadow: inset 0 2px 1px 0 #0d3551;
+          -o-box-shadow: inset 0 2px 1px 0 #0d3551;
+          box-shadow: inset 0 2px 1px 0 #0d3551; }
 
 body.portfolio a.portfolio-nav,
 body.resume a.resume-nav,
@@ -359,7 +359,8 @@ section.home-page {
 /* ========== Resume page ========== */
 body.resume ul {
   list-style-type: none;
-  margin: 0 0 24px 0; }
+  margin: 0 0 24px 0;
+  padding: 0; }
 body.resume ul.skills {
   margin-top: -12px; }
   body.resume ul.skills li {
@@ -367,13 +368,21 @@ body.resume ul.skills {
 
 /* ========== Portfolio page ========== */
 a.project-thumbnail {
-  font-size: 20px;
   height: 132px;
   margin: 0 0 24px 0;
   padding: 5px;
   text-decoration: none; }
   a.project-thumbnail img {
+    margin: 0;
     padding: 0; }
+  a.project-thumbnail p {
+    margin: 0;
+    padding: 0; }
+  a.project-thumbnail h3 {
+    color: #fff;
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: -5px; }
 
 /* ========== Footer ========== */
 footer {
