@@ -1,90 +1,58 @@
-/* ========== HTML5 element display ========== */
-article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+/* ==========================================================================
+Reset adapted from Twitter Bootstrap
+https://github.com/twitter/bootstrap/
+========================================================================== */
+html, body {
+  margin: 0;
+  padding: 0; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
   display: block; }
 
-audio, canvas, video {
+audio,
+canvas,
+video {
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
   display: inline-block;
+  vertical-align: baseline;
+  zoom: 1;
+  *display: inline;
+  *vertical-align: auto;
   *display: inline;
   *zoom: 1; }
 
 audio:not([controls]) {
   display: none; }
 
-[hidden] {
-  display: none; }
-
-/* ========== Base ========== 
-* 1. Correct text resizing oddly in IE6/7 when body font-size is set using em units
-* 2. Force vertical scrollbar in non-IE 
-* 3. Prevent iOS text size adjust on device orientation change, without disabling user zoom: h5bp.com/g */
 html {
   font-size: 100%;
-  overflow-y: scroll;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%; }
 
-body {
-  margin: 0; }
+a:focus {
+  outline: thin dotted #555;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px; }
 
-/* ========== Typography ========== */
-abbr[title] {
-  border-bottom: 1px dotted; }
+a:hover,
+a:active {
+  outline: 0; }
 
-b, strong {
-  font-weight: bold; }
-
-blockquote {
-  margin: 1em 40px; }
-
-dfn {
-  font-style: italic; }
-
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0; }
-
-ins {
-  background: #ff9;
-  color: #000;
-  text-decoration: none; }
-
-mark {
-  background: #ff0;
-  color: #000;
-  font-style: italic;
-  font-weight: bold; }
-
-/* Redeclare monospace font family: h5bp.com/j */
-pre, code, kbd, samp {
-  font-family: monospace, monospace;
-  _font-family: 'courier new', monospace;
-  font-size: 1em; }
-
-/* Improve readability of pre-formatted text in all browsers */
-pre {
-  white-space: pre;
-  white-space: pre-wrap;
-  word-wrap: break-word; }
-
-q {
-  quotes: none; }
-
-q:before, q:after {
-  content: "";
-  content: none; }
-
-small {
-  font-size: 85%; }
-
-/* Position subscript and superscript content without affecting line-height: h5bp.com/k */
-sub, sup {
+sub,
+sup {
+  position: relative;
   font-size: 75%;
   line-height: 0;
-  position: relative;
   vertical-align: baseline; }
 
 sup {
@@ -93,32 +61,50 @@ sup {
 sub {
   bottom: -0.25em; }
 
-/* ========== Lists ========== */
-ul, ol {
-  margin: 1em 0;
-  padding: 0; }
-
-nav ul, nav ol {
-  list-style: none;
-  list-style-image: none;
-  margin: 0;
-  padding: 0; }
-
-/* ========== Embedded content ========== 
-* 1. Improve image quality when scaled in IE7 h5bp.com/d
-* 2. Remove the gap between images and borders on image containers h5bp.com/e */
 img {
+  max-width: 100%;
+  height: auto;
   border: 0;
-  -ms-interpolation-mode: bicubic;
+  -ms-interpolation-mode: bicubic; }
+
+button,
+input,
+select,
+textarea {
+  margin: 0;
+  font-size: 100%;
   vertical-align: middle; }
 
-/* * Correct overflow not hidden in IE9 */
-svg:not(:root) {
-  overflow: hidden; }
+button,
+input {
+  *overflow: visible;
+  line-height: normal; }
 
-/* ========== Figures ========== */
-figure {
-  margin: 0; }
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button; }
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box; }
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none; }
+
+textarea {
+  overflow: auto;
+  vertical-align: top; }
 
 /* ========== Variables ========== */
 /* ========== Base Extends ========== */
@@ -284,7 +270,8 @@ header {
     padding-top: 7px;
     width: 600px; }
     header nav ul {
-      margin-left: -10px; }
+      margin: 0 0 0 -10px;
+      padding: 0; }
     header nav li {
       display: block;
       float: left;
@@ -398,50 +385,3 @@ footer {
   margin: 0 auto;
   text-align: center;
   width: 600px; }
-
-/* ========== Print styles. Inlined to avoid required HTTP connection: www.phpied.com/delay-loading-your-print-css/ ========== */
-@media print {
-  * {
-    background: transparent !important;
-    color: black !important;
-    text-shadow: none !important;
-    filter: none !important;
-    -ms-filter: none !important; }
-
-  /* Black prints faster: h5bp.com/s */
-  a, a:visited {
-    text-decoration: underline; }
-
-  a[href]:after {
-    content: " (" attr(href) ")"; }
-
-  abbr[title]:after {
-    content: " (" attr(title) ")"; }
-
-  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
-    content: ""; }
-
-  /* Don't show links for images, or javascript/internal links */
-  pre, blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid; }
-
-  thead {
-    display: table-header-group; }
-
-  /* h5bp.com/t */
-  tr, img {
-    page-break-inside: avoid; }
-
-  img {
-    max-width: 100% !important; }
-
-  @page {
-    margin: 0.5cm; }
-
-  p, h2, h3 {
-    orphans: 3;
-    widows: 3; }
-
-  h2, h3 {
-    page-break-after: avoid; } }
