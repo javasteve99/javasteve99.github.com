@@ -1,33 +1,8 @@
-/* ==========================================================================
-Reset adapted from Twitter Bootstrap
-https://github.com/twitter/bootstrap/
-========================================================================== */
-html, body {
-  margin: 0;
-  padding: 0; }
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-nav,
-section {
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
   display: block; }
 
-audio,
-canvas,
-video {
-  display: -moz-inline-box;
-  -moz-box-orient: vertical;
+audio, canvas, video {
   display: inline-block;
-  vertical-align: baseline;
-  zoom: 1;
-  *display: inline;
-  *vertical-align: auto;
   *display: inline;
   *zoom: 1; }
 
@@ -40,16 +15,14 @@ html {
   -ms-text-size-adjust: 100%; }
 
 a:focus {
-  outline: thin dotted #555;
+  outline: thin dotted #333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px; }
 
-a:hover,
-a:active {
+a:hover, a:active {
   outline: 0; }
 
-sub,
-sup {
+sub, sup {
   position: relative;
   font-size: 75%;
   line-height: 0;
@@ -63,43 +36,34 @@ sub {
 
 img {
   max-width: 100%;
-  height: auto;
+  vertical-align: middle;
   border: 0;
   -ms-interpolation-mode: bicubic; }
 
-button,
-input,
-select,
-textarea {
+button, input, select, textarea {
   margin: 0;
   font-size: 100%;
   vertical-align: middle; }
 
-button,
-input {
+button, input {
   *overflow: visible;
   line-height: normal; }
 
-button::-moz-focus-inner,
-input::-moz-focus-inner {
+button::-moz-focus-inner, input::-moz-focus-inner {
   padding: 0;
   border: 0; }
 
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+button, input[type="button"], input[type="reset"], input[type="submit"] {
   cursor: pointer;
   -webkit-appearance: button; }
 
 input[type="search"] {
-  -webkit-appearance: textfield;
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
-  box-sizing: content-box; }
+  box-sizing: content-box;
+  -webkit-appearance: textfield; }
 
-input[type="search"]::-webkit-search-decoration,
-input[type="search"]::-webkit-search-cancel-button {
+input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none; }
 
 textarea {
@@ -115,19 +79,19 @@ textarea {
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
   border-radius: 3px;
-  -webkit-box-shadow: 0 2px 4px #cccccc;
-  -moz-box-shadow: 0 2px 4px #cccccc;
-  -ms-box-shadow: 0 2px 4px #cccccc;
-  -o-box-shadow: 0 2px 4px #cccccc;
-  box-shadow: 0 2px 4px #cccccc;
-  color: #fff;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  -ms-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  color: white;
   display: block;
   font-size: 24px;
   height: 36px;
   line-height: 40px;
   margin-right: 20px;
   padding: 0px 15px;
-  text-shadow: 0px 1px #000;
+  text-shadow: 0px 1px black;
   text-decoration: none;
   -webkit-transition-property: background-color;
   -moz-transition-property: background-color;
@@ -151,22 +115,22 @@ textarea {
   transition-delay: 0; }
   .button:hover {
     background: #1b6da9;
-    -webkit-box-shadow: 0 3px 4px #cccccc;
-    -moz-box-shadow: 0 3px 4px #cccccc;
-    -ms-box-shadow: 0 3px 4px #cccccc;
-    -o-box-shadow: 0 3px 4px #cccccc;
-    box-shadow: 0 3px 4px #cccccc;
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    -ms-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    -o-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     -webkit-transform: translateY(-1px);
     -moz-transform: translateY(-1px);
     -ms-transform: translateY(-1px);
     -o-transform: translateY(-1px);
     transform: translateY(-1px); }
   .button:active {
-    -webkit-box-shadow: 0 2px 4px #cccccc;
-    -moz-box-shadow: 0 2px 4px #cccccc;
-    -ms-box-shadow: 0 2px 4px #cccccc;
-    -o-box-shadow: 0 2px 4px #cccccc;
-    box-shadow: 0 2px 4px #cccccc;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    -ms-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    -o-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
     -ms-transform: translateY(0);
@@ -188,8 +152,8 @@ textarea {
 
 /* ========== Global styles ========== */
 body {
-  background: #fff;
-  color: #333;
+  background: white;
+  color: #333333;
   font: 16px/24px ff-meta-serif-web-pro, georgia, sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -233,12 +197,12 @@ h3 {
 
 h4 {
   font-size: 16px;
-  color: #000;
+  color: black;
   font-weight: 700; }
 
 p {
   margin: 0 0 24px 0;
-  text-shadow: 1px 1px 0px #ededed; }
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2); }
 
 p.first {
   padding-top: 24px; }
@@ -256,6 +220,7 @@ header {
     display: block;
     height: 71px;
     margin: 0 auto;
+    overflow: hidden;
     padding-top: 40px;
     text-indent: -9999px;
     width: 600px; }
@@ -270,21 +235,21 @@ header {
     padding-top: 7px;
     width: 600px; }
     header nav ul {
-      margin: 0 0 0 -10px;
+      margin: 0 0 0 -10px !important;
       padding: 0; }
     header nav li {
       display: block;
       float: left;
       font-size: 20px;
       margin-right: 20px;
-      text-shadow: 0 1px 0px #000; }
+      text-shadow: 0 1px 0px black; }
       header nav li a {
         -webkit-border-radius: 3px;
         -moz-border-radius: 3px;
         -ms-border-radius: 3px;
         -o-border-radius: 3px;
         border-radius: 3px;
-        color: #fff;
+        color: white;
         display: block;
         height: 30px;
         line-height: 32px;
@@ -379,15 +344,15 @@ a.project-thumbnail {
     margin: 0;
     padding: 0; }
   a.project-thumbnail h3 {
-    color: #fff;
+    color: white;
     font-size: 20px;
     line-height: 20px;
-    margin-top: -5px; }
+    margin-top: 8px; }
 
 /* ========== Footer ========== */
 footer {
   border-top: 1px solid #14517d;
-  color: #808080;
+  color: #7f7f7f;
   display: block;
   font-size: 12px;
   height: 34px;
