@@ -213,24 +213,22 @@ section img {
 /* ========== Header ========== */
 header {
   background: #14517d;
-  height: 160px;
+  padding: 30px 0 16px 0;
   width: 100%; }
   header div.logo a {
-    background: url("../images/logo.png") no-repeat left 40px;
+    background: url("../images/logo.png") no-repeat left top;
     display: block;
     height: 71px;
     margin: 0 auto;
     overflow: hidden;
-    padding-top: 40px;
     text-indent: -9999px;
     width: 600px; }
     header div.logo a:hover {
-      background: url("../images/logo-hover.png") no-repeat left 39px; }
+      background: url("../images/logo.png") no-repeat left bottom; }
     header div.logo a:active {
-      background: url("../images/logo.png") no-repeat left 40px; }
+      background: url("../images/logo.png") no-repeat left top; }
   header nav {
     display: block;
-    height: 28px;
     margin: 0 auto;
     padding-top: 7px;
     width: 600px; }
