@@ -316,10 +316,6 @@ body.resume ul {
   list-style-type: none;
   margin: 0 0 24px 0;
   padding: 0; }
-body.resume ul.skills {
-  margin-top: -12px; }
-  body.resume ul.skills li {
-    text-indent: 16px; }
 
 /* ========== Portfolio page ========== */
 a.project-thumbnail {
