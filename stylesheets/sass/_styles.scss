@@ -124,7 +124,7 @@ header {
         color: $lightest;
         display: block;
         height: 30px;
-        line-height: 32px;
+        line-height: 30px;
         padding: 0 10px;
         text-decoration: none;
         @include transition(background-color, .25s);
@@ -157,25 +157,11 @@ body.links a.links-nav:hover {
 
 /* ========== Home page ========== */
 section.home-page {
-  background: url(../images/home-page-bg.jpg) no-repeat right 57px;
-  padding: 320px 0 100px 0;
+  background: url(../images/home-page-bg.jpg) no-repeat right 20px;
+  padding: 300px 0 100px 0;
 
   .button {
     float: left;
-  }
-
-  .email {
-    background-image: url('../images/email-icon.png');
-    background-position: 10px center;
-    background-repeat: no-repeat;
-    padding-left: 44px;
-  }
-
-  .twitter {
-    background-image: url('../images/twitter-icon.png');
-    background-position: 7px center;
-    background-repeat: no-repeat;
-    padding-left: 38px;
   }
 }
 

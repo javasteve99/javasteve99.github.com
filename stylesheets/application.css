@@ -88,7 +88,7 @@ textarea {
   display: block;
   font-size: 24px;
   height: 36px;
-  line-height: 40px;
+  line-height: 36px;
   margin-right: 20px;
   padding: 0px 15px;
   text-shadow: 0px 1px black;
@@ -252,7 +252,7 @@ header {
         color: white;
         display: block;
         height: 30px;
-        line-height: 32px;
+        line-height: 30px;
         padding: 0 10px;
         text-decoration: none;
         -webkit-transition-property: background-color;
@@ -306,20 +306,10 @@ body.links a.links-nav:hover {
 
 /* ========== Home page ========== */
 section.home-page {
-  background: url(../images/home-page-bg.jpg) no-repeat right 57px;
-  padding: 320px 0 100px 0; }
+  background: url(../images/home-page-bg.jpg) no-repeat right 20px;
+  padding: 300px 0 100px 0; }
   section.home-page .button {
     float: left; }
-  section.home-page .email {
-    background-image: url("../images/email-icon.png");
-    background-position: 10px center;
-    background-repeat: no-repeat;
-    padding-left: 44px; }
-  section.home-page .twitter {
-    background-image: url("../images/twitter-icon.png");
-    background-position: 7px center;
-    background-repeat: no-repeat;
-    padding-left: 38px; }
 
 /* ========== Resume page ========== */
 body.resume ul {
