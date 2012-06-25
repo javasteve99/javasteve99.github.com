@@ -74,11 +74,11 @@ textarea {
 /* ========== Base Extends ========== */
 .button {
   background: #14517d;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
-  border-radius: 3px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
   -ms-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
@@ -152,13 +152,13 @@ textarea {
 
 /* ========== Global styles ========== */
 body {
-  background: white;
+  background: #e5e5e5;
   color: #333333;
   font: 16px/24px ff-meta-serif-web-pro, georgia, sans-serif;
   font-style: normal;
   font-weight: 400;
   margin: 0 auto;
-  text-shadow: 0 1px 1px #dbdbdb; }
+  text-shadow: 0 1px 1px white; }
 
 .center {
   margin: 0 auto;
@@ -201,14 +201,23 @@ h4 {
   font-weight: 700; }
 
 p {
-  margin: 0 0 24px 0;
-  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2); }
+  margin: 0 0 24px 0; }
 
 p.first {
   padding-top: 24px; }
 
 section img {
-  padding-bottom: 8px; }
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  -ms-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  margin-bottom: 8px; }
 
 /* ========== Header ========== */
 header {
@@ -242,11 +251,11 @@ header {
       margin-right: 20px;
       text-shadow: 0 1px 0px black; }
       header nav li a {
-        -webkit-border-radius: 3px;
-        -moz-border-radius: 3px;
-        -ms-border-radius: 3px;
-        -o-border-radius: 3px;
-        border-radius: 3px;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        -ms-border-radius: 2px;
+        -o-border-radius: 2px;
+        border-radius: 2px;
         color: white;
         display: block;
         height: 30px;
@@ -304,7 +313,7 @@ body.links a.links-nav:hover {
 
 /* ========== Home page ========== */
 section.home-page {
-  background: url(../images/home-page-bg.jpg) no-repeat right 20px;
+  background: url(../images/home-page-bg.png) no-repeat right 30px;
   padding: 300px 0 100px 0; }
   section.home-page .button {
     float: left; }
