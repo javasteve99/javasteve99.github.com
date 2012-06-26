@@ -18,7 +18,7 @@ body {
 
 section {
   margin: 0 auto;
-  padding: 80px 0 50px 0;
+  padding: 80px 10px 50px 10px;
   width: 600px;
 }
 
@@ -80,16 +80,21 @@ section img {
 header {
   background: $primary;
   padding: 30px 0 16px 0;
+  min-width: 620px;
   width: 100%;
 
-  div.logo a {
+  h1.logo {
+    margin-bottom: 0px;
+    width: 368px;
+  }
+
+  h1.logo a {
     background: url('../images/logo.png') no-repeat left top;
     display: block;
     height: 71px;
-    margin: 0 auto;
+    margin: 0px !important;
     overflow: hidden;
     text-indent: -9999px;
-    width: 600px;
 
     &:hover {
       background: url('../images/logo.png') no-repeat left bottom;
@@ -101,41 +106,32 @@ header {
   }
 
   nav {
+    @extend .cf;
     display: block;
-    margin: 0 auto;
+    font-size: 20px;
+    margin: 0 0 0 -10px;
     padding-top: 7px;
-    width: 600px;
 
-    ul {
-      margin: 0 0 0 -10px !important;
-      padding: 0;
-    }
-
-    li {
+    a {
+      @include border-radius(2px);
+      color: $lightest;
       display: block;
       float: left;
-      font-size: 20px;
+      height: 30px;
+      line-height: 30px;
       margin-right: 20px;
+      padding: 0 10px;
+      text-decoration: none;
       text-shadow: 0 1px 0px $darkest;
+      @include transition(background-color, .25s);
 
-      a {
-        @include border-radius(2px);
-        color: $lightest;
-        display: block;
-        height: 30px;
-        line-height: 30px;
-        padding: 0 10px;
-        text-decoration: none;
-        @include transition(background-color, .25s);
+      &:hover {
+        background: lighten($primary, 10%);
+        @include box-shadow(inset 0 1px 0 0 darken($primary, 10%));
+      }
 
-        &:hover {
-          background: lighten($primary, 10%);
-          @include box-shadow(inset 0 1px 0 0 darken($primary, 10%));
-        }
-
-        &:active {
-          @include box-shadow(inset 0 2px 1px 0 darken($primary, 10%));
-        }
+      &:active {
+        @include box-shadow(inset 0 2px 1px 0 darken($primary, 10%));
       }
     }
   }
@@ -156,8 +152,8 @@ body.links a.links-nav:hover {
 
 /* ========== Home page ========== */
 section.home-page {
-  background: url(../images/home-page-bg.png) no-repeat right 30px;
-  padding: 300px 0 100px 0;
+  background: url(../images/home-page-bg.png) no-repeat 382px 30px;
+  padding: 300px 10px 100px 10px;
 
   .button {
     float: left;
@@ -207,6 +203,7 @@ footer {
   font-size: 12px;
   height: 34px;
   margin: 0 auto;
+  padding: 0 10px;
   text-align: center;
   width: 600px;
 }
