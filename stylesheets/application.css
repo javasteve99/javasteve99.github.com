@@ -239,6 +239,16 @@ header {
       background: url("../images/logo.png") no-repeat left bottom; }
     header h1.logo a:active {
       background: url("../images/logo.png") no-repeat left top; }
+  @media all and (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2 / 1), (min-device-pixel-ratio: 2) {
+    header h1.logo a {
+      background: url("../images/logo@2x.png") no-repeat left top;
+      background-size: 368px 142px; }
+      header h1.logo a:hover {
+        background: url("../images/logo@2x.png") no-repeat left bottom;
+        background-size: 368px 142px; }
+      header h1.logo a:active {
+        background: url("../images/logo@2x.png") no-repeat left top;
+        background-size: 368px 142px; } }
   header nav {
     display: block;
     font-size: 20px;

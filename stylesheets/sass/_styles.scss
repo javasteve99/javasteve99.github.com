@@ -105,6 +105,23 @@ header {
     }
   }
 
+  @media all and (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2) {
+    h1.logo a {
+      background: url('../images/logo@2x.png') no-repeat left top;
+      background-size: 368px 142px;
+
+      &:hover {
+        background: url('../images/logo@2x.png') no-repeat left bottom;
+        background-size: 368px 142px;
+      }
+
+      &:active {
+        background: url('../images/logo@2x.png') no-repeat left top;
+        background-size: 368px 142px;
+      }
+    }
+  }
+
   nav {
     @extend .cf;
     display: block;

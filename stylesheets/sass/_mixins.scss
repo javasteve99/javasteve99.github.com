@@ -1,18 +1,18 @@
 /* ========== Base Extends ========== */
 .button {
-	background: $primary;
-	@include border-radius(2px);
-	@include box-shadow(0 1px 4px rgba($darkest, 0.3));
-	color: $lightest;
-	display: block;
-	font-size: 20px;
-	height: 36px;
-	line-height: 36px;
-	margin-right: 20px;
-	padding: 0px 15px;
-	text-shadow: 0px 1px $darkest;
-	text-decoration: none;
-	@include transition(background-color, .25s);
+  background: $primary;
+  @include border-radius(2px);
+  @include box-shadow(0 1px 4px rgba($darkest, 0.3));
+  color: $lightest;
+  display: block;
+  font-size: 20px;
+  height: 36px;
+  line-height: 36px;
+  margin-right: 20px;
+  padding: 0px 15px;
+  text-shadow: 0px 1px $darkest;
+  text-decoration: none;
+  @include transition(background-color, .25s);
 
   &:hover {
     background: lighten($primary, 10%);
