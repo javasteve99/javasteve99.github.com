@@ -1,9 +1,11 @@
-/* ========== Global styles ========== */
+/* Global Styles ================================================================================ */
 
 body {
   background: $background;
   color: $text;
-  font: 16px/24px ff-meta-serif-web-pro, georgia, sans-serif;
+  font-family: $base-font-family;
+  font-size: 100%;
+  line-height: $base-line-height;
   font-style: normal;
   font-weight: 400;
   margin: 0 auto;
@@ -26,44 +28,9 @@ img {
   border: none;
 }
 
-a {
-  color: $primary;
-  text-decoration: underline;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  color: $primary;
-  font-weight: 400;
-  margin: 0;
-  padding: 0;
-}
-
-h1, h2 {
-  font-size: 48px;
-  margin-bottom: 30px;
-}
-
 h3 {
-  font-size: 24px;
-  margin-bottom: 8px;
-
-  a {
-    text-decoration: none;
-  }
-
-  a:hover {
-    text-decoration: underline;
-  }
-}
-
-h4 {
-  font-size: 16px;
-  color: $darkest;
-  font-weight: 700;
-}
-
-p {
-  margin: 0 0 24px 0;
+  a { text-decoration: none; }
+  a:hover { text-decoration: underline; }
 }
 
 p.first {
@@ -76,7 +43,7 @@ section img {
   margin-bottom: 8px;
 }
 
-/* ========== Header ========== */
+/* Header ======================================================================================= */
 header {
   background: $primary;
   padding: 30px 0 16px 0;
@@ -123,7 +90,7 @@ header {
   }
 
   nav {
-    @extend .cf;
+    @include clearfix;
     display: block;
     font-size: 20px;
     margin: 0 0 0 -10px;
@@ -167,7 +134,7 @@ body.links a.links-nav:hover {
   background: lighten($primary, 10%);
 }
 
-/* ========== Home page ========== */
+/* Home Page ==================================================================================== */
 section.home-page {
   background: url(../images/home-page-bg.png) no-repeat 382px 30px;
   padding: 300px 10px 100px 10px;
@@ -177,7 +144,7 @@ section.home-page {
   }
 }
 
-/* ========== Resume page ========== */
+/* Resume ======================================================================================= */
 body.resume {
 
   ul {
@@ -187,7 +154,7 @@ body.resume {
   }
 }
 
-/* ========== Portfolio page ========== */
+/* Portfolio Page =============================================================================== */
 a.project-thumbnail {
   height: 132px;
   margin: 0 0 24px 0;
@@ -212,7 +179,7 @@ a.project-thumbnail {
   }
 }
 
-/* ========== Footer ========== */
+/* Footer ======================================================================================= */
 footer {
   border-top: 1px solid $primary;
   color: $gray50;

@@ -1,0 +1,98 @@
+/* Type Styles ================================================================================== */
+
+p {
+  margin: 0 0 $vertical-measure 0;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+cite {
+  font-style: normal;
+}
+
+a {
+  color: $primary;
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  font-family: $heading-font-family;
+  font-weight: 400;
+  line-height: 1;
+  color: $primary;
+  text-rendering: optimizelegibility; // Fix the character spacing for headings
+}
+
+h1 { font-size: 3em; margin-bottom: 30px; }
+h2 { font-size: 3em; margin-bottom: 30px; }
+h3 { font-size: 1.5em; margin-bottom: 8px; }
+h4 { font-size: 1em; font-weight: 700; color: $darkest; }
+h5 { font-size: 14px; line-height: 20px; }
+h6 { font-size: 12px; line-height: 20px; }
+
+ul, ol {
+  padding: 0;
+  margin: 0 0 $base-line-height 1em;
+}
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin-bottom: 0;
+}
+
+li {
+  line-height: $base-line-height;
+}
+
+hr {
+  margin: $base-line-height 0;
+  border: 0;
+  border-top: 1px solid $primary;
+  border-bottom: 1px solid $lightest;
+}
+
+abbr[title] {
+  cursor: help;
+  border-bottom: 1px dotted $gray20;
+}
+
+blockquote {
+  padding: 0 0 0 1em;
+  margin: 0 0 $base-line-height;
+  border-left: 4px solid $primary;
+
+  p { margin-bottom: 0; }
+
+  small {
+    display: block;
+    line-height: $base-line-height;
+    color: $text;
+    &:before {
+      content: '\2014 \00A0';
+    }
+  }
+}
+
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
+  content: "";
+}
+
+address {
+  display: block;
+  margin-bottom: $base-line-height;
+  font-style: normal;
+  line-height: $base-line-height;
+}

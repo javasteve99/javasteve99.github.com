@@ -1,31 +1,20 @@
-/* ========== Variables ========== */
+// Variables ===================================================================================== /
 
-// Grayscale
-$white:                       #fff;
-$gray05:                      #f2f2f2;
-$gray10:                      #e5e5e5;
-$gray15:                      #d9d9d9;
-$gray20:                      #ccc;
-$gray25:                      #bfbfbf;
-$gray30:                      #b2b2b2;
-$gray35:                      #a6a6a6;
-$gray40:                      #999;
-$gray45:                      #8c8c8c;
-$gray50:                      #7f7f7f;
-$gray55:                      #737373;
-$gray60:                      #666;
-$gray65:                      #595959;
-$gray70:                      #4c4c4c;
-$gray75:                      #404040;
-$gray80:                      #333;
-$gray85:                      #262626;
-$gray90:                      #191919;
-$gray95:                      #0d0d0d;
-$black:                       #000;
+// White - Grays - Black
+$black:                       hsl(0, 0%, 0%);
+$gray90:                      hsl(0, 0%, 10%);
+$gray80:                      hsl(0, 0%, 20%);
+$gray70:                      hsl(0, 0%, 30%);
+$gray60:                      hsl(0, 0%, 40%);
+$gray50:                      hsl(0, 0%, 50%);
+$gray40:                      hsl(0, 0%, 60%);
+$gray30:                      hsl(0, 0%, 70%);
+$gray20:                      hsl(0, 0%, 80%);
+$gray10:                      hsl(0, 0%, 90%);
+$white:                       hsl(0, 0%, 100%);
 
 // Accent colors
 $blue:                        #14517d;
-$light-gray:                  #dbdbdb;
 
 // Color scheme
 $primary:                     $blue;
@@ -34,3 +23,10 @@ $lightest:                    $white;
 $darkest:                     $black;
 $background:                  $gray10;
 $text:                        $gray80;
+
+// Type Variables
+$base-font-family:            ff-meta-serif-web-pro, georgia, sans-serif;
+$heading-font-family:         inherit;
+$base-font-size:              1em;
+$base-line-height:            1.5;
+$vertical-measure:            1.5em;

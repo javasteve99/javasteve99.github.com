@@ -1,4 +1,4 @@
-/* ========== Base Extends ========== */
+// Global Mixins ================================================================================= /
 .button {
   background: $primary;
   @include border-radius(2px);
@@ -26,9 +26,8 @@
   }
 }
 
-/* ========== Clear Fix ========== */
-/* For modern browsers */
-.cf:before, .cf:after { content:""; display:table; }
-.cf:after { clear:both; }
-/* For IE 6/7 (trigger hasLayout) */
-.cf { zoom:1; }
+@mixin clearfix {
+  zoom: 1;
+  &:before, &:after { content: ""; display: table; }
+  &:after { clear: both; }
+}

@@ -1,31 +1,86 @@
-article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
   display: block; }
 
-audio, canvas, video {
-  display: inline-block;
-  *display: inline;
-  *zoom: 1; }
+audio,
+canvas,
+video {
+  display: inline-block; }
 
 audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+[hidden] {
   display: none; }
 
 html {
-  font-size: 100%;
+  font-family: sans-serif;
+  /* 1 */
   -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%; }
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */ }
+
+body {
+  margin: 0; }
 
 a:focus {
-  outline: thin dotted #333;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px; }
+  outline: thin dotted; }
 
-a:hover, a:active {
+a:active,
+a:hover {
   outline: 0; }
 
-sub, sup {
-  position: relative;
+h1 {
+  font-size: 2em; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b,
+strong {
+  font-weight: bold; }
+
+dfn {
+  font-style: italic; }
+
+mark {
+  background: #ff0;
+  color: #000; }
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019"; }
+
+small {
+  font-size: 80%; }
+
+sub,
+sup {
   font-size: 75%;
   line-height: 0;
+  position: relative;
   vertical-align: baseline; }
 
 sup {
@@ -35,43 +90,87 @@ sub {
   bottom: -0.25em; }
 
 img {
-  max-width: 100%;
-  vertical-align: middle;
-  border: 0;
-  -ms-interpolation-mode: bicubic; }
-
-button, input, select, textarea {
-  margin: 0;
-  font-size: 100%;
-  vertical-align: middle; }
-
-button, input {
-  *overflow: visible;
-  line-height: normal; }
-
-button::-moz-focus-inner, input::-moz-focus-inner {
-  padding: 0;
   border: 0; }
 
-button, input[type="button"], input[type="reset"], input[type="submit"] {
+svg:not(:root) {
+  overflow: hidden; }
+
+figure {
+  margin: 0; }
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+button,
+input {
+  line-height: normal; }
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
   cursor: pointer;
-  -webkit-appearance: button; }
+  /* 3 */ }
+
+button[disabled],
+input[disabled] {
+  cursor: default; }
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
 
 input[type="search"] {
-  -webkit-box-sizing: content-box;
+  -webkit-appearance: textfield;
+  /* 1 */
   -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  -webkit-appearance: textfield; }
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
 
-input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button {
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
 
 textarea {
   overflow: auto;
-  vertical-align: top; }
+  /* 1 */
+  vertical-align: top;
+  /* 2 */ }
 
-/* ========== Variables ========== */
-/* ========== Base Extends ========== */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
 .button {
   background: #14517d;
   -webkit-border-radius: 2px;
@@ -137,24 +236,112 @@ textarea {
     -o-transform: translateY(0);
     transform: translateY(0); }
 
-/* ========== Clear Fix ========== */
-/* For modern browsers */
-.cf:before, header nav:before, .cf:after, header nav:after {
-  content: "";
-  display: table; }
+/* Type Styles ================================================================================== */
+p {
+  margin: 0 0 1.5em 0; }
 
-.cf:after, header nav:after {
-  clear: both; }
+strong {
+  font-weight: bold; }
 
-/* For IE 6/7 (trigger hasLayout) */
-.cf, header nav {
-  zoom: 1; }
+em {
+  font-style: italic; }
 
-/* ========== Global styles ========== */
+cite {
+  font-style: normal; }
+
+a {
+  color: #14517d;
+  text-decoration: underline; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-weight: 400;
+  line-height: 1;
+  color: #14517d;
+  text-rendering: optimizelegibility; }
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 30px; }
+
+h2 {
+  font-size: 3em;
+  margin-bottom: 30px; }
+
+h3 {
+  font-size: 1.5em;
+  margin-bottom: 8px; }
+
+h4 {
+  font-size: 1em;
+  font-weight: 700;
+  color: black; }
+
+h5 {
+  font-size: 14px;
+  line-height: 20px; }
+
+h6 {
+  font-size: 12px;
+  line-height: 20px; }
+
+ul, ol {
+  padding: 0;
+  margin: 0 0 1.5 1em; }
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin-bottom: 0; }
+
+li {
+  line-height: 1.5; }
+
+hr {
+  margin: 1.5 0;
+  border: 0;
+  border-top: 1px solid #14517d;
+  border-bottom: 1px solid white; }
+
+abbr[title] {
+  cursor: help;
+  border-bottom: 1px dotted #cccccc; }
+
+blockquote {
+  padding: 0 0 0 1em;
+  margin: 0 0 1.5;
+  border-left: 4px solid #14517d; }
+  blockquote p {
+    margin-bottom: 0; }
+  blockquote small {
+    display: block;
+    line-height: 1.5;
+    color: #333333; }
+    blockquote small:before {
+      content: '\2014 \00A0'; }
+
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
+  content: ""; }
+
+address {
+  display: block;
+  margin-bottom: 1.5;
+  font-style: normal;
+  line-height: 1.5; }
+
+/* Global Styles ================================================================================ */
 body {
-  background: #e5e5e5;
+  background: #e6e6e6;
   color: #333333;
-  font: 16px/24px ff-meta-serif-web-pro, georgia, sans-serif;
+  font-family: ff-meta-serif-web-pro, georgia, sans-serif;
+  font-size: 100%;
+  line-height: 1.5;
   font-style: normal;
   font-weight: 400;
   margin: 0 auto;
@@ -173,35 +360,10 @@ section {
 img {
   border: none; }
 
-a {
-  color: #14517d;
+h3 a {
+  text-decoration: none; }
+h3 a:hover {
   text-decoration: underline; }
-
-h1, h2, h3, h4, h5, h6 {
-  color: #14517d;
-  font-weight: 400;
-  margin: 0;
-  padding: 0; }
-
-h1, h2 {
-  font-size: 48px;
-  margin-bottom: 30px; }
-
-h3 {
-  font-size: 24px;
-  margin-bottom: 8px; }
-  h3 a {
-    text-decoration: none; }
-  h3 a:hover {
-    text-decoration: underline; }
-
-h4 {
-  font-size: 16px;
-  color: black;
-  font-weight: 700; }
-
-p {
-  margin: 0 0 24px 0; }
 
 p.first {
   padding-top: 24px; }
@@ -219,7 +381,7 @@ section img {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
   margin-bottom: 8px; }
 
-/* ========== Header ========== */
+/* Header ======================================================================================= */
 header {
   background: #14517d;
   padding: 30px 0 16px 0;
@@ -250,10 +412,16 @@ header {
         background: url("../images/logo@2x.png") no-repeat left top;
         background-size: 368px 142px; } }
   header nav {
+    zoom: 1;
     display: block;
     font-size: 20px;
     margin: 0 0 0 -10px;
     padding-top: 7px; }
+    header nav:before, header nav:after {
+      content: "";
+      display: table; }
+    header nav:after {
+      clear: both; }
     header nav a {
       -webkit-border-radius: 2px;
       -moz-border-radius: 2px;
@@ -318,20 +486,20 @@ body.resume a.resume-nav:hover,
 body.links a.links-nav:hover {
   background: #1b6da9; }
 
-/* ========== Home page ========== */
+/* Home Page ==================================================================================== */
 section.home-page {
   background: url(../images/home-page-bg.png) no-repeat 382px 30px;
   padding: 300px 10px 100px 10px; }
   section.home-page .button {
     float: left; }
 
-/* ========== Resume page ========== */
+/* Resume ======================================================================================= */
 body.resume ul {
   list-style-type: none;
   margin: 0 0 24px 0;
   padding: 0; }
 
-/* ========== Portfolio page ========== */
+/* Portfolio Page =============================================================================== */
 a.project-thumbnail {
   height: 132px;
   margin: 0 0 24px 0;
@@ -349,10 +517,10 @@ a.project-thumbnail {
     line-height: 20px;
     margin-top: 8px; }
 
-/* ========== Footer ========== */
+/* Footer ======================================================================================= */
 footer {
   border-top: 1px solid #14517d;
-  color: #7f7f7f;
+  color: gray;
   display: block;
   font-size: 12px;
   height: 34px;
