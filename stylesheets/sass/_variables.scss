@@ -25,8 +25,12 @@ $background:                  $gray10;
 $text:                        $gray80;
 
 // Type Variables
-$base-font-family:            ff-meta-serif-web-pro, georgia, sans-serif;
-$heading-font-family:         inherit;
+$regular-font-family:         "SourceSansProRegular", sans-serif;
+$italic-font-family:          "SourceSansProItalic", sans-serif;
+$bold-font-family:            "SourceSansProBold", sans-serif;
+$bold-italic-font-family:     "SourceSansProBoldItalic", sans-serif;
+$light-font-family:           "SourceSansProLight", sans-serif;
+$light-italic-font-family:    "SourceSansProLightItalic", sans-serif;
 $base-font-size:              1em;
 $base-line-height:            1.5;
 $vertical-measure:            1.5em;

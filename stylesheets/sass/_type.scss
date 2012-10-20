@@ -5,6 +5,7 @@ p {
 }
 
 strong {
+  font-family: $bold-font-family;
   font-weight: bold;
 }
 
@@ -18,25 +19,27 @@ cite {
 
 a {
   color: $primary;
+  font-family: $bold-font-family;
+  font-weight: bold;
   text-decoration: underline;
 }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
-  font-family: $heading-font-family;
-  font-weight: 400;
+  font-family: $bold-font-family;
+  font-weight: bold;
   line-height: 1;
   color: $primary;
   text-rendering: optimizelegibility; // Fix the character spacing for headings
 }
 
 h1 { font-size: 3em; margin-bottom: 30px; }
-h2 { font-size: 3em; margin-bottom: 30px; }
+h2 { font-size: 3em; margin-bottom: 16px; }
 h3 { font-size: 1.5em; margin-bottom: 8px; }
-h4 { font-size: 1em; font-weight: 700; color: $darkest; }
-h5 { font-size: 14px; line-height: 20px; }
-h6 { font-size: 12px; line-height: 20px; }
+h4 { font-size: 1em; color: $darkest; }
+h5 { font-size: 1em; line-height: 20px; }
+h6 { font-size: 1em; line-height: 20px; }
 
 ul, ol {
   padding: 0;
