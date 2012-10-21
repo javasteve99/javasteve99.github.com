@@ -25,12 +25,8 @@ $background:                  $gray10;
 $text:                        $gray80;
 
 // Type Variables
-$regular-font-family:         "SourceSansProRegular", sans-serif;
-$italic-font-family:          "SourceSansProItalic", sans-serif;
-$bold-font-family:            "SourceSansProBold", sans-serif;
-$bold-italic-font-family:     "SourceSansProBoldItalic", sans-serif;
-$light-font-family:           "SourceSansProLight", sans-serif;
-$light-italic-font-family:    "SourceSansProLightItalic", sans-serif;
+$base-font-family:            "source-sans-pro", source-sans-pro, sans-serif;
+$heading-font-family:            "source-sans-pro", source-sans-pro, sans-serif;
 $base-font-size:              1em;
-$base-line-height:            1.5;
-$vertical-measure:            1.5em;
+$base-line-height:            1.375;
+$vertical-measure:            1.375em;

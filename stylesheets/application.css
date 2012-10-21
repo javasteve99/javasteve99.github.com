@@ -171,55 +171,11 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* Font Face ==================================================================================== */
-@font-face {
-  font-family: 'SourceSansProBold';
-  src: url("../fonts/SourceSansPro-Bold-webfont.eot");
-  src: url("../fonts/SourceSansPro-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/SourceSansPro-Bold-webfont.woff") format("woff"), url("../fonts/SourceSansPro-Bold-webfont.ttf") format("truetype"), url("../fonts/SourceSansPro-Bold-webfont.svg#SourceSansProBold") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'SourceSansProBoldItalic';
-  src: url("../fonts/SourceSansPro-BoldIt-webfont.eot");
-  src: url("../fonts/SourceSansPro-BoldIt-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/SourceSansPro-BoldIt-webfont.woff") format("woff"), url("../fonts/SourceSansPro-BoldIt-webfont.ttf") format("truetype"), url("../fonts/SourceSansPro-BoldIt-webfont.svg#SourceSansProBoldItalic") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'SourceSansProLight';
-  src: url("../fonts/SourceSansPro-Light-webfont.eot");
-  src: url("../fonts/SourceSansPro-Light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/SourceSansPro-Light-webfont.woff") format("woff"), url("../fonts/SourceSansPro-Light-webfont.ttf") format("truetype"), url("../fonts/SourceSansPro-Light-webfont.svg#SourceSansProLight") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'SourceSansProLightItalic';
-  src: url("../fonts/SourceSansPro-LightIt-webfont.eot");
-  src: url("../fonts/SourceSansPro-LightIt-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/SourceSansPro-LightIt-webfont.woff") format("woff"), url("../fonts/SourceSansPro-LightIt-webfont.ttf") format("truetype"), url("../fonts/SourceSansPro-LightIt-webfont.svg#SourceSansProLightItalic") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'SourceSansProRegular';
-  src: url("../fonts/SourceSansPro-Regular-webfont.eot");
-  src: url("../fonts/SourceSansPro-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/SourceSansPro-Regular-webfont.woff") format("woff"), url("../fonts/SourceSansPro-Regular-webfont.ttf") format("truetype"), url("../fonts/SourceSansPro-Regular-webfont.svg#SourceSansProRegular") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'SourceSansProItalic';
-  src: url("../fonts/SourceSansPro-It-webfont.eot");
-  src: url("../fonts/SourceSansPro-It-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/SourceSansPro-It-webfont.woff") format("woff"), url("../fonts/SourceSansPro-It-webfont.ttf") format("truetype"), url("../fonts/SourceSansPro-It-webfont.svg#SourceSansProItalic") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
 /* Type Styles ================================================================================== */
 p {
-  margin: 0 0 1.5em 0; }
+  margin: 0 0 1.375em 0; }
 
 strong {
-  font-family: "SourceSansProBold", sans-serif;
   font-weight: bold; }
 
 em {
@@ -230,14 +186,13 @@ cite {
 
 a {
   color: #14517d;
-  font-family: "SourceSansProBold", sans-serif;
   font-weight: bold;
   text-decoration: underline; }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
-  font-family: "SourceSansProBold", sans-serif;
+  font-family: "source-sans-pro", source-sans-pro, sans-serif;
   font-weight: bold;
   line-height: 1;
   color: #14517d;
@@ -269,7 +224,7 @@ h6 {
 
 ul, ol {
   padding: 0;
-  margin: 0 0 1.5 1em; }
+  margin: 0 0 1.375 1em; }
 
 ul ul,
 ul ol,
@@ -278,10 +233,10 @@ ol ul {
   margin-bottom: 0; }
 
 li {
-  line-height: 1.5; }
+  line-height: 1.375; }
 
 hr {
-  margin: 1.5 0;
+  margin: 1.375 0;
   border: 0;
   border-top: 1px solid #14517d;
   border-bottom: 1px solid white; }
@@ -292,13 +247,13 @@ abbr[title] {
 
 blockquote {
   padding: 0 0 0 1em;
-  margin: 0 0 1.5;
+  margin: 0 0 1.375;
   border-left: 4px solid #14517d; }
   blockquote p {
     margin-bottom: 0; }
   blockquote small {
     display: block;
-    line-height: 1.5;
+    line-height: 1.375;
     color: #333333; }
     blockquote small:before {
       content: '\2014 \00A0'; }
@@ -311,17 +266,17 @@ blockquote:after {
 
 address {
   display: block;
-  margin-bottom: 1.5;
+  margin-bottom: 1.375;
   font-style: normal;
-  line-height: 1.5; }
+  line-height: 1.375; }
 
 /* Global Styles ================================================================================ */
 body {
   background: #e6e6e6;
   color: #333333;
-  font-family: "SourceSansProRegular", sans-serif;
+  font-family: "source-sans-pro", source-sans-pro, sans-serif;
   font-size: 100%;
-  line-height: 1.5;
+  line-height: 1.375;
   font-style: normal;
   font-weight: 400;
   margin: 0 auto;
