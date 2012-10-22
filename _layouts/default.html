@@ -18,20 +18,23 @@
 </head>
 <body class="{{ page.area }}">
 
-<header>
+<header role="banner">
   <div class="center">
     <h1 class="logo"><a href="/">steve hickey design</a></h1>
-    <nav>
+    <nav class="global" role="navigation">
       <a href="portfolio.html" class="portfolio-nav">portfolio</a>
-      <a href="resume.html" class="resume-nav">r&eacute;sum&eacute;</a>
+      <a href="experience.html" class="experience-nav">experience</a>
+      <a href="blog.html" class="blog-nav">blog</a>
       <a href="links.html" class="links-nav">links</a>
     </nav>
   </div>
 </header>
 
+<div role="main">
 {{ content }}
+</div>
 
-<footer>
+<footer role="contentinfo">
   &copy; 2012 Steve Hickey. All work is protected by <a href="#" id="raptorize">hungry raptors</a>. Don't steal my stuff.
 </footer>
 
@@ -39,6 +42,7 @@
 <script>window.jQuery || document.write('<script src="javascripts/jquery-1.7.2.min.js"><\/script>')</script>
 <script src="javascripts/plugins.js"></script>
 <script src="javascripts/scripts.js"></script>
+<script src="javascripts/gridOverlay.js"></script>
 <script>
   var _gaq=[['_setAccount','UA-20633683-1'],['_trackPageview']];
   (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];

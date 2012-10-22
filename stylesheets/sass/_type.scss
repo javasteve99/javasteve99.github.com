@@ -1,6 +1,19 @@
 /* Type Styles ================================================================================== */
 
+@mixin body-font-styles { // keep body specific type styles in the type stylesheep
+  color: $text;
+  font-family: $base-font-family;
+  font-size: 100%;
+  line-height: $base-line-height;
+  font-style: normal;
+  font-weight: normal;
+  font-weight: 400;
+  text-shadow: 0 1px 1px $text-shadow;
+}
+
 p {
+  font-size: 1em;
+  line-height: $base-line-height;
   margin: 0 0 $vertical-measure 0;
 }
 
@@ -27,17 +40,49 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
   font-family: $heading-font-family;
   font-weight: bold;
+  font-weight: 700;
   line-height: 1;
   color: $primary;
   text-rendering: optimizelegibility; // Fix the character spacing for headings
+
+  a { text-decoration: none; }
+  a:hover { text-decoration: underline; }
 }
 
-h1 { font-size: 3em; margin-bottom: 30px; }
-h2 { font-size: 3em; margin-bottom: 16px; }
-h3 { font-size: 1.5em; margin-bottom: 8px; }
-h4 { font-size: 1em; color: $darkest; }
-h5 { font-size: 1em; line-height: 20px; }
-h6 { font-size: 1em; line-height: 20px; }
+h1 {
+  font-size: 2.618em;
+  margin: 0.625em 0 0.5em 0;
+}
+
+h2 {
+  font-size: 2.225em;
+  margin: 0.875em 0 0.615em 0;
+}
+
+h3 {
+  font-size: 1.618em;
+  margin: 1.5em 0 0.085em 0;
+}
+
+h4 {
+  color: $darkest;
+  font-size: 1.375em;
+  margin: 1.91em 0 0.1em 0;
+}
+
+h5 {
+  color: $darkest;
+  font-size: 1em;
+  margin: 2.925em 0 0.2em 0;
+}
+
+h6 {
+  color: $darkest;
+  font-size: 0.85em;
+  margin: 3.675em 0 0.2em 0;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
 
 ul, ol {
   padding: 0;
