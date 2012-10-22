@@ -172,6 +172,9 @@ table {
   border-spacing: 0; }
 
 /* Type Styles ================================================================================== */
+html {
+  -webkit-font-smoothing: antialiased; }
+
 p {
   font-size: 1em;
   line-height: 1.375;

@@ -1,5 +1,7 @@
 /* Type Styles ================================================================================== */
 
+html { -webkit-font-smoothing: antialiased; }
+
 @mixin body-font-styles { // keep body specific type styles in the type stylesheep
   color: $text;
   font-family: $base-font-family;
