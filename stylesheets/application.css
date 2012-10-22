@@ -323,7 +323,7 @@ p.first {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   min-width: 620px;
-  padding: 2.5em 0 0.9em 0;
+  padding: 0.75em 0 1em 0;
   width: 100%; }
 
 .logo {
@@ -423,7 +423,7 @@ body.home [role="main"] {
     height: 1.5em;
     line-height: 1.5em;
     margin-right: 20px;
-    padding: 0.1em 1em 0 1em;
+    padding: 0 1em;
     text-shadow: 0px 1px #061825;
     text-decoration: none;
     -webkit-transition: background-color, 0.25s;
@@ -471,7 +471,7 @@ ul.portfolio-links {
     height: 1.5em;
     line-height: 1.5em;
     margin-right: 20px;
-    padding: 0.1em 1em 0 1em;
+    padding: 0 1em;
     text-shadow: 0px 1px #061825;
     text-decoration: none;
     -webkit-transition: background-color, 0.25s;
