@@ -14,27 +14,26 @@ html { -webkit-font-smoothing: antialiased; }
 }
 
 p {
-  font-size: 1em;
+  font-size: $base-font-size;
   line-height: $base-line-height;
-  margin: 0 0 $vertical-measure 0;
+  margin: 0 0 #{$vertical-measure}em 0;
 }
 
-strong {
-  font-weight: bold;
-}
-
-em {
-  font-style: italic;
-}
-
-cite {
-  font-style: normal;
-}
+strong { font-weight: bold; }
+em { font-style: italic; }
+cite { font-style: normal; }
 
 a {
   color: $primary;
   font-weight: bold;
-  text-decoration: underline;
+  text-decoration: none;
+  border-bottom: 1px solid rgba($primary, 0.25);
+  @include transition(border, .25s);
+
+  &:hover {
+    text-decoration: none;
+    border-bottom: 1px solid $primary;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -46,49 +45,46 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1;
   color: $primary;
   text-rendering: optimizelegibility; // Fix the character spacing for headings
-
-  a { text-decoration: none; }
-  a:hover { text-decoration: underline; }
 }
 
 h1 {
-  font-size: 2.618em;
-  margin: 0.625em 0 0.5em 0;
+  font-size: #{$modular-scale-up4}em;
+  margin-bottom: #{$vertical-measure / $modular-scale-up4}em;
 }
 
 h2 {
-  font-size: 2.225em;
-  margin: 0.875em 0 0.615em 0;
+  font-size: #{$modular-scale-up3}em;
+  margin-bottom: #{$vertical-measure / $modular-scale-up3}em;
 }
 
 h3 {
-  font-size: 1.618em;
-  margin: 1.5em 0 0.085em 0;
+  font-size: #{$modular-scale-up2}em;
+  margin-bottom: #{$vertical-measure / $modular-scale-up2}em;
 }
 
 h4 {
   color: $darkest;
-  font-size: 1.375em;
-  margin: 1.91em 0 0.1em 0;
+  font-size: #{$modular-scale-up1}em;
+  margin-bottom: 0;
 }
 
 h5 {
   color: $darkest;
-  font-size: 1em;
-  margin: 2.925em 0 0.2em 0;
+  font-size: #{$modular-scale-base}em;
+  margin-bottom: 0;
 }
 
 h6 {
   color: $darkest;
-  font-size: 0.85em;
-  margin: 3.675em 0 0.2em 0;
+  font-size: #{$modular-scale-down1}em;
+  margin-bottom: 0;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
 
 ul, ol {
   padding: 0;
-  margin: 0 0 $base-line-height 1em;
+  margin: 0 0 #{$vertical-measure}em 1em;
 }
 
 ul ul,
@@ -103,7 +99,7 @@ li {
 }
 
 hr {
-  margin: $base-line-height 0;
+  margin: 0 0 #{$vertical-measure}em 0;
   border: 0;
   border-top: 1px solid $primary;
   border-bottom: 1px solid $lightest;
@@ -116,8 +112,8 @@ abbr[title] {
 
 blockquote {
   padding: 0 0 0 1em;
-  margin: 0 0 $base-line-height;
-  border-left: 4px solid $primary;
+  margin: 0 0 #{$vertical-measure}em 0;
+  border-left: 0.25em solid $primary;
 
   p { margin-bottom: 0; }
 
@@ -140,7 +136,7 @@ blockquote:after {
 
 address {
   display: block;
-  margin-bottom: $base-line-height;
+  margin-bottom: #{$vertical-measure}em;
   font-style: normal;
   line-height: $base-line-height;
 }
