@@ -52,14 +52,14 @@ h1 {
   margin-bottom: #{$vertical-measure / $modular-scale-up4}em;
 }
 
-h2 {
+h2, h1.headline {
   font-size: #{$modular-scale-up3}em;
   margin-bottom: #{$vertical-measure / $modular-scale-up3}em;
 }
 
 h3 {
   font-size: #{$modular-scale-up2}em;
-  margin-bottom: #{$vertical-measure / $modular-scale-up2}em;
+  margin: -0.2em 0 0.1em 0;
 }
 
 h4 {
@@ -68,15 +68,17 @@ h4 {
   margin-bottom: 0;
 }
 
-h5 {
+h5, h2.subhead {
   color: $darkest;
   font-size: #{$modular-scale-base}em;
+  line-height: $base-line-height;
   margin-bottom: 0;
 }
 
 h6 {
-  color: $darkest;
+  color: lighten($darkest, 25%);
   font-size: #{$modular-scale-down1}em;
+  line-height: $base-line-height;
   margin-bottom: 0;
   letter-spacing: 0.1em;
   text-transform: uppercase;

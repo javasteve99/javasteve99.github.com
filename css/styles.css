@@ -217,27 +217,29 @@ h1 {
   font-size: 2.625em;
   margin-bottom: 0.54762em; }
 
-h2 {
+h2, h1.headline {
   font-size: 2.3125em;
   margin-bottom: 0.62162em; }
 
 h3 {
   font-size: 1.625em;
-  margin-bottom: 0.88462em; }
+  margin: -0.2em 0 0.1em 0; }
 
 h4 {
   color: black;
   font-size: 1.4375em;
   margin-bottom: 0; }
 
-h5 {
+h5, h2.subhead {
   color: black;
   font-size: 1em;
+  line-height: 1.4375;
   margin-bottom: 0; }
 
 h6 {
-  color: black;
+  color: #404040;
   font-size: 0.875em;
+  line-height: 1.4375;
   margin-bottom: 0;
   letter-spacing: 0.1em;
   text-transform: uppercase; }
@@ -459,7 +461,14 @@ body.home [role="main"] {
       -o-transform: translate3d(0px, 0px, 0px);
       transform: translate3d(0px, 0px, 0px); }
 
-/* Resume ======================================================================================= */
+/* Experience =================================================================================== */
+body.experience h3 {
+  margin-bottom: 0.075em; }
+body.experience h4 {
+  font-size: 1em;
+  margin-bottom: 0.25em; }
+body.experience h3 + h4 {
+  margin-top: 0.3em; }
 body.experience ul {
   list-style-type: none;
   margin: 0 0 1.4375em 0;
@@ -519,6 +528,32 @@ ul.portfolio-links {
     ul.portfolio-links a span {
       position: relative;
       top: -0.2em; }
+
+/* Blog styles =============================================================================== */
+body.blog article {
+  position: relative; }
+body.blog .date {
+  opacity: 0.2;
+  position: absolute;
+  right: 0;
+  top: 0.9em;
+  -webkit-transition: opacity, 0.25s;
+  -moz-transition: opacity, 0.25s;
+  -ms-transition: opacity, 0.25s;
+  -o-transition: opacity, 0.25s;
+  transition: opacity, 0.25s; }
+  body.blog .date:hover {
+    opacity: 1; }
+
+h1.headline {
+  margin-bottom: 0; }
+
+h2.subhead {
+  margin-bottom: 1.4375em;
+  width: 75%; }
+
+h4 {
+  margin: -0.15em 0 0.15em 0; }
 
 /* Secret gifs @ http://stevehickeydesign.com/gifs - good find bro! ============================= */
 figure.gif {
