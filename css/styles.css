@@ -268,15 +268,15 @@ abbr[title] {
   border-bottom: 1px dotted #cccccc; }
 
 blockquote {
-  padding: 0 0 0 1em;
+  color: #737373;
+  padding-left: 1em;
   margin: 0 0 1.4375em 0;
   border-left: 0.25em solid #14517d; }
   blockquote p {
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    font-style: italic; }
   blockquote small {
-    display: block;
-    line-height: 1.4375;
-    color: #333333; }
+    font-size: 0.875; }
     blockquote small:before {
       content: '\2014 \00A0'; }
 
@@ -286,11 +286,35 @@ blockquote:before,
 blockquote:after {
   content: ""; }
 
-address {
+code,
+pre {
+  background-color: #073642;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  color: #93a1a1;
+  font-family: "source-code-pro", source-code-pro, sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  font-weight: 700;
+  padding: 0 0.2em;
+  text-shadow: none; }
+
+pre {
   display: block;
-  margin-bottom: 1.4375em;
-  font-style: normal;
-  line-height: 1.4375; }
+  margin: 0 0 1.4375em;
+  padding-left: 1em;
+  word-break: break-all;
+  word-wrap: break-word;
+  white-space: pre;
+  white-space: pre-wrap; }
+  pre.scrollable {
+    max-height: 20em;
+    overflow-y: scroll; }
+  pre code {
+    color: inherit;
+    background-color: transparent; }
 
 /* Global Styles ================================================================================ */
 body {

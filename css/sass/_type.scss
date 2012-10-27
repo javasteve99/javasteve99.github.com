@@ -113,16 +113,18 @@ abbr[title] {
 }
 
 blockquote {
-  padding: 0 0 0 1em;
+  color: lighten($text, 25%);
+  padding-left: 1em;
   margin: 0 0 #{$vertical-measure}em 0;
   border-left: 0.25em solid $primary;
 
-  p { margin-bottom: 0; }
+  p {
+    margin-bottom: 0;
+    font-style: italic;
+  }
 
   small {
-    display: block;
-    line-height: $base-line-height;
-    color: $text;
+    font-size: #{$modular-scale-down1};
     &:before {
       content: '\2014 \00A0';
     }
@@ -136,9 +138,37 @@ blockquote:after {
   content: "";
 }
 
-address {
+// Code styling
+code,
+pre {
+  background-color: $sol-dark-bg;
+  @include border-radius(2px);
+  @include box-shadow(0 1px 4px rgba($darkest, 0.3));
+  color: $sol-lightest-text;
+  font-family: $code-font-family;
+  font-size: $base-font-size;
+  font-weight: bold;
+  font-weight: 700;
+  padding: 0 0.2em;
+  text-shadow: none;
+}
+
+pre {
   display: block;
-  margin-bottom: #{$vertical-measure}em;
-  font-style: normal;
-  line-height: $base-line-height;
+  margin: 0 0 #{$vertical-measure}em;
+  padding-left: 1em;
+  word-break: break-all;
+  word-wrap: break-word;
+  white-space: pre;
+  white-space: pre-wrap;
+
+  &.scrollable {
+    max-height: 20em;
+    overflow-y: scroll;
+  }
+
+  code {
+    color: inherit;
+    background-color: transparent;
+  }
 }
