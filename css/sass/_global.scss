@@ -201,7 +201,36 @@ h2.subhead {
 
 h4 {
   margin: -0.15em 0 0.15em 0;
+}
 
+ul.posts {
+  list-style-type: none;
+  margin-left: 0;
+
+  li {
+    padding: 0.9375em 0 1.9375em 0;
+    position: relative;
+    border-bottom: 1px solid rgba($primary, 0.25);
+    border-top: 1px solid rgba($lightest, 0.5);
+    &:first-child { border-top: none; padding-top: 0;
+      .date { top: 0.4em; }
+    }
+    &:last-child{ border-bottom: none; padding-bottom: 0; }
+  }
+
+  h1.title {
+    font-size: #{$modular-scale-up2}em;
+    margin-bottom: #{$vertical-measure / 4}em;
+  }
+
+  h2.subhead {
+    font-size: #{$modular-scale-down1}em;
+    margin-bottom: 0;
+  }
+
+  .date {
+    top: 1.3em;
+  }
 }
 
 /* Secret gifs @ http://stevehickeydesign.com/gifs - good find bro! ============================= */

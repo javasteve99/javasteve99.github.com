@@ -579,6 +579,31 @@ h2.subhead {
 h4 {
   margin: -0.15em 0 0.15em 0; }
 
+ul.posts {
+  list-style-type: none;
+  margin-left: 0; }
+  ul.posts li {
+    padding: 0.9375em 0 1.9375em 0;
+    position: relative;
+    border-bottom: 1px solid rgba(20, 81, 125, 0.25);
+    border-top: 1px solid rgba(255, 255, 255, 0.5); }
+    ul.posts li:first-child {
+      border-top: none;
+      padding-top: 0; }
+      ul.posts li:first-child .date {
+        top: 0.4em; }
+    ul.posts li:last-child {
+      border-bottom: none;
+      padding-bottom: 0; }
+  ul.posts h1.title {
+    font-size: 1.625em;
+    margin-bottom: 0.35938em; }
+  ul.posts h2.subhead {
+    font-size: 0.875em;
+    margin-bottom: 0; }
+  ul.posts .date {
+    top: 1.3em; }
+
 /* Secret gifs @ http://stevehickeydesign.com/gifs - good find bro! ============================= */
 figure.gif {
   margin: 0 0 2.875em 0;

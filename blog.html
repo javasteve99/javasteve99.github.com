@@ -4,12 +4,12 @@ title: blog
 area: blog
 ---
 
-  <div class="blog-link">
-    <h3><a href="/2012/10/26/hello-world.html">Hello, World!</a></h3>
-    <p class="introduction">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
-  </div>
-
-  <div class="blog-link">
-    <h3><a href="/2012/10/27/hello-world-2.html">Hello, World! 2</a></h3>
-    <p class="introduction">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
-  </div>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li>
+        <h1 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
+        <h2 class="subhead">{{ post.subhead }}</h4>
+        <span class="date">{{ post.date | date: "%B %d, %Y" }}</span>
+      </li>
+    {% endfor %}
+  </ul>
