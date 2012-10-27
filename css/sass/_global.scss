@@ -15,10 +15,7 @@ body {
 [role="main"] {
   margin: 0 auto;
   padding: 5em 1em 3em 1em; // 80px 16px 48px 16px
-  width: 100%;
-  min-width: 37.5em; // drop this once we're responsive
-  max-width: 37.5em; // 600px
-  @include box-sizing(border-box);
+  width: 37.5em; // 600px
 
   *:first-child {
     margin-top: 0;

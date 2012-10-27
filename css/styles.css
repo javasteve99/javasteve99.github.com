@@ -312,12 +312,7 @@ body {
 [role="main"] {
   margin: 0 auto;
   padding: 5em 1em 3em 1em;
-  width: 100%;
-  min-width: 37.5em;
-  max-width: 37.5em;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+  width: 37.5em; }
   [role="main"] *:first-child {
     margin-top: 0; }
   [role="main"] img {
