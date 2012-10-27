@@ -2,6 +2,7 @@
 body {
   background: $background;
   margin: 0 auto;
+  padding: 0;
   @include body-font-styles;
 }
 
@@ -14,7 +15,10 @@ body {
 [role="main"] {
   margin: 0 auto;
   padding: 5em 1em 3em 1em; // 80px 16px 48px 16px
-  width: 37.5em; // 600px
+  width: 100%;
+  min-width: 37.5em; // drop this once we're responsive
+  max-width: 37.5em; // 600px
+  @include box-sizing(border-box);
 
   *:first-child {
     margin-top: 0;
@@ -107,8 +111,9 @@ body.links a.links-nav:hover {
 
 /* Home Page ==================================================================================== */
 body.home [role="main"] {
-  background: url(../img/home-page-bg.png) no-repeat 23.875em 2em;
-  padding: 18em 1em 6em 1em;
+  background: url(../img/home-page-bg.png) no-repeat 23em 2em;
+  padding-top: 18em;
+  padding-bottom: 6em;
 }
 
 .supporting-links {
