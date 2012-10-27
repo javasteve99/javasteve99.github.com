@@ -1,0 +1,104 @@
+/* Code Styles ================================================================================== */
+code,
+pre {
+  background-color: $sol-dark-bg;
+  @include border-radius(2px);
+  @include box-shadow(0 1px 4px rgba($darkest, 0.3));
+  color: $sol-lightest-text;
+  direction: ltr;
+  font-family: $code-font-family;
+  font-size: #{$modular-scale-down1}em;
+  font-weight: bold;
+  font-weight: 700;
+  overflow: auto;
+  padding: 0 0.2em;
+  text-align: left;
+  text-shadow: none;
+  white-space: pre;
+  word-spacing: normal;
+  -moz-tab-size: 2;
+  -o-tab-size: 2;
+  tab-size: 2;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+pre {
+  display: block;
+  margin: 0 0 #{$vertical-measure}em;
+  padding-left: 1em;
+  word-break: break-all;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+
+  &.scrollable {
+    max-height: 20em;
+    overflow-y: scroll;
+  }
+
+  code[class*="language-"] {
+    background-color: transparent;
+    color: inherit;
+    @include box-shadow(none);
+    font-family: $code-font-family;
+    font-size: #{$modular-scale-base}em;
+    padding: 0;
+  }
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: $sol-darkest-text;
+}
+
+.token.punctuation {
+  color: $sol-lightest-text;
+}
+
+.namespace {
+  opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number {
+  color: $sol-blue;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string {
+  color: $sol-green;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  color: $sol-yellow;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  color: $sol-blue;
+}
+
+.token.regex,
+.token.important {
+  color: $sol-orange;
+}
+
+.token.important {
+  font-weight: bold;
+}
+
+.token.entity {
+  cursor: help;
+}

@@ -137,38 +137,3 @@ blockquote:before,
 blockquote:after {
   content: "";
 }
-
-// Code styling
-code,
-pre {
-  background-color: $sol-dark-bg;
-  @include border-radius(2px);
-  @include box-shadow(0 1px 4px rgba($darkest, 0.3));
-  color: $sol-lightest-text;
-  font-family: $code-font-family;
-  font-size: $base-font-size;
-  font-weight: bold;
-  font-weight: 700;
-  padding: 0 0.2em;
-  text-shadow: none;
-}
-
-pre {
-  display: block;
-  margin: 0 0 #{$vertical-measure}em;
-  padding-left: 1em;
-  word-break: break-all;
-  word-wrap: break-word;
-  white-space: pre;
-  white-space: pre-wrap;
-
-  &.scrollable {
-    max-height: 20em;
-    overflow-y: scroll;
-  }
-
-  code {
-    color: inherit;
-    background-color: transparent;
-  }
-}
