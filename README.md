@@ -1,11 +1,11 @@
-Portfolio website
------------------
+Personal website
+================
 
 Can be accessed at this domain: [stevehickeydesign.com](http://stevehickeydesign.com)
 
 
-Running a Jekyll server and watching Sass/Bourbon simultaneously
-================================================================
+Running Jekyll/Sass/Bourbon simultaneously
+----------------------------------------------------------------
 
 <code>rake server</code>
 
