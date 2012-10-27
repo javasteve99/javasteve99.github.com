@@ -1,20 +1,12 @@
 Portfolio website
 -----------------
 
-Can be accessed at these domains:
-
-* stevehickeydesign.com
-* stevehickey.com
+Can be accessed at this domain: [stevehickeydesign.com](http://stevehickeydesign.com)
 
 
-Start Sass and include Bourbon
--------------------------
+Running a Jekyll server and watching Sass/Bourbon simultaneously
+================================================================
 
-Watch Sass stylesheet and require Bourbon:
-sass --watch stylesheets/sass:stylesheets -r ./stylesheets/sass/bourbon/lib/bourbon.rb
+<code>rake server</code>
 
-Start the Jekyll server
------------------------
-
-* jekyll --server --auto
-* You can view your running application at http://localhost:4000
+I'm pretty sure this requires at least Ruby 1.9.3 to work. But I don't know. Frankly, it's a small miracle that I figured this out.
