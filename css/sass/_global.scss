@@ -1,25 +1,13 @@
 /* Global Styles ================================================================================ */
-body {
-  background: $background;
-  margin: 0 auto;
-  padding: 0;
-  @include body-font-styles;
-}
-
-.center {
-  margin: 0 auto;
-  padding: 0px 1em;
-  width: 37.5em; // 600px
-}
+html { margin: 0; padding: 0; width: 100%; }
+body { background: $background; margin: 0; padding: 0; @include body-font-styles; width: 100%; }
+.container { width: 100%; min-width: $max-width; max-width: $max-width; margin: 0 auto; padding: 0; }
 
 [role="main"] {
   margin: 0 auto;
   padding: 5em 1em 3em 1em; // 80px 16px 48px 16px
-  width: 37.5em; // 600px
 
-  *:first-child {
-    margin-top: 0;
-  }
+  *:first-child { margin-top: 0; }
 
   img {
     @include border-radius(2px);
@@ -34,16 +22,15 @@ body {
   @include box-sizing(border-box);
   min-width: 38.75em;
   padding: 1em 0 1em 0;
-  width: 100%;
 }
 
 .logo {
   font-size: #{$modular-scale-up5}em;
   margin: 0;
+  padding: 0 0.234375em;
 
   & a {
     color: $lightest;
-    @include inline-block;
     margin: 0 !important;
     text-decoration: none;
     text-shadow: 0 1px 0 darken($primary, 20%);
@@ -66,6 +53,7 @@ nav.global {
   @include clearfix;
   display: block;
   margin: 1em 0 0 -0.5em;
+  padding: 0 1em;
 
   a {
     @include border-radius(2px);
@@ -108,7 +96,7 @@ body.links a.links-nav:hover {
 
 /* Home Page ==================================================================================== */
 body.home [role="main"] {
-  background: url(../img/home-page-bg.png) no-repeat 23em 2em;
+  background: url('/img/home-page-bg.png') no-repeat top right;
   padding-top: 18em;
   padding-bottom: 6em;
 }
@@ -253,7 +241,6 @@ figure.gif {
   font-size: #{$modular-scale-down1}em;
   line-height: 2;
   height: #{$vertical-measure * 2}em;
-  margin: 0 auto;
+  margin: 0 1em;
   text-align: center;
-  width: 43em;
 }

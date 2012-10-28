@@ -367,9 +367,14 @@ pre {
   cursor: help; }
 
 /* Global Styles ================================================================================ */
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%; }
+
 body {
   background: #e6e6e6;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   color: #333333;
   font-family: "source-sans-pro", source-sans-pro, sans-serif;
@@ -378,17 +383,19 @@ body {
   font-style: normal;
   font-weight: normal;
   font-weight: 400;
-  text-shadow: 0 1px 1px white; }
+  text-shadow: 0 1px 1px white;
+  width: 100%; }
 
-.center {
+.container {
+  width: 100%;
+  min-width: 39.5em;
+  max-width: 39.5em;
   margin: 0 auto;
-  padding: 0px 1em;
-  width: 37.5em; }
+  padding: 0; }
 
 [role="main"] {
   margin: 0 auto;
-  padding: 5em 1em 3em 1em;
-  width: 37.5em; }
+  padding: 5em 1em 3em 1em; }
   [role="main"] *:first-child {
     margin-top: 0; }
   [role="main"] img {
@@ -405,19 +412,14 @@ body {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   min-width: 38.75em;
-  padding: 1em 0 1em 0;
-  width: 100%; }
+  padding: 1em 0 1em 0; }
 
 .logo {
   font-size: 3.75em;
-  margin: 0; }
+  margin: 0;
+  padding: 0 0.234375em; }
   .logo a {
     color: white;
-    display: inline-block;
-    vertical-align: baseline;
-    zoom: 1;
-    *display: inline;
-    *vertical-align: auto;
     margin: 0 !important;
     text-decoration: none;
     text-shadow: 0 1px 0 #061825; }
@@ -441,7 +443,8 @@ body {
 nav.global {
   zoom: 1;
   display: block;
-  margin: 1em 0 0 -0.5em; }
+  margin: 1em 0 0 -0.5em;
+  padding: 0 1em; }
   nav.global:before, nav.global:after {
     content: "";
     display: table; }
@@ -488,7 +491,7 @@ body.links a.links-nav:hover {
 
 /* Home Page ==================================================================================== */
 body.home [role="main"] {
-  background: url(../img/home-page-bg.png) no-repeat 23em 2em;
+  background: url("/img/home-page-bg.png") no-repeat top right;
   padding-top: 18em;
   padding-bottom: 6em; }
 
@@ -671,6 +674,5 @@ figure.gif {
   font-size: 0.875em;
   line-height: 2;
   height: 2.875em;
-  margin: 0 auto;
-  text-align: center;
-  width: 43em; }
+  margin: 0 1em;
+  text-align: center; }

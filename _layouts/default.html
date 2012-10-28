@@ -19,7 +19,7 @@
 <body class="{{ page.area }}">
 
 <header role="banner">
-  <div class="center">
+  <div class="container">
     <h1 class="logo"><a href="/">steve hickey design</a></h1>
     <nav class="global" role="navigation">
       <a href="/portfolio" class="portfolio-nav">portfolio</a>
@@ -28,15 +28,17 @@
       <a href="/links" class="links-nav">links</a>
     </nav>
   </div>
-</header>
+</header><!-- end of header[role="banner"] -->
 
-<div role="main">
-{{ content }}
-</div>
+<div class="container">
+  <div role="main">
+    {{ content }}
+  </div><!-- end of div[role="main"] -->
 
-<footer role="contentinfo">
-  &copy; 2012 Steve Hickey. All work is protected by <a href="#" id="raptorize">hungry raptors</a>. Don't steal my stuff.
-</footer>
+  <footer role="contentinfo">
+    &copy; 2012 Steve Hickey. All work is protected by <a href="#" id="raptorize">hungry raptors</a>. Don't steal my stuff.
+  </footer><!-- end of footer[role="contentinfo"] -->
+</div><!-- end of div.container -->
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="/js/jquery-1.7.2.min.js"><\/script>')</script>
