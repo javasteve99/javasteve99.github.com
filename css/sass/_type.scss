@@ -57,15 +57,22 @@ h2, h1.title {
   margin-bottom: #{$vertical-measure / $modular-scale-up3}em;
 }
 
+h1.title { margin-bottom: 0; }
+
+h2.subhead {
+  margin-bottom: #{$vertical-measure}em;
+  width: 75%;
+}
+
 h3 {
   font-size: #{$modular-scale-up2}em;
-  margin: -0.2em 0 0.1em 0;
+  margin: -0.2em 0 0.075em 0;
 }
 
 h4 {
   color: $darkest;
   font-size: #{$modular-scale-up1}em;
-  margin-bottom: 0;
+  margin: -0.15em 0 0.15em 0;
 }
 
 h5, h2.subhead {

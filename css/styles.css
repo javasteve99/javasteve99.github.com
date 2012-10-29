@@ -209,14 +209,21 @@ h2, h1.title {
   font-size: 2.3125em;
   margin-bottom: 0.62162em; }
 
+h1.title {
+  margin-bottom: 0; }
+
+h2.subhead {
+  margin-bottom: 1.4375em;
+  width: 75%; }
+
 h3 {
   font-size: 1.625em;
-  margin: -0.2em 0 0.1em 0; }
+  margin: -0.2em 0 0.075em 0; }
 
 h4 {
   color: black;
   font-size: 1.4375em;
-  margin-bottom: 0; }
+  margin: -0.15em 0 0.15em 0; }
 
 h5, h2.subhead {
   color: black;
@@ -405,6 +412,33 @@ body {
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
     margin-bottom: 0.5em; }
 
+ul.descriptions {
+  list-style-type: none;
+  margin-left: 0; }
+  ul.descriptions li {
+    padding: 0.9375em 0 1.9375em 0;
+    position: relative;
+    border-bottom: 1px solid rgba(20, 81, 125, 0.25);
+    border-top: 1px solid rgba(255, 255, 255, 0.5); }
+    ul.descriptions li:first-child {
+      border-top: none;
+      padding-top: 0; }
+      ul.descriptions li:first-child .date {
+        top: 0.4em; }
+    ul.descriptions li:last-child {
+      border-bottom: none;
+      padding-bottom: 0; }
+  ul.descriptions h1.title {
+    font-size: 1.625em;
+    margin-bottom: 0.35938em; }
+  ul.descriptions h2.subhead {
+    font-size: 0.875em;
+    margin-bottom: 0; }
+  ul.descriptions p {
+    margin-bottom: 0; }
+  ul.descriptions .date {
+    top: 1.3em; }
+
 /* Header ======================================================================================= */
 [role="banner"] {
   background: #14517d;
@@ -539,17 +573,11 @@ body.home [role="main"] {
       transform: translate3d(0px, 0px, 0px); }
 
 /* Experience =================================================================================== */
-body.experience h3 {
-  margin-bottom: 0.075em; }
-body.experience h4 {
-  font-size: 1em;
-  margin-bottom: 0.25em; }
-body.experience h3 + h4 {
-  margin-top: 0.3em; }
+body.experience section.employment h3 {
+  margin-bottom: 0.85em; }
 body.experience ul {
   list-style-type: none;
-  margin: 0 0 1.4375em 0;
-  padding: 0; }
+  margin-left: 0; }
 
 /* Portfolio Page =============================================================================== */
 ul.portfolio-links {
@@ -621,41 +649,6 @@ body.blog .date {
   transition: opacity, 0.25s; }
   body.blog .date:hover {
     opacity: 1; }
-
-h1.title {
-  margin-bottom: 0; }
-
-h2.subhead {
-  margin-bottom: 1.4375em;
-  width: 75%; }
-
-h4 {
-  margin: -0.15em 0 0.15em 0; }
-
-ul.posts {
-  list-style-type: none;
-  margin-left: 0; }
-  ul.posts li {
-    padding: 0.9375em 0 1.9375em 0;
-    position: relative;
-    border-bottom: 1px solid rgba(20, 81, 125, 0.25);
-    border-top: 1px solid rgba(255, 255, 255, 0.5); }
-    ul.posts li:first-child {
-      border-top: none;
-      padding-top: 0; }
-      ul.posts li:first-child .date {
-        top: 0.4em; }
-    ul.posts li:last-child {
-      border-bottom: none;
-      padding-bottom: 0; }
-  ul.posts h1.title {
-    font-size: 1.625em;
-    margin-bottom: 0.35938em; }
-  ul.posts h2.subhead {
-    font-size: 0.875em;
-    margin-bottom: 0; }
-  ul.posts .date {
-    top: 1.3em; }
 
 /* Secret gifs @ http://stevehickeydesign.com/gifs - good find bro! ============================= */
 figure.gif {

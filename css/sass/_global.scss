@@ -16,6 +16,36 @@ body { background: $background; margin: 0; padding: 0; @include body-font-styles
   }
 }
 
+ul.descriptions {
+  list-style-type: none;
+  margin-left: 0;
+
+  li {
+    padding: 0.9375em 0 1.9375em 0;
+    position: relative;
+    border-bottom: 1px solid rgba($primary, 0.25);
+    border-top: 1px solid rgba($lightest, 0.5);
+    &:first-child { border-top: none; padding-top: 0;
+      .date { top: 0.4em; }
+    }
+    &:last-child{ border-bottom: none; padding-bottom: 0; }
+  }
+
+  h1.title {
+    font-size: #{$modular-scale-up2}em;
+    margin-bottom: #{$vertical-measure / 4}em;
+  }
+
+  h2.subhead {
+    font-size: #{$modular-scale-down1}em;
+    margin-bottom: 0;
+  }
+
+  p { margin-bottom: 0; }
+
+  .date { top: 1.3em; }
+}
+
 /* Header ======================================================================================= */
 [role="banner"] {
   background: $primary;
@@ -114,23 +144,13 @@ body.home [role="main"] {
 /* Experience =================================================================================== */
 body.experience {
 
-  h3 {
-    margin-bottom: 0.075em;
-  }
-
-  h4 {
-    font-size: #{$modular-scale-base}em;
-    margin-bottom: 0.25em;
-  }
-
-  h3 + h4 {
-    margin-top: 0.3em;
+  section.employment h3 {
+    margin-bottom: 0.85em;
   }
 
   ul {
     list-style-type: none;
-    margin: 0 0 #{$vertical-measure}em 0;
-    padding: 0;
+    margin-left: 0;
   }
 }
 
@@ -161,9 +181,7 @@ ul.portfolio-links {
 /* Blog styles =============================================================================== */
 body.blog {
 
-  article {
-    position: relative;
-  }
+  article { position: relative; } // position the date relative to article element
 
   .date {
     opacity: 0.2;
@@ -172,52 +190,7 @@ body.blog {
     top: 0.9em;
     @include transition(opacity, .25s);
 
-    &:hover {
-      opacity: 1;
-    }
-  }
-}
-
-h1.title {
-  margin-bottom: 0;
-}
-
-h2.subhead {
-  margin-bottom: #{$vertical-measure}em;
-  width: 75%;
-}
-
-h4 {
-  margin: -0.15em 0 0.15em 0;
-}
-
-ul.posts {
-  list-style-type: none;
-  margin-left: 0;
-
-  li {
-    padding: 0.9375em 0 1.9375em 0;
-    position: relative;
-    border-bottom: 1px solid rgba($primary, 0.25);
-    border-top: 1px solid rgba($lightest, 0.5);
-    &:first-child { border-top: none; padding-top: 0;
-      .date { top: 0.4em; }
-    }
-    &:last-child{ border-bottom: none; padding-bottom: 0; }
-  }
-
-  h1.title {
-    font-size: #{$modular-scale-up2}em;
-    margin-bottom: #{$vertical-measure / 4}em;
-  }
-
-  h2.subhead {
-    font-size: #{$modular-scale-down1}em;
-    margin-bottom: 0;
-  }
-
-  .date {
-    top: 1.3em;
+    &:hover { opacity: 1; }
   }
 }
 
