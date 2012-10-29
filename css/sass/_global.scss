@@ -154,8 +154,12 @@ body.experience {
 /* Portfolio Page =============================================================================== */
 body.portfolio {
 
-  h1.title {
-    margin-bottom: 0.45em;
+  h1.title { margin-bottom: 0.45em; }
+
+  figure {
+    margin-bottom: #{$vertical-measure}em;
+    img { margin-bottom: 0; }
+    figcaption { font-size: #{$modular-scale-down1}em; }
   }
 }
 

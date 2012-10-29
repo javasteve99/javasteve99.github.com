@@ -545,6 +545,12 @@ body.experience ul {
 /* Portfolio Page =============================================================================== */
 body.portfolio h1.title {
   margin-bottom: 0.45em; }
+body.portfolio figure {
+  margin-bottom: 1.4375em; }
+  body.portfolio figure img {
+    margin-bottom: 0; }
+  body.portfolio figure figcaption {
+    font-size: 0.875em; }
 
 ul.portfolio-links {
   list-style-type: none;
