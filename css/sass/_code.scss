@@ -27,15 +27,19 @@ pre {
 
 pre {
   display: block;
-  margin: 0 0 #{$vertical-measure}em;
-  padding-left: 1em;
-  word-break: break-all;
-  word-wrap: break-word;
-  white-space: pre-wrap;
+  line-height: 1.7; // sorting out line-height issue by hard-coding it. womp womp
+  overflow-x: auto;
+  margin: -0.2em 0 1.35em 0;
+  padding: 0.25em 1em;
 
   &.scrollable {
     max-height: 20em;
     overflow-y: scroll;
+  }
+
+  &::-webkit-scrollbar {
+    height: 0;
+    opacity: 0.5;
   }
 
   code[class*="language-"] {
@@ -55,6 +59,18 @@ pre {
   color: $sol-darkest-text;
 }
 
+.token.attr-name {
+  color: $sol-light-text;
+}
+
+.token.attr-value {
+  color: $sol-cyan;
+}
+
+.token.property {
+  color: $sol-yellow;
+}
+
 .token.punctuation {
   color: $sol-lightest-text;
 }
@@ -63,7 +79,6 @@ pre {
   opacity: .7;
 }
 
-.token.property,
 .token.tag,
 .token.boolean,
 .token.number {
@@ -71,7 +86,6 @@ pre {
 }
 
 .token.selector,
-.token.attr-name,
 .token.string {
   color: $sol-green;
 }
@@ -85,7 +99,6 @@ pre {
 }
 
 .token.atrule,
-.token.attr-value,
 .token.keyword {
   color: $sol-blue;
 }

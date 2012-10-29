@@ -311,14 +311,16 @@ pre {
 
 pre {
   display: block;
-  margin: 0 0 1.4375em;
-  padding-left: 1em;
-  word-break: break-all;
-  word-wrap: break-word;
-  white-space: pre-wrap; }
+  line-height: 1.7;
+  overflow-x: auto;
+  margin: -0.2em 0 1.35em 0;
+  padding: 0.25em 1em; }
   pre.scrollable {
     max-height: 20em;
     overflow-y: scroll; }
+  pre::-webkit-scrollbar {
+    height: 0;
+    opacity: 0.5; }
   pre code[class*="language-"] {
     background-color: transparent;
     color: inherit;
@@ -334,20 +336,27 @@ pre {
 .token.cdata {
   color: #586e75; }
 
+.token.attr-name {
+  color: #839496; }
+
+.token.attr-value {
+  color: #2aa198; }
+
+.token.property {
+  color: #b58900; }
+
 .token.punctuation {
   color: #93a1a1; }
 
 .namespace {
   opacity: .7; }
 
-.token.property,
 .token.tag,
 .token.boolean,
 .token.number {
   color: #268bd2; }
 
 .token.selector,
-.token.attr-name,
 .token.string {
   color: #859900; }
 
@@ -359,7 +368,6 @@ pre {
   color: #b58900; }
 
 .token.atrule,
-.token.attr-value,
 .token.keyword {
   color: #268bd2; }
 
