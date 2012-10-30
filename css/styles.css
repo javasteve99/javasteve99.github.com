@@ -359,6 +359,7 @@ body {
 
 .container {
   width: 100%;
+  min-width: 39.5em;
   max-width: 39.5em;
   margin: 0 auto;
   padding: 0; }
