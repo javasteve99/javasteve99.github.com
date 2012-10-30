@@ -50,7 +50,6 @@ ul.descriptions {
 [role="banner"] {
   background: $primary;
   @include box-sizing(border-box);
-  min-width: 38.75em;
   padding: 1em 0 1em 0;
 }
 
