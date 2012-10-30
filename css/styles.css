@@ -359,7 +359,6 @@ body {
 
 .container {
   width: 100%;
-  min-width: 39.5em;
   max-width: 39.5em;
   margin: 0 auto;
   padding: 0; }
@@ -487,9 +486,9 @@ body.links a.links-nav {
 
 /* Home Page ==================================================================================== */
 body.home [role="main"] {
-  background: url("/img/home-page-bg.png") no-repeat top right;
-  padding-top: 18em;
-  padding-bottom: 6em; }
+  background: url("/img/home-page-bg.png") no-repeat 96% 1.5em;
+  padding-top: 17.25em;
+  padding-bottom: 4.3125em; }
 
 .supporting-links {
   list-style-type: none;
