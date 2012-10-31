@@ -144,3 +144,12 @@ blockquote:before,
 blockquote:after {
   content: "";
 }
+
+@media screen and (max-width: 24em) {
+  h1, h2, h1.title { font-size: #{$modular-scale-up2}em; }
+  h3, h5, h2.subhead { font-size: #{$modular-scale-up1}em; }
+  h4 { font-size: $base-font-size; }
+  h5, h2.subhead, h6 { font-size: #{$modular-scale-down2}em; width: 100%; }
+  p, ul, ol { font-size: #{$modular-scale-down1}em; line-height: $base-line-height; margin: 0 0 #{$vertical-measure}em 0; }
+  li { font-size: #{$modular-scale-down1}em; line-height: 1; margin-bottom: 0.4375em; }
+}
