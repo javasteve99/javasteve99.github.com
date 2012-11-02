@@ -598,9 +598,10 @@ ul.portfolio-links {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    border: 0.25em solid transparent;
     height: auto;
     margin: 0 0 0.71875em 0;
-    padding: 5px 5px 0 5px; }
+    padding: 0; }
     ul.portfolio-links a:hover {
       background: #1b6da9;
       -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
@@ -619,10 +620,11 @@ ul.portfolio-links {
       -o-transform: translate3d(0px, 0px, 0px);
       transform: translate3d(0px, 0px, 0px); }
     ul.portfolio-links a img {
-      margin: 0; }
-    ul.portfolio-links a span {
-      position: relative;
-      top: -0.2em; }
+      -webkit-border-radius: 1px;
+      border-radius: 1px;
+      margin: 0;
+      width: 100%;
+      max-width: 100%; }
 
 @media screen and (max-width: 27em) {
   ul.portfolio-links a img {

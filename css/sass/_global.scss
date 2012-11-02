@@ -205,15 +205,16 @@ ul.portfolio-links {
   a {
     @include button;
     @include box-sizing(border-box);
+    border: 0.25em solid transparent;
     height: auto;
     margin: 0 0 #{$vertical-measure / 2}em 0;
-    padding: 5px 5px 0 5px; // used because I'm offsetting an image, declared in pixel values
+    padding: 0;
 
-    img { margin: 0; }
-
-    span {
-      position: relative;
-      top: -0.2em;
+    img {
+      @include border-radius(1px);
+      margin: 0;
+      width: 100%;
+      max-width: 100%;
     }
   }
 }
