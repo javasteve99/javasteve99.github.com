@@ -1,3 +1,3 @@
-$(window).load(function() {
-  $('a#raptorize').raptorize();
-});
+/*
+ * Scripts go here, minified is best
+ */
