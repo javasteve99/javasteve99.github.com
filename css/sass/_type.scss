@@ -19,6 +19,10 @@ p {
   margin: 0 0 #{$vertical-measure}em 0;
 }
 
+p + figure, p + pre {
+  margin-top: #{$vertical-measure * -0.5}em;
+}
+
 strong { font-weight: bold; }
 em { font-style: italic; }
 cite { font-style: normal; }
@@ -93,7 +97,7 @@ h6 {
 
 ul, ol {
   padding: 0;
-  margin: 0 0 #{$vertical-measure}em 1em;
+  margin: 0 0 #{$vertical-measure}em 0;
 }
 
 ul ul,

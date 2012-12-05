@@ -227,13 +227,23 @@ ul.portfolio-links {
 /* Blog styles =============================================================================== */
 body.blog {
 
-  article { position: relative; } // position the date relative to article element
+  article {
+    position: relative; // position the date relative to article element
+
+    header {
+      margin-bottom: #{$vertical-measure}em;
+    }
+
+    footer {
+      margin-top: #{$vertical-measure * 4}em;
+    }
+  }
 
   .date {
     opacity: 0.2;
     position: absolute;
     right: 0;
-    top: 0.9em;
+    top: 2.325em;
     @include transition(opacity, .25s);
 
     &:hover { opacity: 1; }

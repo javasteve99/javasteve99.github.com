@@ -124,6 +124,9 @@ p {
   line-height: 1.4375;
   margin: 0 0 1.4375em 0; }
 
+p + figure, p + pre {
+  margin-top: -0.71875em; }
+
 strong {
   font-weight: bold; }
 
@@ -197,7 +200,7 @@ h6 {
 
 ul, ol {
   padding: 0;
-  margin: 0 0 1.4375em 1em; }
+  margin: 0 0 1.4375em 0; }
 
 ul ul,
 ul ol,
@@ -636,11 +639,15 @@ ul.portfolio-links {
 /* Blog styles =============================================================================== */
 body.blog article {
   position: relative; }
+  body.blog article header {
+    margin-bottom: 1.4375em; }
+  body.blog article footer {
+    margin-top: 5.75em; }
 body.blog .date {
   opacity: 0.2;
   position: absolute;
   right: 0;
-  top: 0.9em;
+  top: 2.325em;
   -webkit-transition: opacity, 0.25s;
   -moz-transition: opacity, 0.25s;
   -ms-transition: opacity, 0.25s;
