@@ -144,6 +144,7 @@ body.links a.links-nav {
   [role="banner"] { padding: 0.5em 0.618em; }
   [role="banner"] .logo { font-size: #{$modular-scale-up2}em; }
   nav.global { padding: 0 0.382em; margin-top: 0.5em; }
+  nav.global a { margin-right: 0.25em; }
 }
 
 /* Home Page ==================================================================================== */
@@ -252,6 +253,7 @@ body.blog {
 
 @media screen and (max-width: 27em) {
   body.blog article .date { position: static; }
+  body.blog article h1.title { font-size: #{$modular-scale-up2}em; }
 }
 /* Secret gifs @ http://stevehickeydesign.com/gifs - good find bro! ============================= */
 figure.gif {

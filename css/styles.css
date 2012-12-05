@@ -494,7 +494,10 @@ body.links a.links-nav {
 
   nav.global {
     padding: 0 0.382em;
-    margin-top: 0.5em; } }
+    margin-top: 0.5em; }
+
+  nav.global a {
+    margin-right: 0.25em; } }
 /* Home Page ==================================================================================== */
 body.home [role="main"] {
   background: url("/img/home-page-bg.png") no-repeat 96% 1.5em;
@@ -658,7 +661,10 @@ body.blog .date {
 
 @media screen and (max-width: 27em) {
   body.blog article .date {
-    position: static; } }
+    position: static; }
+
+  body.blog article h1.title {
+    font-size: 1.625em; } }
 /* Secret gifs @ http://stevehickeydesign.com/gifs - good find bro! ============================= */
 figure.gif {
   margin: 0 0 2.875em 0;
