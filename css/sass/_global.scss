@@ -159,18 +159,14 @@ body.home [role="main"] {
 
   li a {
     @include button;
-    float: left;
     text-align: center;
+    margin: 0 0 0.5em 0;
+    padding: 0.25em auto;
   }
-}
-
-@media screen and (max-width: 32em) {
-  .supporting-links li a { font-size: $base-font-size; padding: 0.25em 1em; }
 }
 
 @media screen and (max-width: 27em) {
   body.home [role="main"] { background: none; padding: 1em; }
-  .supporting-links li a { float: none; margin: 0 0 0.5em 0; }
 }
 
 /* Experience =================================================================================== */
