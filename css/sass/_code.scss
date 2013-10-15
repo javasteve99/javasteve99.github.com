@@ -2,7 +2,7 @@
 code,
 pre {
   background-color: $sol-dark-bg;
-  @include border-radius(2px);
+  border-radius: 2px;
   @include box-shadow(0 1px 4px rgba($darkest, 0.3));
   color: $sol-lightest-text;
   direction: ltr;
