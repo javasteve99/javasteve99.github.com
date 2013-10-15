@@ -119,8 +119,7 @@ nav.global {
 
 body.portfolio a.portfolio-nav,
 body.experience a.experience-nav,
-body.blog a.blog-nav,
-body.links a.links-nav {
+body.blog a.blog-nav {
   background: lighten($primary, 6%);
   @include box-shadow(inset 0 1px 0 0 darken($primary, 20%));
 
@@ -254,18 +253,6 @@ body.blog {
 @media screen and (max-width: 27em) {
   body.blog article .date { position: static; }
   body.blog article h1.title { font-size: #{$modular-scale-up2}em; }
-}
-/* Secret gifs @ http://stevehickeydesign.com/gifs - good find bro! ============================= */
-figure.gif {
-  margin: 0 0 #{$vertical-measure * 2}em 0;
-  padding: 0;
-  width: 100%;
-
-  img {
-    margin: 0;
-    padding: 0;
-    max-width: 100%;
-  }
 }
 
 /* Footer ======================================================================================= */
