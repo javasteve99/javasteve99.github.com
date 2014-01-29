@@ -1,5 +1,7 @@
-auto: true
 exclude:
 - README.md
 - CNAME
+- artwork
+- sass
+- Rakefile
 permalink: pretty
