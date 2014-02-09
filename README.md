@@ -1,12 +1,17 @@
-Personal website
-================
+# SteveHickeyDesign.com
 
 Can be accessed at this domain: [stevehickeydesign.com](http://stevehickeydesign.com)
 
+## Installing dependencies
 
-Running Jekyll/Sass/Bourbon simultaneously
-----------------------------------------------------------------
+```shell
+cd ~/Sites/javasteve99.github.com
+bundle install
+npm install
+```
 
-<code>rake server</code>
+## Running Jekyll/Grunt for dev
 
-I'm pretty sure this requires at least Ruby 1.9.3 to work. But I don't know. Frankly, it's a small miracle that I figured this out.
+```shell
+rake serve
+```

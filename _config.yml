@@ -1,7 +1,14 @@
-exclude:
-- README.md
-- CNAME
-- artwork
-- sass
-- Rakefile
+exclude: [
+  README.md,
+  CNAME,
+  Rakefile,
+  Gemfile,
+  Gemfile.lock,
+  gruntfile.js,
+  npm-debug.log,
+  node_modules,
+  package.json,
+  src,
+  artwork
+]
 permalink: pretty
