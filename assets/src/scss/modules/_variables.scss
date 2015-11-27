@@ -53,9 +53,9 @@ $modular-scale-down1: 0.875;  // 14px
 $modular-scale-down2: 0.625;  // 10px
 
 // Type Variables
-$base-font-family:    "source-sans-pro", source-sans-pro, sans-serif;
-$heading-font-family: "source-sans-pro", source-sans-pro, sans-serif;
-$code-font-family:    "source-code-pro", source-code-pro, sans-serif;
+$base-font-family:    "Source Sans Pro", sans-serif;
+$heading-font-family: "Source Sans Pro", sans-serif;
+$code-font-family:    "Source Code Pro", monospace;
 $base-font-size:      #{$modular-scale-base}em;
 $base-line-height:    $modular-scale-up1;
 $vertical-measure:    $modular-scale-up1;
