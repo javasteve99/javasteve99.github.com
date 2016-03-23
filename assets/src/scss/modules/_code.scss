@@ -1,17 +1,10 @@
 /* Code Styles ================================================================================== */
 code,
 pre {
-  background-color: $sol-dark-bg;
-  border-radius: 2px;
-  box-shadow: 0 1px 4px rgba($darkest, 0.3);
-  color: $sol-lightest-text;
   direction: ltr;
   font-family: $code-font-family;
   font-size: #{$modular-scale-down1}em;
-  font-weight: bold;
-  font-weight: 700;
   overflow: auto;
-  padding: 0 0.2em;
   text-align: left;
   text-shadow: none;
   white-space: pre;
@@ -29,8 +22,6 @@ pre {
   display: block;
   line-height: 1.7; // sorting out line-height issue by hard-coding it. womp womp
   overflow-x: auto;
-  margin: -0.2em 0 1.35em 0;
-  padding: 0.25em 1em;
 
   &.scrollable {
     max-height: 20em;
@@ -40,14 +31,5 @@ pre {
   &::-webkit-scrollbar {
     height: 0;
     opacity: 0.5;
-  }
-
-  code[class*="language-"] {
-    background-color: transparent;
-    color: inherit;
-    box-shadow: none;
-    font-family: $code-font-family;
-    font-size: #{$modular-scale-base}em;
-    padding: 0;
   }
 }
