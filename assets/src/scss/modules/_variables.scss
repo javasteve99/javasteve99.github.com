@@ -35,9 +35,8 @@ $modular-scale-down1: 0.875;  // 14px
 $modular-scale-down2: 0.625;  // 10px
 
 // Type Variables
-$base-font-family:    sans-serif;
-$heading-font-family: sans-serif;
-$code-font-family:    monospace;
+$base-font-family:    'Merriweather', sans-serif;
+$code-font-family:    'Fira Mono', monospace;
 $base-font-size:      #{$modular-scale-base}em;
 $base-line-height:    $modular-scale-up1;
 $vertical-measure:    $modular-scale-up1;

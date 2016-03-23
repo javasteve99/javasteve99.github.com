@@ -369,7 +369,8 @@ p {
   margin: 0 0 1.4375em 0; }
 
 strong {
-  font-weight: bold; }
+  font-weight: bold;
+  font-weight: 700; }
 
 em {
   font-style: italic; }
@@ -381,6 +382,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
   font-weight: bold;
+  font-weight: 700;
   line-height: 1;
   text-rendering: optimizelegibility; }
 
@@ -420,7 +422,7 @@ abbr[title] {
 code,
 pre {
   direction: ltr;
-  font-family: monospace;
+  font-family: "Fira Mono", monospace;
   font-size: 0.875em;
   overflow: auto;
   text-align: left;
@@ -459,11 +461,12 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 100%;
   line-height: 1.4375;
   font-style: normal;
   font-weight: normal;
+  font-weight: 400;
   width: 100%; }
 
 .container {

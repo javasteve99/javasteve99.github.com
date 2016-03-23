@@ -9,6 +9,7 @@
   line-height: $base-line-height;
   font-style: normal;
   font-weight: normal;
+  font-weight: 400;
 }
 
 p {
@@ -17,7 +18,7 @@ p {
   margin: 0 0 #{$vertical-measure}em 0;
 }
 
-strong { font-weight: bold; }
+strong { font-weight: bold; font-weight: 700; }
 em { font-style: italic; }
 cite { font-style: normal; }
 
@@ -25,6 +26,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
   font-weight: bold;
+  font-weight: 700;
   line-height: 1;
   text-rendering: optimizelegibility;
 }
