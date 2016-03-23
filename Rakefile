@@ -1,9 +1,9 @@
-desc "Runs Grunt to compile assets and watch for changes, starts Jekyll server."
-task :serve do
-  puts "Running Grunt tasks and watching for changes, starting the Jekyll server."
+desc "Run SASS watch and start Jekyll server."
+task :dev do
+  puts "Watching SASS files for changes and running Jekyll server on port 4000."
   pids = [
-    spawn('grunt'),
-    spawn('jekyll serve --watch'),
+    spawn('sass --watch assets/src/scss:assets/build/css'),
+    spawn('jekyll serve'),
   ]
   trap "INT" do
     Process.kill "INT", *pids

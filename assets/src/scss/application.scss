@@ -1,5 +1,4 @@
 /* Import modules =============================================================================== */
-@import 'vendor/bourbon/bourbon';
 @import 'modules/normalize';
 @import 'modules/variables';
 @import 'modules/mixins';
@@ -20,7 +19,7 @@ body { background: $background; margin: 0; padding: 0; @include body-font-styles
 
   img {
     border-radius: 2px;
-    @include box-shadow(0 1px 4px rgba($darkest, 0.3));
+    box-shadow: 0 1px 4px rgba($darkest, 0.3);
     margin-bottom: 0.5em; // 8px
     max-width: 100%;
   }
@@ -65,7 +64,7 @@ ul.descriptions {
 /* Header ======================================================================================= */
 [role="banner"] {
   background: $primary;
-  @include box-sizing(border-box);
+  box-sizing: border-box;
   padding: 1em 0;
 }
 
@@ -83,13 +82,13 @@ ul.descriptions {
     &:hover {
       text-shadow: 0 2px 0 darken($primary, 20%);
       text-decoration: none;
-      @include transform(translate3d(0px, -1px, 0px));
+      transform: translate3d(0px, -1px, 0px);
     }
 
     &:active {
       text-shadow: 0 1px 0 darken($primary, 20%);
       text-decoration: none;
-      @include transform(translate3d(0px, 0px, 0px));
+      transform: translate3d(0px, 0px, 0px);
     }
   }
 }
@@ -111,15 +110,15 @@ nav.global {
     padding: 0 0.5em;
     text-decoration: none;
     text-shadow: 0 1px 0 darken($primary, 20%);
-    @include transition(background-color, .25s);
+    transition: background-color, .25s;
 
     &:hover {
       background: lighten($primary, 10%);
-      @include box-shadow(inset 0 1px 0 0 darken($primary, 20%));
+      box-shadow: inset 0 1px 0 0 darken($primary, 20%);
     }
 
     &:active {
-      @include box-shadow(inset 0 2px 1px 0 darken($primary, 20%));
+      box-shadow: inset 0 2px 1px 0 darken($primary, 20%);
     }
   }
 
@@ -130,7 +129,7 @@ body.portfolio a.portfolio-nav,
 body.experience a.experience-nav,
 body.blog a.blog-nav {
   background: lighten($primary, 6%);
-  @include box-shadow(inset 0 1px 0 0 darken($primary, 20%));
+  box-shadow: inset 0 1px 0 0 darken($primary, 20%);
 
   &:hover {
     background: lighten($primary, 10%);
@@ -209,7 +208,7 @@ ul.portfolio-links {
 
   a {
     @include button;
-    @include box-sizing(border-box);
+    box-sizing: border-box;
     border: 0.25em solid transparent;
     height: auto;
     margin: 0 0 #{$vertical-measure / 2}em 0;
@@ -245,7 +244,7 @@ body.blog {
 
   .date {
     opacity: 0.2;
-    @include transition(opacity, .25s);
+    transition: opacity, .25s;
 
     &:hover { opacity: 1; }
   }
