@@ -1,28 +1,6 @@
 // Variables ===================================================================================== /
 
-// White - Grays - Black
-$black:             hsl(0, 0%, 0%);
-$gray90:            hsl(0, 0%, 10%);
-$gray80:            hsl(0, 0%, 20%);
-$gray70:            hsl(0, 0%, 30%);
-$gray60:            hsl(0, 0%, 40%);
-$gray50:            hsl(0, 0%, 50%);
-$gray40:            hsl(0, 0%, 60%);
-$gray30:            hsl(0, 0%, 70%);
-$gray20:            hsl(0, 0%, 80%);
-$gray10:            hsl(0, 0%, 90%);
-$white:             hsl(0, 0%, 100%);
-
-// Accent colors
-$blue:                #14517d;
-
 // Color scheme
-$primary:             $blue;
-$text-shadow:         $white;
-$lightest:            $white;
-$darkest:             $black;
-$background:          $gray10;
-$text:                $gray80;
 
 // Modular Scale : 16 @ 1.618 and 23 @ 1.618
 $modular-scale-up5:   3.75;   // 60px
@@ -42,7 +20,7 @@ $base-line-height:    $modular-scale-up1;
 $vertical-measure:    $modular-scale-up1;
 
 // Grid function variables (not yet in use)
-$max-width:           39.5em;
+$max-width:           40em;
 $column-width:        32%;
 $gutter-width:        2%;
 $maximum-columns:     3;

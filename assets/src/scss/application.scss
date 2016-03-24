@@ -10,7 +10,6 @@
 html {
   margin: 0;
   padding: 0;
-  width: 100%;
   box-sizing: border-box;
 }
 
@@ -22,7 +21,6 @@ body {
   margin: 0;
   padding: 0;
   @include body-font-styles;
-  width: 100%;
 }
 
 .container {
@@ -30,9 +28,4 @@ body {
   max-width: $max-width;
   margin: 0 auto;
   padding: 0;
-}
-
-[role="main"] {
-  margin: 0 auto;
-  padding: 1em;
 }

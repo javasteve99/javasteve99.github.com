@@ -1,0 +1,11 @@
+---
+layout: default
+title: Speaking
+area: speaking
+---
+
+      <ul class="descriptions">{% for talk in site.speaking %}
+        <li>
+          <h1 class="title"><a href="{{ post.url }}">{{ talk.title }}</a></h1>
+        </li>{% endfor %}
+      </ul>

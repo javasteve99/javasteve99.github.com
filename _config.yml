@@ -2,13 +2,28 @@ exclude: [
   README.md,
   CNAME,
   Rakefile,
-  Gemfile,
-  Gemfile.lock,
-  gruntfile.js,
-  npm-debug.log,
-  node_modules,
-  package.json,
-  src,
-  artwork
+  src
 ]
 permalink: pretty
+
+collections:
+  work:
+    output: true
+  speaking:
+    output: true
+  podcast:
+    output: true
+
+defaults:
+  - scope:
+      type: work
+    values:
+      layout: work
+  - scope:
+      type: speaking
+    values:
+      layout: talk
+  - scope:
+      type: podcast
+    values:
+      layout: podcast

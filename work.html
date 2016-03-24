@@ -1,0 +1,11 @@
+---
+layout: default
+title: Work
+area: work
+---
+
+      <ul class="descriptions">{% for work in site.work %}
+        <li>
+          <h1 class="title"><a href="{{ post.url }}">{{ work.title }}</a></h1>
+        </li>{% endfor %}
+      </ul>

@@ -20,7 +20,6 @@ pre {
 
 pre {
   display: block;
-  line-height: 1.7; // sorting out line-height issue by hard-coding it. womp womp
   overflow-x: auto;
 
   &.scrollable {

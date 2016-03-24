@@ -27,7 +27,6 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
   font-weight: bold;
   font-weight: 700;
-  line-height: 1;
   text-rendering: optimizelegibility;
 }
 
@@ -65,9 +64,4 @@ ol ul {
 
 li {
   line-height: $base-line-height;
-}
-
-abbr[title] {
-  cursor: help;
-  border-bottom: 1px dotted #000000;
 }

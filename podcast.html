@@ -1,0 +1,11 @@
+---
+layout: default
+title: Podcast
+area: podcast
+---
+
+      <ul class="descriptions">{% for podcast in site.podcast %}
+        <li>
+          <h1 class="title"><a href="{{ post.url }}">{{ podcast.title }}</a></h1>
+        </li>{% endfor %}
+      </ul>

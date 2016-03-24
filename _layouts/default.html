@@ -15,25 +15,32 @@
 </head>
 <body class="{{ page.area }}">
 
-<header role="banner">
+<header class="global-banner" role="banner">
   <div class="container">
-    <h1 class="logo"><a href="/">Steve Hickey</a></h1>
-    <nav class="global" role="navigation">
-      <a href="/portfolio" class="portfolio-nav">Work</a>
-      <a href="/experience" class="experience-nav">Experience</a>
-      <a href="/blog" class="blog-nav">Writing</a>
+    <h1 class="site-name"><a href="/">Steve Hickey</a></h1>
+    <nav class="global-nav" role="navigation">
+      <ul>
+        <li><a href="/work" class="work-nav">Work</a></li>
+        <li><a href="/experience" class="experience-nav">Experience</a></li>
+        <li><a href="/blog" class="writing-nav">Writing</a></li>
+        <li><a href="/speaking" class="speaking-nav">Speaking</a></li>
+        <li><a href="/podcast" class="podcast-nav">Podcast</a></li>
+      </ul>
     </nav>
-  </div>
-</header><!-- end of header[role="banner"] -->
+  </div><!-- end of div.container -->
+</header><!-- end of header.global-banner -->
 
-<div class="container">
-  <div role="main">
+<main class="main-content" role="main">
+  <div class="container">
 {{ content }}
-  </div><!-- end of div[role="main"] -->
-  <footer role="contentinfo">
-    &copy; 2016 Steve Hickey. All work is protected by <a href="http://www.youtube.com/watch?feature=player_detailpage&v=TO5wryDdEI0#t=18s" target="_blank">hungry raptors</a>. Don't steal my stuff.
-  </footer><!-- end of footer[role="contentinfo"] -->
-</div><!-- end of div.container -->
+  </div><!-- end of div.container -->
+</main><!-- end of main.main-content -->
+
+<footer class="global-footer" role="contentinfo">
+  <div class="container">
+    <p>&copy; 2016 Steve Hickey. All work is protected by <a href="http://www.youtube.com/watch?feature=player_detailpage&v=TO5wryDdEI0#t=18s" target="_blank">hungry raptors</a>. Don't steal my stuff.</p>
+  </div><!-- end of div.container -->
+</footer><!-- end of footer.global-footer -->
 
 <script>
   var _gaq=[['_setAccount','UA-20633683-1'],['_trackPageview']];
