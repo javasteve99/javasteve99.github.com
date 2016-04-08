@@ -4,8 +4,11 @@ title: Podcast
 area: podcast
 ---
 
-      <ul class="descriptions">{% for podcast in site.podcast %}
-        <li>
-          <h1 class="title"><a href="{{ post.url }}">{{ podcast.title }}</a></h1>
-        </li>{% endfor %}
-      </ul>
+    <header class="page-header">
+      <h2>Podcast</h2>
+    </header>
+    <ul class="descriptions">{% for podcast in site.podcast %}
+      <li>
+        <h3 class="title"><a href="{{ podcast.url }}">{{ podcast.title }}</a></h3>
+      </li>{% endfor %}
+    </ul>

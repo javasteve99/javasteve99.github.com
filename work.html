@@ -4,8 +4,11 @@ title: Work
 area: work
 ---
 
-      <ul class="descriptions">{% for work in site.work %}
-        <li>
-          <h1 class="title"><a href="{{ post.url }}">{{ work.title }}</a></h1>
-        </li>{% endfor %}
-      </ul>
+    <header class="page-header">
+      <h2>Work</h2>
+    </header>
+    <ul class="descriptions">{% for work in site.work %}
+      <li>
+        <h3 class="title"><a href="{{ work.url }}">{{ work.title }}</a></h3>
+      </li>{% endfor %}
+    </ul>

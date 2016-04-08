@@ -4,8 +4,11 @@ title: Speaking
 area: speaking
 ---
 
-      <ul class="descriptions">{% for talk in site.speaking %}
-        <li>
-          <h1 class="title"><a href="{{ post.url }}">{{ talk.title }}</a></h1>
-        </li>{% endfor %}
-      </ul>
+    <header class="page-header">
+      <h2>Speaking</h2>
+    </header>
+    <ul class="descriptions">{% for talk in site.speaking %}
+      <li>
+        <h3 class="title"><a href="{{ talk.url }}">{{ talk.title }}</a></h3>
+      </li>{% endfor %}
+    </ul>
