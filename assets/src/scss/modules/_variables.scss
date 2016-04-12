@@ -16,8 +16,8 @@ $modular-scale-down2: 0.625;  // 10px
 $base-font-family:    'Merriweather', sans-serif;
 $code-font-family:    'Fira Mono', monospace;
 $base-font-size:      #{$modular-scale-base}em;
-$base-line-height:    $modular-scale-up1;
-$vertical-measure:    $modular-scale-up1;
+$base-line-height:    $modular-scale-up2;
+$vertical-measure:    $modular-scale-up2;
 
 // Grid function variables (not yet in use)
 $max-width:           40em;
