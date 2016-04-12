@@ -7,11 +7,11 @@ exclude: [
 permalink: pretty
 
 collections:
-  work:
-    output: true
   speaking:
-    output: true
+    output: false
   podcast:
+    output: false
+  work:
     output: true
 
 defaults:
