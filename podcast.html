@@ -12,6 +12,6 @@ area: podcast
     <ul class="descriptions">{% for podcast in podcasts %}
       <li>
         <h3 class="title"><a href="{{ podcast.url }}">{{ podcast.title }}</a></h3>
-        <span class="date">{{ podcast.date | date: "%B %d, %Y" }}</span>
+        <p>{{ podcast.date | date: "%B %d, %Y" }}</p>
       </li>{% endfor %}
     </ul>

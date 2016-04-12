@@ -11,6 +11,6 @@ area: writing
     <ul class="descriptions">{% for post in site.posts %}
       <li>
         <h3 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
-        <span class="date">{{ post.date | date: "%B %d, %Y" }}</span>
+        <p>{{ post.date | date: "%B %d, %Y" }}</p>
       </li>{% endfor %}
     </ul>

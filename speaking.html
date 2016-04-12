@@ -7,8 +7,10 @@ area: speaking
     <header class="page-header">
       <h2>Speaking</h2>
     </header>
-    <ul class="descriptions">{% for talk in site.speaking %}
+    {% assign talks = site.speaking | sort: 'date' | reverse %}
+    <ul class="descriptions">{% for talk in talks %}
       <li>
         <h3 class="title"><a href="{{ talk.url }}">{{ talk.title }}</a></h3>
+        <p>{{ talk.date | date: "%B %d, %Y" }} at {{ talk.host }}</p>
       </li>{% endfor %}
     </ul>
