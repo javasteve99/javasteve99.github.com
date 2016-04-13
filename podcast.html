@@ -9,9 +9,11 @@ area: podcast
       <p>For 3 years I was a co-host of <a href="http://www.freshtilledsoil.com/category/podcast/">The Dirt</a>, a UX podcast. In that time <a href="http://csskarma.com/">Tim Wright</a>, <a href="http://www.markgrambau.com/">Mark Grambau</a> and I recorded 166 episodes, spoke with dozens of industry leaders and a few of my personal heroes, and <del>wasted</del> wisely used a lot of company time. Here are a few of my favorite episodes.</p>
     </header>
     {% assign podcasts = site.podcast | sort: 'date' | reverse %}
-    <ul class="descriptions">{% for podcast in podcasts %}
+    <ul class="descriptions">
+      {% for podcast in podcasts %}
       <li>
-        <h3 class="title"><a href="{{ podcast.url }}">{{ podcast.title }}</a></h3>
+        <h3 class="title"><a href="{{ podcast.external-url }}">{{ podcast.title }}</a></h3>
         <p>{{ podcast.date | date: "%B %d, %Y" }}</p>
-      </li>{% endfor %}
+      </li>
+      {% endfor %}
     </ul>

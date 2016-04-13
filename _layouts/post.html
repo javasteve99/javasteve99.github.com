@@ -5,7 +5,11 @@ layout: default
     <article>
       <header>
         <h2 class="title">{{ page.title }}</h2>
-        <span class="date">{{ page.date | date: "%B %d, %Y" }}</span>
+        <p>{{ page.date | date: "%B %d, %Y" }}</p>
       </header>
-{{ content }}
+      {% if page.external-url %}
+        <p>This article is available at <a href="{{ page.external-url }}">{{ page.external-url }}</a>.</p>
+      {% else %}
+        {{ content }}
+      {% endif %}
     </article>
