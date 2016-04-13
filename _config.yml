@@ -19,11 +19,9 @@ defaults:
       type: work
     values:
       layout: work
+      area: work
   - scope:
-      type: speaking
+      type: posts
     values:
-      layout: talk
-  - scope:
-      type: podcast
-    values:
-      layout: podcast
+      layout: post
+      area: writing

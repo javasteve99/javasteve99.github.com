@@ -8,7 +8,7 @@ layout: default
         <p>{{ page.date | date: "%B %d, %Y" }}</p>
       </header>
       {% if page.external-url %}
-        <p>This article is available at <a href="{{ page.external-url }}">{{ page.external-url }}</a>.</p>
+        <p>This article is available at <a href="{{ page.external-url }}">{{ page.external-source }}</a>.</p>
       {% else %}
         {{ content }}
       {% endif %}

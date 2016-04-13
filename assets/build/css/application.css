@@ -365,8 +365,8 @@ textarea {
 /* Type Styles ================================================================================== */
 p {
   font-size: 1em;
-  line-height: 1.625;
-  margin: 0 0 1.625em 0; }
+  line-height: 1.75;
+  margin: 0 0 1.75em 0; }
 
 strong {
   font-weight: bold;
@@ -386,23 +386,26 @@ h1, h2, h3, h4, h5, h6 {
   text-rendering: optimizelegibility; }
 
 h1 {
-  font-size: 2.625em; }
+  font-size: 3rem; }
 
-h2, h1.title {
-  font-size: 2.3125em; }
+h2 {
+  font-size: 2.25rem; }
 
-h3 {
-  font-size: 1.625em; }
+h3, h3.title {
+  font-size: 1.75rem; }
+  h3 .source, h3.title .source {
+    font-size: 1rem;
+    display: block; }
 
 h4 {
-  font-size: 1.4375em; }
+  font-size: 1.3125rem; }
 
 h5 {
-  font-size: 1em; }
+  font-size: 1rem; }
 
 ul, ol {
   padding: 0;
-  margin: 0 0 1.625em 0; }
+  margin: 0 0 1.75em 0; }
 
 ul ul,
 ul ol,
@@ -411,7 +414,7 @@ ol ul {
   margin-bottom: 0; }
 
 li {
-  line-height: 1.625; }
+  line-height: 1.75; }
 
 /* Code Styles ================================================================================== */
 code,
@@ -456,7 +459,7 @@ body {
   padding: 0;
   font-family: "Merriweather", sans-serif;
   font-size: 100%;
-  line-height: 1.625;
+  line-height: 1.75;
   font-style: normal;
   font-weight: normal;
   font-weight: 400; }

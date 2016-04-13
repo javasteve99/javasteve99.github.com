@@ -3,21 +3,28 @@
 // Color scheme
 
 // Modular Scale : 16 @ 1.618 and 23 @ 1.618
-$modular-scale-up5:   3.75;   // 60px
-$modular-scale-up4:   2.625;  // 42px
-$modular-scale-up3:   2.3125; // 37px
-$modular-scale-up2:   1.625;  // 26px
-$modular-scale-up1:   1.4375; // 22px
+$modular-scale-up12:  5.25;   // 84px
+$modular-scale-up11:  4.8125; // 77px
+$modular-scale-up10:  3.9375; // 63px
+$modular-scale-up9:   3.4375; // 55px
+$modular-scale-up8:   3;      // 48px
+$modular-scale-up7:   2.625;  // 42px
+$modular-scale-up6:   2.25;   // 36px
+$modular-scale-up5:   2;      // 32px
+$modular-scale-up4:   1.75;   // 28px
+$modular-scale-up3:   1.5;    // 24px
+$modular-scale-up2:   1.3125; // 21px
+$modular-scale-up1:   1.125;  // 18px
 $modular-scale-base:  1;      // 16px
 $modular-scale-down1: 0.875;  // 14px
-$modular-scale-down2: 0.625;  // 10px
+$modular-scale-down2: 0.75;   // 12px
 
 // Type Variables
 $base-font-family:    'Merriweather', sans-serif;
 $code-font-family:    'Fira Mono', monospace;
 $base-font-size:      #{$modular-scale-base}em;
-$base-line-height:    $modular-scale-up2;
-$vertical-measure:    $modular-scale-up2;
+$base-line-height:    $modular-scale-up4;
+$vertical-measure:    $modular-scale-up4;
 
 // Grid function variables (not yet in use)
 $max-width:           40em;
