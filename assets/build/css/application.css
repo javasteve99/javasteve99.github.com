@@ -456,7 +456,7 @@ html {
 
 body {
   margin: 0;
-  padding: 0;
+  padding: 0 1em;
   font-family: "Merriweather", sans-serif;
   font-size: 100%;
   line-height: 1.75;
