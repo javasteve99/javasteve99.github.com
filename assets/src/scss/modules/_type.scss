@@ -74,7 +74,7 @@ a {
   font-weight: bold;
   text-decoration: none;
   border-bottom: 1px solid rgba($primary, 0.25);
-  @include transition(border, .25s);
+  transition: border, .25s;
 
   &:hover {
     text-decoration: none;
