@@ -8,22 +8,34 @@
   font-size: 100%;
   line-height: $base-line-height;
   font-style: normal;
-  font-weight: normal;
-  font-weight: 400;
+  font-weight: light;
+  font-weight: 300;
+  color: $dark-blue;
 }
 
-p {
+p,
+ul,
+ol {
   font-size: $base-font-size;
   line-height: $base-line-height;
   margin: 0 0 #{$vertical-measure}em 0;
+  width: 100%;
+  max-width: columns(5);
 }
 
 strong { font-weight: bold; font-weight: 700; }
 em { font-style: italic; }
 cite { font-style: normal; }
 
-.section-link {
-  opacity: 0.25;
+a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 2px solid rgba($dark-blue, 0.2);
+  transition: border-color 0.5s;
+
+  &:hover {
+    border-color: $dark-blue;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {

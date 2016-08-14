@@ -363,10 +363,14 @@ textarea {
 
 /* @font-face =================================================================================== */
 /* Type Styles ================================================================================== */
-p {
-  font-size: 1em;
-  line-height: 1.75;
-  margin: 0 0 1.75em 0; }
+p,
+ul,
+ol {
+  font-size: 1.25em;
+  line-height: 1.8;
+  margin: 0 0 1.8em 0;
+  width: 100%;
+  max-width: 70.40816%; }
 
 strong {
   font-weight: bold;
@@ -378,8 +382,13 @@ em {
 cite {
   font-style: normal; }
 
-.section-link {
-  opacity: 0.25; }
+a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 2px solid rgba(79, 101, 124, 0.2);
+  transition: border-color 0.5s; }
+  a:hover {
+    border-color: #4F657C; }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
@@ -395,20 +404,20 @@ h2 {
   font-size: 2.25rem; }
 
 h3, h3.title {
-  font-size: 1.75rem; }
+  font-size: 1.8rem; }
   h3 .source, h3.title .source {
-    font-size: 1rem;
+    font-size: 1.25rem;
     display: block; }
 
 h4 {
   font-size: 1.3125rem; }
 
 h5 {
-  font-size: 1rem; }
+  font-size: 1.25rem; }
 
 ul, ol {
   padding: 0;
-  margin: 0 0 1.75em 0; }
+  margin: 0 0 1.8em 0; }
 
 ul ul,
 ul ol,
@@ -417,7 +426,7 @@ ol ul {
   margin-bottom: 0; }
 
 li {
-  line-height: 1.75; }
+  line-height: 1.8; }
 
 /* Code Styles ================================================================================== */
 code,
@@ -459,18 +468,103 @@ html {
 
 body {
   margin: 0;
-  padding: 0 1em;
+  padding: 0;
   font-family: "Merriweather", sans-serif;
   font-size: 100%;
-  line-height: 1.75;
+  line-height: 1.8;
   font-style: normal;
-  font-weight: normal;
-  font-weight: 400; }
+  font-weight: light;
+  font-weight: 300;
+  color: #4F657C; }
 
 .container {
   width: 100%;
-  max-width: 40em;
+  max-width: 54.5rem;
   margin: 0 auto;
-  padding: 0; }
+  padding: 0 1rem; }
+
+/* Header
+================================================================================ */
+.global-banner {
+  box-shadow: rgba(79, 101, 124, 0.23) 0 2px 8px;
+  background-color: #FFFFFF;
+  padding: 0.75rem 0 1.5rem 0; }
+  .home .global-banner {
+    position: relative;
+    z-index: 2;
+    margin-bottom: -1rem; }
+  .global-banner h1 {
+    font-size: 2.25rem;
+    text-align: center;
+    font-weight: normal;
+    text-decoration: none; }
+    .global-banner h1 a {
+      border-bottom-color: transparent; }
+      .global-banner h1 a:hover {
+        border-bottom-color: #4F657C; }
+
+.global-nav ul {
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  max-width: 100%; }
+.global-nav li {
+  display: inline-block;
+  margin: 0 0.5rem;
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: bold;
+  font-weight: 400;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.075em; }
+
+/* Footer
+================================================================================ */
+.global-footer {
+  padding: 1rem 0;
+  background-color: #4F657C;
+  color: #FFFFFF; }
+  .global-footer p {
+    font-size: 0.875rem;
+    margin: 0; }
+  .global-footer a {
+    border-color: rgba(255, 255, 255, 0.2); }
+    .global-footer a:hover {
+      border-color: #FFFFFF; }
+
+/* Home
+================================================================================ */
+.home h2 {
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 1.3125rem;
+  font-weight: bold;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.075em; }
+
+.intro .container {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  background-image: url("../img/bio-photo.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain; }
+  .intro .container p {
+    margin: 0; }
+
+.about-me,
+.contact {
+  padding: 2rem 0 1rem 0; }
+
+.about-me {
+  background-color: #64A2E3;
+  color: #FFFFFF; }
+  .about-me a {
+    border-color: rgba(255, 255, 255, 0.2); }
+    .about-me a:hover {
+      border-color: #FFFFFF; }
+
+.contact ul {
+  list-style-type: none; }
 
 /*# sourceMappingURL=application.css.map */

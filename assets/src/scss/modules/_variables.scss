@@ -1,6 +1,9 @@
 // Variables ===================================================================================== /
 
 // Color scheme
+$dark-blue:           #4F657C;
+$light-blue:          #64A2E3;
+$lightest:            #FFFFFF;
 
 // Modular Scale : 16 @ 1.618 and 23 @ 1.618
 $modular-scale-up12:  5.25;   // 84px
@@ -9,14 +12,14 @@ $modular-scale-up10:  3.9375; // 63px
 $modular-scale-up9:   3.4375; // 55px
 $modular-scale-up8:   3;      // 48px
 $modular-scale-up7:   2.625;  // 42px
-$modular-scale-up6:   2.25;   // 36px
+$modular-scale-up6:   2.25;   // 36px my name
 $modular-scale-up5:   2;      // 32px
-$modular-scale-up4:   1.75;   // 28px
-$modular-scale-up3:   1.5;    // 24px
+$modular-scale-up4:   1.8;    // 30px line-height
+$modular-scale-up3:   1.4375; // 23px all caps h2
 $modular-scale-up2:   1.3125; // 21px
 $modular-scale-up1:   1.125;  // 18px
-$modular-scale-base:  1;      // 16px
-$modular-scale-down1: 0.875;  // 14px
+$modular-scale-base:  1.25;   // 20px body
+$modular-scale-down1: 0.875;  // 14px nav links
 $modular-scale-down2: 0.75;   // 12px
 
 // Type Variables
@@ -27,7 +30,7 @@ $base-line-height:    $modular-scale-up4;
 $vertical-measure:    $modular-scale-up4;
 
 // Grid function variables (not yet in use)
-$max-width:           40em;
-$column-width:        32%;
-$gutter-width:        2%;
-$maximum-columns:     3;
+$max-width:           54.5rem;  // 840px + 32px for padding
+$column-width:        11.2244%; // ~94px
+$gutter-width:        3.5714%;  // ~30px
+$maximum-columns:     7;

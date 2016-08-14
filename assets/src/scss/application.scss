@@ -19,7 +19,7 @@ html {
 
 body {
   margin: 0;
-  padding: 0 1em;
+  padding: 0;
   @include body-font-styles;
 }
 
@@ -27,5 +27,126 @@ body {
   width: 100%;
   max-width: $max-width;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 1rem;
+}
+
+/* Header
+================================================================================ */
+.global-banner {
+  box-shadow: rgba($dark-blue, 0.23) 0 2px 8px;
+  background-color: $lightest;
+  padding: 0.75rem 0 1.5rem 0;
+
+  .home & {
+    position: relative; z-index: 2; // make sure header shadow is over image below it
+    margin-bottom: -1rem; // create overlap of header on image
+  }
+
+  h1 {
+    font-size: #{$modular-scale-up6}rem;
+    text-align: center;
+    font-weight: normal;
+    text-decoration: none;
+
+    a {
+      border-bottom-color: transparent;
+
+      &:hover {
+        border-bottom-color: $dark-blue;
+      }
+    }
+  }
+}
+
+.global-nav {
+  ul {
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    max-width: 100%;
+  }
+
+  li {
+    display: inline-block;
+    margin: 0 0.5rem;
+    font-family: "Merriweather Sans", sans-serif;
+    font-weight: bold;
+    font-weight: 400;
+    font-size: #{$modular-scale-down1}rem;
+    text-transform: uppercase;
+    letter-spacing: 0.075em;
+  }
+}
+
+/* Footer
+================================================================================ */
+.global-footer {
+  padding: 1rem 0;
+  background-color: $dark-blue;
+  color: $lightest;
+
+  p {
+    font-size: #{$modular-scale-down1}rem;
+    margin: 0;
+  }
+
+  a {
+    border-color: rgba($lightest, 0.2);
+
+    &:hover {
+      border-color: $lightest;
+    }
+  }
+}
+
+
+/* Home
+================================================================================ */
+.home h2 {
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: #{$modular-scale-up2}rem;
+  font-weight: bold;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.075em;
+}
+
+.intro {
+
+  .container {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    background-image: url("../img/bio-photo.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+
+    p {
+      margin: 0;
+    }
+  }
+}
+
+.about-me,
+.contact {
+  padding: 2rem 0 1rem 0;
+}
+
+.about-me {
+  background-color: $light-blue;
+  color: $lightest;
+
+  a {
+    border-color: rgba($lightest, 0.2);
+
+    &:hover {
+      border-color: $lightest;
+    }
+  }
+}
+
+.contact {
+  ul {
+    list-style-type: none;
+  }
 }
