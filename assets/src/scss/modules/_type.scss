@@ -41,9 +41,15 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 { font-size: #{$modular-scale-up6}rem; }
 
-h2 { font-size: #{$modular-scale-up5}rem; }
+h2 {
+  font-size: #{$modular-scale-up4}rem;
+  line-height: $modular-scale-up2;
+}
 
-h3, h3.title { font-size: #{$modular-scale-up2}rem;
+h3, h3.title {
+  font-size: #{$modular-scale-up2}rem;
+  line-height: $modular-scale-up2;
+
   .source {
     font-size: #{$modular-scale-down1}rem;
     display: block;
@@ -73,6 +79,8 @@ li { line-height: $modular-scale-up4; }
   p, ul, ol { font-size: #{$modular-scale-base}rem; }
 
   h1 { font-size: #{$modular-scale-up7}rem; }
+
+  h2 { font-size: #{$modular-scale-up5}rem; }
 
   h3, h3.title { font-size: #{$modular-scale-up3}rem;
     .source { font-size: #{$modular-scale-base}rem; }

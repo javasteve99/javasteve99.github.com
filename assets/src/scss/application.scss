@@ -32,16 +32,16 @@ body {
 /* Global Header
 ================================================================================ */
 .global-banner {
-  box-shadow: rgba($dark-blue, 0.23) 0 2px 8px;
+  box-shadow: rgba($dark-blue, 0.2) 0 2px 8px;
   background-color: $lightest;
-  padding: 0.75rem 0 1.5rem 0;
+  padding: 2% 0 3% 0;
   position: relative; z-index: 2; // make sure header shadow is over module below it
 
   h1 {
-    font-size: #{$modular-scale-up4}rem;
-    text-align: center;
-    font-weight: normal;
+    font-size: #{$modular-scale-up5}rem;
+    line-height: $modular-scale-up1;
     text-decoration: none;
+    margin-bottom: 0.5rem;
 
     a {
       border-bottom-color: transparent;
@@ -56,7 +56,6 @@ body {
 .global-nav {
   ul {
     list-style-type: none;
-    text-align: center;
     margin: 0;
     max-width: 100%;
     line-height: 1.5;
@@ -64,34 +63,32 @@ body {
 
   li {
     display: inline-block;
-    margin: 0 0.5rem;
-    font-family: "Merriweather Sans", sans-serif;
+    margin: 0 1rem 0 0;
     font-weight: bold;
-    font-weight: 400;
+    font-weight: 700;
     font-size: #{$modular-scale-down2}rem;
-    text-transform: uppercase;
-    letter-spacing: 0.075em;
   }
 }
 
 @media (min-width: 500px) {
   .global-banner {
-    h1 { font-size: #{$modular-scale-up5}rem; }
+    h1 { font-size: #{$modular-scale-up6}rem; }
   }
 }
 
 /* Global Footer
 ================================================================================ */
 .global-footer {
-  padding: 1rem 0;
+  padding: 2% 0;
   background: $dark-blue;
   background: $dark-gradient;
-  box-shadow: inset darken($dark-blue, 10%) 0 2px 8px;
+  box-shadow: inset darken($dark-blue, 50%) 0 2px 8px;
   color: $lightest;
 
   p {
     margin: 0;
     font-size: #{$modular-scale-down2}rem;
+    line-height: $modular-scale-up3;
     width: 100%;
   }
 
@@ -107,19 +104,10 @@ body {
 
 /* Home Page
 ================================================================================ */
-.home h2 {
-  font-family: "Merriweather Sans", sans-serif;
-  font-size: #{$modular-scale-base}rem;
-  font-weight: bold;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
 .intro {
 
   .container {
-    padding-top: 1rem;
+    padding-top: 3%;
     padding-bottom: 65%;
     background-image: url("../img/bio-photo.png");
     background-repeat: no-repeat;
@@ -135,7 +123,7 @@ body {
 @media (min-width: 650px) {
 
   .home .global-banner {
-    margin-bottom: -1rem; // create overlap of header on image
+    margin-bottom: -3%; // create overlap of header on image
   }
 
   .intro {
@@ -151,25 +139,19 @@ body {
       background-position: right bottom;
     }
   }
-
-  .home h2 {
-    font-size: #{$modular-scale-up2}rem;
-    letter-spacing: 0.075em;
-  }
 }
 
 .about-me,
 .contact {
-  padding: 2rem 0 1rem 0;
+  padding: 4% 0 3% 0;
 }
 
 .about-me {
-  background: $light-blue;
+  background: $light-green;
   background: $light-gradient;
   box-shadow:
-    inset rgba($dark-blue, 0.3) 0 2px 8px,
-    inset rgba($dark-blue, 0.5) 0 -2px 8px;
-  color: $lightest;
+    inset rgba($dark-blue, 0.1) 0 2px 8px,
+    inset rgba($dark-blue, 0.2) 0 -2px 8px;
 
   a {
     border-color: rgba($lightest, 0.2);
@@ -190,14 +172,11 @@ body {
 /* Page Header
 ================================================================================ */
 .page-header {
-  background: $light-blue;
+  background: $light-green;
   background: $light-gradient;
-  color: $lightest;
-  padding-top: 1rem;
+  padding-top: 2%;
   padding-bottom: 2rem;
-  box-shadow:
-    inset rgba($dark-blue, 0.3) 0 2px 8px,
-    inset rgba($dark-blue, 0.5) 0 -2px 8px;
+  box-shadow: inset rgba($dark-blue, 0.2) 0 -2px 8px;
 
   p {
     margin: 0;
@@ -222,15 +201,11 @@ body {
   li {
     margin-bottom: #{$modular-scale-up4}rem;
   }
-
-  .title {
-    line-height: $modular-scale-up2;
-  }
 }
 
 figure {
   margin: 0 0 #{$modular-scale-up4}rem 0;
-  box-shadow: rgba($dark-blue, 0.23) 0 2px 8px;
+  box-shadow: rgba($dark-blue, 0.2) 0 2px 8px;
 
   img {
     display: block;

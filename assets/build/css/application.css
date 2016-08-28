@@ -369,7 +369,7 @@ body {
   font-style: normal;
   font-weight: light;
   font-weight: 300;
-  color: #4F657C; }
+  color: #142F48; }
 
 p, ul, ol {
   font-size: 0.875rem;
@@ -390,10 +390,10 @@ cite {
 a {
   color: inherit;
   text-decoration: none;
-  border-bottom: 2px solid rgba(79, 101, 124, 0.2);
+  border-bottom: 2px solid rgba(20, 47, 72, 0.2);
   transition: border-color 0.5s; }
   a:hover {
-    border-color: #4F657C; }
+    border-color: #142F48; }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
@@ -405,10 +405,12 @@ h1 {
   font-size: 2.625rem; }
 
 h2 {
-  font-size: 2.25rem; }
+  font-size: 2rem;
+  line-height: 1.4375; }
 
 h3, h3.title {
-  font-size: 1.4375rem; }
+  font-size: 1.4375rem;
+  line-height: 1.4375; }
   h3 .source, h3.title .source {
     font-size: 1.125rem;
     display: block; }
@@ -438,6 +440,9 @@ li {
 
   h1 {
     font-size: 3rem; }
+
+  h2 {
+    font-size: 2.25rem; }
 
   h3, h3.title {
     font-size: 1.8rem; }
@@ -505,51 +510,48 @@ body {
 /* Global Header
 ================================================================================ */
 .global-banner {
-  box-shadow: rgba(79, 101, 124, 0.23) 0 2px 8px;
+  box-shadow: rgba(20, 47, 72, 0.2) 0 2px 8px;
   background-color: #FFFFFF;
-  padding: 0.75rem 0 1.5rem 0;
+  padding: 2% 0 3% 0;
   position: relative;
   z-index: 2; }
   .global-banner h1 {
-    font-size: 2rem;
-    text-align: center;
-    font-weight: normal;
-    text-decoration: none; }
+    font-size: 2.25rem;
+    line-height: 1.3125;
+    text-decoration: none;
+    margin-bottom: 0.5rem; }
     .global-banner h1 a {
       border-bottom-color: transparent; }
       .global-banner h1 a:hover {
-        border-bottom-color: #4F657C; }
+        border-bottom-color: #142F48; }
 
 .global-nav ul {
   list-style-type: none;
-  text-align: center;
   margin: 0;
   max-width: 100%;
   line-height: 1.5; }
 .global-nav li {
   display: inline-block;
-  margin: 0 0.5rem;
-  font-family: "Merriweather Sans", sans-serif;
+  margin: 0 1rem 0 0;
   font-weight: bold;
-  font-weight: 400;
-  font-size: 0.875rem;
-  text-transform: uppercase;
-  letter-spacing: 0.075em; }
+  font-weight: 700;
+  font-size: 0.875rem; }
 
 @media (min-width: 500px) {
   .global-banner h1 {
-    font-size: 2.25rem; } }
+    font-size: 2.625rem; } }
 /* Global Footer
 ================================================================================ */
 .global-footer {
-  padding: 1rem 0;
-  background: #4F657C;
-  background: linear-gradient(to bottom, #4F657C, #3b4c5d);
-  box-shadow: inset #3b4c5d 0 2px 8px;
+  padding: 2% 0;
+  background: #142F48;
+  background: linear-gradient(to bottom, #142F48, #0b1a28);
+  box-shadow: inset black 0 2px 8px;
   color: #FFFFFF; }
   .global-footer p {
     margin: 0;
     font-size: 0.875rem;
+    line-height: 1.8;
     width: 100%; }
   .global-footer a {
     border-color: rgba(255, 255, 255, 0.2); }
@@ -558,16 +560,8 @@ body {
 
 /* Home Page
 ================================================================================ */
-.home h2 {
-  font-family: "Merriweather Sans", sans-serif;
-  font-size: 1.25rem;
-  font-weight: bold;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 0.05em; }
-
 .intro .container {
-  padding-top: 1rem;
+  padding-top: 3%;
   padding-bottom: 65%;
   background-image: url("../img/bio-photo.png");
   background-repeat: no-repeat;
@@ -578,7 +572,7 @@ body {
 
 @media (min-width: 650px) {
   .home .global-banner {
-    margin-bottom: -1rem; }
+    margin-bottom: -3%; }
 
   .intro p {
     max-width: 70.40816%; }
@@ -586,20 +580,15 @@ body {
     padding-top: 10%;
     padding-bottom: 10%;
     background-size: 40%;
-    background-position: right bottom; }
-
-  .home h2 {
-    font-size: 1.4375rem;
-    letter-spacing: 0.075em; } }
+    background-position: right bottom; } }
 .about-me,
 .contact {
-  padding: 2rem 0 1rem 0; }
+  padding: 4% 0 3% 0; }
 
 .about-me {
-  background: #64A2E3;
-  background: linear-gradient(to bottom, #64A2E3, #3988db);
-  box-shadow: inset rgba(79, 101, 124, 0.3) 0 2px 8px, inset rgba(79, 101, 124, 0.5) 0 -2px 8px;
-  color: #FFFFFF; }
+  background: #DDEB30;
+  background: linear-gradient(to bottom, #DDEB30, #d2e216);
+  box-shadow: inset rgba(20, 47, 72, 0.1) 0 2px 8px, inset rgba(20, 47, 72, 0.2) 0 -2px 8px; }
   .about-me a {
     border-color: rgba(255, 255, 255, 0.2); }
     .about-me a:hover {
@@ -611,12 +600,11 @@ body {
 /* Page Header
 ================================================================================ */
 .page-header {
-  background: #64A2E3;
-  background: linear-gradient(to bottom, #64A2E3, #3988db);
-  color: #FFFFFF;
-  padding-top: 1rem;
+  background: #DDEB30;
+  background: linear-gradient(to bottom, #DDEB30, #d2e216);
+  padding-top: 2%;
   padding-bottom: 2rem;
-  box-shadow: inset rgba(79, 101, 124, 0.3) 0 2px 8px, inset rgba(79, 101, 124, 0.5) 0 -2px 8px; }
+  box-shadow: inset rgba(20, 47, 72, 0.2) 0 -2px 8px; }
   .page-header p {
     margin: 0; }
 
@@ -632,12 +620,10 @@ body {
     margin: 0; }
   .descriptions li {
     margin-bottom: 2rem; }
-  .descriptions .title {
-    line-height: 1.4375; }
 
 figure {
   margin: 0 0 2rem 0;
-  box-shadow: rgba(79, 101, 124, 0.23) 0 2px 8px; }
+  box-shadow: rgba(20, 47, 72, 0.2) 0 2px 8px; }
   figure img {
     display: block;
     width: 100%;
@@ -650,7 +636,7 @@ figure {
 
 pre {
   margin: 0 0 2rem 0;
-  box-shadow: rgba(79, 101, 124, 0.23) 0 2px 8px;
+  box-shadow: rgba(20, 47, 72, 0.23) 0 2px 8px;
   padding: 0.5rem 1rem; }
 
 /*# sourceMappingURL=application.css.map */
