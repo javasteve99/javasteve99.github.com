@@ -1,26 +1,20 @@
-/* @font-face =================================================================================== */
-
-
 /* Type Styles ================================================================================== */
 
-@mixin body-font-styles { // keep body specific type styles in the type stylesheet
+body {
   font-family: $base-font-family;
   font-size: 100%;
-  line-height: $base-line-height;
+  line-height: $modular-scale-up4;
   font-style: normal;
   font-weight: light;
   font-weight: 300;
   color: $dark-blue;
 }
 
-p,
-ul,
-ol {
-  font-size: $base-font-size;
-  line-height: $base-line-height;
-  margin: 0 0 #{$vertical-measure}em 0;
+p, ul, ol {
+  font-size: #{$modular-scale-down2}rem;
+  line-height: $modular-scale-up4;
+  margin: 0 0 #{$modular-scale-up4}em 0;
   width: 100%;
-  max-width: columns(6);
 }
 
 strong { font-weight: bold; font-weight: 700; }
@@ -43,37 +37,26 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
   font-weight: bold;
   font-weight: 700;
-  text-rendering: optimizelegibility;
 }
 
-h1 {
-  font-size: #{$modular-scale-up8}rem;
-}
+h1 { font-size: #{$modular-scale-up6}rem; }
 
-h2 {
-  font-size: #{$modular-scale-up6}rem;
-}
+h2 { font-size: #{$modular-scale-up5}rem; }
 
-h3, h3.title {
-  font-size: #{$modular-scale-up4}rem;
-
+h3, h3.title { font-size: #{$modular-scale-up2}rem;
   .source {
-    font-size: #{$modular-scale-base}rem;;
+    font-size: #{$modular-scale-down1}rem;
     display: block;
   }
 }
 
-h4 {
-  font-size: #{$modular-scale-up2}rem;
-}
+h4 { font-size: #{$modular-scale-base}rem; }
 
-h5 {
-  font-size: #{$modular-scale-base}rem;
-}
+h5 { font-size: #{$modular-scale-down2}rem; }
 
 ul, ol {
   padding: 0;
-  margin: 0 0 #{$vertical-measure}em 0;
+  margin: 0 0 #{$modular-scale-up4}em 0;
 }
 
 ul ul,
@@ -83,6 +66,27 @@ ol ul {
   margin-bottom: 0;
 }
 
-li {
-  line-height: $base-line-height;
+li { line-height: $modular-scale-up4; }
+
+@media (min-width: 500px) {
+
+  p, ul, ol { font-size: #{$modular-scale-base}rem; }
+
+  h1 { font-size: #{$modular-scale-up7}rem; }
+
+  h3, h3.title { font-size: #{$modular-scale-up3}rem;
+    .source { font-size: #{$modular-scale-base}rem; }
+  }
+
+  h4 { font-size: #{$modular-scale-up1}rem; }
+
+  h5 { font-size: #{$modular-scale-base}rem; }
+}
+
+@media (min-width: 700px) {
+  p,
+  ul,
+  ol {
+    max-width: columns(6);
+  }
 }

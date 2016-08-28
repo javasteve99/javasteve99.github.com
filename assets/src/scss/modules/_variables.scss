@@ -8,28 +8,25 @@ $light-gradient:      linear-gradient(to bottom, $light-blue, darken($light-blue
 $lightest:            #FFFFFF;
 
 // Modular Scale : 16 @ 1.618 and 23 @ 1.618
-$modular-scale-up12:  5.25;   // 84px
-$modular-scale-up11:  4.8125; // 77px
-$modular-scale-up10:  3.9375; // 63px
-$modular-scale-up9:   3.4375; // 55px
-$modular-scale-up8:   3;      // 48px
-$modular-scale-up7:   2.625;  // 42px
-$modular-scale-up6:   2.25;   // 36px my name
-$modular-scale-up5:   2;      // 32px
-$modular-scale-up4:   1.8;    // 30px line-height
-$modular-scale-up3:   1.4375; // 23px all caps h2
-$modular-scale-up2:   1.3125; // 21px
-$modular-scale-up1:   1.125;  // 18px
+$modular-scale-up11:  5.25;   // 84px
+$modular-scale-up10:  4.8125; // 77px
+$modular-scale-up9:   3.9375; // 63px
+$modular-scale-up8:   3.4375; // 55px
+$modular-scale-up7:   3;      // 48px
+$modular-scale-up6:   2.625;  // 42px
+$modular-scale-up5:   2.25;   // 36px my name
+$modular-scale-up4:   2;      // 32px
+$modular-scale-up3:   1.8;    // 30px line-height
+$modular-scale-up2:   1.4375; // 23px all caps h2
+$modular-scale-up1:   1.3125; // 21px
 $modular-scale-base:  1.25;   // 20px body
-$modular-scale-down1: 0.875;  // 14px nav links
-$modular-scale-down2: 0.75;   // 12px
+$modular-scale-down1: 1.125;  // 18px
+$modular-scale-down2: 0.875;  // 14px nav links
+$modular-scale-down3: 0.75;   // 12px
 
 // Type Variables
 $base-font-family:    'Merriweather', sans-serif;
 $code-font-family:    'Fira Mono', monospace;
-$base-font-size:      #{$modular-scale-base}em;
-$base-line-height:    $modular-scale-up4;
-$vertical-measure:    $modular-scale-up4;
 
 // Grid function variables (not yet in use)
 $max-width:           54.5rem;  // 840px + 32px for padding
