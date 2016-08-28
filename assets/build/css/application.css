@@ -369,7 +369,7 @@ body {
   font-style: normal;
   font-weight: light;
   font-weight: 300;
-  color: #142F48; }
+  color: #2A323A; }
 
 p, ul, ol {
   font-size: 0.875rem;
@@ -390,10 +390,10 @@ cite {
 a {
   color: inherit;
   text-decoration: none;
-  border-bottom: 2px solid rgba(20, 47, 72, 0.2);
+  border-bottom: 2px solid rgba(42, 50, 58, 0.2);
   transition: border-color 0.5s; }
   a:hover {
-    border-color: #142F48; }
+    border-color: #2A323A; }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
@@ -510,7 +510,7 @@ body {
 /* Global Header
 ================================================================================ */
 .global-banner {
-  box-shadow: rgba(20, 47, 72, 0.2) 0 2px 8px;
+  box-shadow: rgba(42, 50, 58, 0.2) 0 2px 8px;
   background-color: #FFFFFF;
   padding: 2% 0 3% 0;
   position: relative;
@@ -523,7 +523,7 @@ body {
     .global-banner h1 a {
       border-bottom-color: transparent; }
       .global-banner h1 a:hover {
-        border-bottom-color: #142F48; }
+        border-bottom-color: #2A323A; }
 
 .global-nav ul {
   list-style-type: none;
@@ -544,8 +544,8 @@ body {
 ================================================================================ */
 .global-footer {
   padding: 2% 0;
-  background: #142F48;
-  background: linear-gradient(to bottom, #142F48, #0b1a28);
+  background: #2A323A;
+  background: linear-gradient(to bottom, #2A323A, #191e22);
   box-shadow: inset black 0 2px 8px;
   color: #FFFFFF; }
   .global-footer p {
@@ -588,7 +588,7 @@ body {
 .about-me {
   background: #DDEB30;
   background: linear-gradient(to bottom, #DDEB30, #d2e216);
-  box-shadow: inset rgba(20, 47, 72, 0.1) 0 2px 8px, inset rgba(20, 47, 72, 0.2) 0 -2px 8px; }
+  box-shadow: inset rgba(42, 50, 58, 0.1) 0 2px 8px, inset rgba(42, 50, 58, 0.2) 0 -2px 8px; }
   .about-me a {
     border-color: rgba(255, 255, 255, 0.2); }
     .about-me a:hover {
@@ -604,7 +604,7 @@ body {
   background: linear-gradient(to bottom, #DDEB30, #d2e216);
   padding-top: 2%;
   padding-bottom: 2rem;
-  box-shadow: inset rgba(20, 47, 72, 0.2) 0 -2px 8px; }
+  box-shadow: inset rgba(42, 50, 58, 0.2) 0 -2px 8px; }
   .page-header p {
     margin: 0; }
 
@@ -623,7 +623,7 @@ body {
 
 figure {
   margin: 0 0 2rem 0;
-  box-shadow: rgba(20, 47, 72, 0.2) 0 2px 8px; }
+  box-shadow: rgba(42, 50, 58, 0.2) 0 2px 8px; }
   figure img {
     display: block;
     width: 100%;
@@ -636,7 +636,7 @@ figure {
 
 pre {
   margin: 0 0 2rem 0;
-  box-shadow: rgba(20, 47, 72, 0.23) 0 2px 8px;
+  box-shadow: rgba(42, 50, 58, 0.23) 0 2px 8px;
   padding: 0.5rem 1rem; }
 
 /*# sourceMappingURL=application.css.map */
