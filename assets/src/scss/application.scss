@@ -204,7 +204,52 @@ body {
   }
 }
 
+
+/* Page Content
+================================================================================ */
 .page-content {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.descriptions {
+  list-style-type: none;
+
+  p {
+    margin: 0;
+  }
+
+  li {
+    margin-bottom: #{$modular-scale-up4}rem;
+  }
+
+  .title {
+    line-height: $modular-scale-up2;
+  }
+}
+
+figure {
+  margin: 0 0 #{$modular-scale-up4}rem 0;
+  box-shadow: rgba($dark-blue, 0.23) 0 2px 8px;
+
+  img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  figcaption {
+    padding: 1rem;
+
+    p {
+      margin: 0;
+      font-size: #{$modular-scale-down2}rem;
+    }
+  }
+}
+
+pre {
+  margin: 0 0 #{$modular-scale-up4}rem 0;
+  box-shadow: rgba($dark-blue, 0.23) 0 2px 8px;
+  padding: 0.5rem 1rem;
 }

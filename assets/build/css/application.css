@@ -620,8 +620,37 @@ body {
   .page-header p {
     margin: 0; }
 
+/* Page Content
+================================================================================ */
 .page-content {
   padding-top: 2rem;
   padding-bottom: 2rem; }
+
+.descriptions {
+  list-style-type: none; }
+  .descriptions p {
+    margin: 0; }
+  .descriptions li {
+    margin-bottom: 2rem; }
+  .descriptions .title {
+    line-height: 1.4375; }
+
+figure {
+  margin: 0 0 2rem 0;
+  box-shadow: rgba(79, 101, 124, 0.23) 0 2px 8px; }
+  figure img {
+    display: block;
+    width: 100%;
+    max-width: 100%; }
+  figure figcaption {
+    padding: 1rem; }
+    figure figcaption p {
+      margin: 0;
+      font-size: 0.875rem; }
+
+pre {
+  margin: 0 0 2rem 0;
+  box-shadow: rgba(79, 101, 124, 0.23) 0 2px 8px;
+  padding: 0.5rem 1rem; }
 
 /*# sourceMappingURL=application.css.map */
