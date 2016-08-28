@@ -32,7 +32,7 @@ body {
 /* Global Header
 ================================================================================ */
 .global-banner {
-  box-shadow: rgba($dark-blue, 0.2) 0 2px 8px;
+  box-shadow: rgba($dark, 0.2) 0 2px 8px;
   background-color: $lightest;
   padding: 2% 0 3% 0;
   position: relative; z-index: 2; // make sure header shadow is over module below it
@@ -47,7 +47,7 @@ body {
       border-bottom-color: transparent;
 
       &:hover {
-        border-bottom-color: $dark-blue;
+        border-bottom-color: $dark;
       }
     }
   }
@@ -80,9 +80,9 @@ body {
 ================================================================================ */
 .global-footer {
   padding: 2% 0;
-  background: $dark-blue;
+  background: $dark;
   background: $dark-gradient;
-  box-shadow: inset darken($dark-blue, 50%) 0 2px 8px;
+  box-shadow: inset darken($dark, 50%) 0 2px 8px;
   color: $lightest;
 
   p {
@@ -147,11 +147,11 @@ body {
 }
 
 .about-me {
-  background: $light-green;
+  background: $light;
   background: $light-gradient;
   box-shadow:
-    inset rgba($dark-blue, 0.1) 0 2px 8px,
-    inset rgba($dark-blue, 0.2) 0 -2px 8px;
+    inset rgba($dark, 0.1) 0 2px 8px,
+    inset rgba($dark, 0.2) 0 -2px 8px;
 
   a {
     border-color: rgba($lightest, 0.2);
@@ -172,11 +172,11 @@ body {
 /* Page Header
 ================================================================================ */
 .page-header {
-  background: $light-green;
+  background: $light;
   background: $light-gradient;
   padding-top: 2%;
   padding-bottom: 2rem;
-  box-shadow: inset rgba($dark-blue, 0.2) 0 -2px 8px;
+  box-shadow: inset rgba($dark, 0.2) 0 -2px 8px;
 
   p {
     margin: 0;
@@ -205,7 +205,7 @@ body {
 
 figure {
   margin: 0 0 #{$modular-scale-up4}rem 0;
-  box-shadow: rgba($dark-blue, 0.2) 0 2px 8px;
+  box-shadow: rgba($dark, 0.2) 0 2px 8px;
 
   img {
     display: block;
@@ -225,6 +225,6 @@ figure {
 
 pre {
   margin: 0 0 #{$modular-scale-up4}rem 0;
-  box-shadow: rgba($dark-blue, 0.23) 0 2px 8px;
+  box-shadow: rgba($dark, 0.23) 0 2px 8px;
   padding: 0.5rem 1rem;
 }
