@@ -30,15 +30,15 @@ body {
   padding: 0 1rem;
 }
 
-/* Header
+/* Global Header
 ================================================================================ */
 .global-banner {
   box-shadow: rgba($dark-blue, 0.23) 0 2px 8px;
   background-color: $lightest;
   padding: 0.75rem 0 1.5rem 0;
+  position: relative; z-index: 2; // make sure header shadow is over module below it
 
   .home & {
-    position: relative; z-index: 2; // make sure header shadow is over image below it
     margin-bottom: -1rem; // create overlap of header on image
   }
 
@@ -78,7 +78,7 @@ body {
   }
 }
 
-/* Footer
+/* Global Footer
 ================================================================================ */
 .global-footer {
   padding: 1rem 0;
@@ -100,7 +100,7 @@ body {
 }
 
 
-/* Home
+/* Home Page
 ================================================================================ */
 .home h2 {
   font-family: "Merriweather Sans", sans-serif;
@@ -149,4 +149,14 @@ body {
   ul {
     list-style-type: none;
   }
+}
+
+
+/* Page Header
+================================================================================ */
+.page-header {
+  background-color: $light-blue;
+  color: $lightest;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
 }

@@ -3,13 +3,19 @@ layout: default
 ---
 
     <article>
-      <header>
-        <h2 class="title">{{ page.title }}</h2>
-        <p>{{ page.date | date: "%B %d, %Y" }}</p>
-      </header>
-      {% if page.external-url %}
-        <p>This article is available at <a href="{{ page.external-url }}">{{ page.external-source }}</a>.</p>
-      {% else %}
-        {{ content }}
-      {% endif %}
+      <header class="page-header">
+        <div class="container">
+          <h2 class="title">{{ page.title }}</h2>
+          <p>{{ page.date | date: "%B %d, %Y" }}</p>
+        </div><!-- end of .container -->
+      </header><!-- end of .article-header -->
+      <div class="page-content">
+        <div class="container">
+          {% if page.external-url %}
+          <p>This article is available at <a href="{{ page.external-url }}">{{ page.external-source }}</a>.</p>
+          {% else %}
+          {{ content }}
+          {% endif %}
+        </div><!-- end of .container -->
+      </div><!-- end of .article-content -->
     </article>

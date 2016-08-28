@@ -3,8 +3,14 @@ layout: default
 ---
 
     <article>
-      <header>
-        <h2 class="title">{{ page.title }}</h2>
-      </header>
-      {{ content }}
+      <header class="page-header">
+        <div class="container">
+          <h2 class="title">{{ page.title }}</h2>
+        </div><!-- end of .container -->
+      </header><!-- end of .page-header -->
+      <div class="page-content">
+        <div class="container">
+          {{ content }}
+        </div><!-- end of .container -->
+      </div><!-- end of .page-content -->
     </article>

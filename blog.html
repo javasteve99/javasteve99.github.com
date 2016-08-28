@@ -5,18 +5,24 @@ area: writing
 ---
 
     <header class="page-header">
-      <h2>Writing</h2>
-      <p>From time to time I manage to have a thought that I believe might be useful to others in our industry.</p>
-    </header>
-    <ul class="descriptions">
-      {% for post in site.posts %}
-      <li>
-        {% if post.external-url %}
-          <h3 class="title"><a href="{{ post.external-url }}">{{ post.title }} <span class="source">(From {{ post.external-source }})</span></a></h3>
-        {% else %}
-          <h3 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
-        {% endif %}
-        <p>{{ post.date | date: "%B %d, %Y" }}</p>
-      </li>
-      {% endfor %}
-    </ul>
+      <div class="container">
+        <h2>Writing</h2>
+        <p>From time to time I manage to have a thought that I believe might be useful to others in our industry.</p>
+      </div><!-- end of .container -->
+    </header><!-- end of .page-header -->
+    <div class="page-content">
+      <div class="container">
+        <ul class="descriptions">
+          {% for post in site.posts %}
+          <li>
+            {% if post.external-url %}
+            <h3 class="title"><a href="{{ post.external-url }}">{{ post.title }} <span class="source">(From {{ post.external-source }})</span></a></h3>
+            {% else %}
+            <h3 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+            {% endif %}
+            <p>{{ post.date | date: "%B %d, %Y" }}</p>
+          </li>
+          {% endfor %}
+        </ul>
+      </div><!-- end of .container -->
+    </div><!-- end of .page-content -->

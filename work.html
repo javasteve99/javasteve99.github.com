@@ -5,11 +5,19 @@ area: work
 ---
 
     <header class="page-header">
-      <h2>Work</h2>
-      <p>I lead teams that create products users truly need, while driving meaningful improvement in our client&rsquo;s businesses. Here&rsquo;s a small sample of the projects I&rsquo;ve led over the last four years. </p>
-    </header>
-    <ul class="descriptions">{% for work in site.work %}
-      <li>
-        <h3 class="title"><a href="{{ work.url }}">{{ work.title }}</a></h3>
-      </li>{% endfor %}
-    </ul>
+      <div class="container">
+        <h2>Work</h2>
+        <p>I lead teams that create products users truly need, while driving meaningful improvement in our client&rsquo;s businesses. Here&rsquo;s a small sample of the projects I&rsquo;ve led over the last four years. </p>
+      </div><!-- end of .container -->
+    </header><!-- end of .page-header -->
+    <div class="page-content">
+      <div class="container">
+        <ul class="descriptions">
+          {% for work in site.work %}
+          <li>
+            <h3 class="title"><a href="{{ work.url }}">{{ work.title }}</a></h3>
+          </li>
+          {% endfor %}
+        </ul>
+      </div><!-- end of .container -->
+    </div><!-- end of .page-content -->

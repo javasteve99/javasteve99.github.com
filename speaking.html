@@ -5,15 +5,21 @@ area: speaking
 ---
 
     <header class="page-header">
-      <h2>Speaking</h2>
-      <p>For reasons that I'll never understand, sometimes people want to pay to hear me speak. These are some of the better talks and workshops I've given.</p>
-    </header>
-    {% assign talks = site.speaking | sort: 'date' | reverse %}
-    <ul class="descriptions">
-      {% for talk in talks %}
-      <li>
-        <h3 class="title"><a href="{{ talk.external-url }}">{{ talk.title }}</a></h3>
-        <p>{{ talk.date | date: "%B %d, %Y" }} at {{ talk.host }}</p>
-      </li>
-      {% endfor %}
-    </ul>
+      <div class="container">
+        <h2>Speaking</h2>
+        <p>For reasons that I'll never understand, sometimes people want to pay to hear me speak. These are some of the better talks and workshops I've given.</p>
+      </div><!-- end of .container -->
+    </header><!-- end of .page-header -->
+    <div class="page-content">
+      <div class="container"
+        {% assign talks = site.speaking | sort: 'date' | reverse %}
+        <ul class="descriptions">
+          {% for talk in talks %}
+          <li>
+            <h3 class="title"><a href="{{ talk.external-url }}">{{ talk.title }}</a></h3>
+            <p>{{ talk.date | date: "%B %d, %Y" }} at {{ talk.host }}</p>
+          </li>
+          {% endfor %}
+        </ul>
+      </div><!-- end of .container -->
+    </div><!-- end of .page-content -->
