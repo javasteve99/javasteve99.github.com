@@ -20,7 +20,7 @@ ol {
   line-height: $base-line-height;
   margin: 0 0 #{$vertical-measure}em 0;
   width: 100%;
-  max-width: columns(5);
+  max-width: columns(6);
 }
 
 strong { font-weight: bold; font-weight: 700; }

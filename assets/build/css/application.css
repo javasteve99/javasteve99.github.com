@@ -370,7 +370,7 @@ ol {
   line-height: 1.8;
   margin: 0 0 1.8em 0;
   width: 100%;
-  max-width: 70.40816%; }
+  max-width: 85.20408%; }
 
 strong {
   font-weight: bold;
@@ -491,8 +491,6 @@ body {
   padding: 0.75rem 0 1.5rem 0;
   position: relative;
   z-index: 2; }
-  .home .global-banner {
-    margin-bottom: -1rem; }
   .global-banner h1 {
     font-size: 2.25rem;
     text-align: center;
@@ -507,7 +505,8 @@ body {
   list-style-type: none;
   text-align: center;
   margin: 0;
-  max-width: 100%; }
+  max-width: 100%;
+  line-height: 1.5; }
 .global-nav li {
   display: inline-block;
   margin: 0 0.5rem;
@@ -522,7 +521,9 @@ body {
 ================================================================================ */
 .global-footer {
   padding: 1rem 0;
-  background-color: #4F657C;
+  background: #4F657C;
+  background: linear-gradient(to bottom, #4F657C, #3b4c5d);
+  box-shadow: inset #3b4c5d 0 2px 8px;
   color: #FFFFFF; }
   .global-footer p {
     font-size: 0.875rem;
@@ -543,21 +544,34 @@ body {
   letter-spacing: 0.075em; }
 
 .intro .container {
-  padding-top: 7rem;
-  padding-bottom: 7rem;
+  padding-top: 1rem;
+  padding-bottom: 80%;
   background-image: url("../img/bio-photo.png");
   background-repeat: no-repeat;
-  background-position: right center;
-  background-size: contain; }
+  background-position: center bottom;
+  background-size: 80%; }
   .intro .container p {
     margin: 0; }
 
+@media (min-width: 40em) {
+  .home .global-banner {
+    margin-bottom: -1rem; }
+
+  .intro p {
+    max-width: 70.40816%; }
+  .intro .container {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    background-size: contain;
+    background-position: right bottom; } }
 .about-me,
 .contact {
   padding: 2rem 0 1rem 0; }
 
 .about-me {
-  background-color: #64A2E3;
+  background: #64A2E3;
+  background: linear-gradient(to bottom, #64A2E3, #3988db);
+  box-shadow: inset rgba(79, 101, 124, 0.3) 0 2px 8px, inset rgba(79, 101, 124, 0.5) 0 -2px 8px;
   color: #FFFFFF; }
   .about-me a {
     border-color: rgba(255, 255, 255, 0.2); }
@@ -570,9 +584,17 @@ body {
 /* Page Header
 ================================================================================ */
 .page-header {
-  background-color: #64A2E3;
+  background: #64A2E3;
+  background: linear-gradient(to bottom, #64A2E3, #3988db);
   color: #FFFFFF;
   padding-top: 1rem;
+  padding-bottom: 2rem;
+  box-shadow: inset rgba(79, 101, 124, 0.3) 0 2px 8px, inset rgba(79, 101, 124, 0.5) 0 -2px 8px; }
+  .page-header p {
+    margin: 0; }
+
+.page-content {
+  padding-top: 2rem;
   padding-bottom: 2rem; }
 
 /*# sourceMappingURL=application.css.map */

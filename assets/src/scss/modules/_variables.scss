@@ -2,7 +2,9 @@
 
 // Color scheme
 $dark-blue:           #4F657C;
+$dark-gradient:       linear-gradient(to bottom, $dark-blue, darken($dark-blue, 10%));
 $light-blue:          #64A2E3;
+$light-gradient:      linear-gradient(to bottom, $light-blue, darken($light-blue, 10%));
 $lightest:            #FFFFFF;
 
 // Modular Scale : 16 @ 1.618 and 23 @ 1.618

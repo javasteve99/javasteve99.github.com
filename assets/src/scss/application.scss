@@ -38,10 +38,6 @@ body {
   padding: 0.75rem 0 1.5rem 0;
   position: relative; z-index: 2; // make sure header shadow is over module below it
 
-  .home & {
-    margin-bottom: -1rem; // create overlap of header on image
-  }
-
   h1 {
     font-size: #{$modular-scale-up6}rem;
     text-align: center;
@@ -64,6 +60,7 @@ body {
     text-align: center;
     margin: 0;
     max-width: 100%;
+    line-height: 1.5;
   }
 
   li {
@@ -82,7 +79,9 @@ body {
 ================================================================================ */
 .global-footer {
   padding: 1rem 0;
-  background-color: $dark-blue;
+  background: $dark-blue;
+  background: $dark-gradient;
+  box-shadow: inset darken($dark-blue, 10%) 0 2px 8px;
   color: $lightest;
 
   p {
@@ -114,15 +113,36 @@ body {
 .intro {
 
   .container {
-    padding-top: 7rem;
-    padding-bottom: 7rem;
+    padding-top: 1rem;
+    padding-bottom: 80%;
     background-image: url("../img/bio-photo.png");
     background-repeat: no-repeat;
-    background-position: right center;
-    background-size: contain;
+    background-position: center bottom;
+    background-size: 80%;
 
     p {
       margin: 0;
+    }
+  }
+}
+
+@media (min-width: 40em) {
+
+  .home .global-banner {
+    margin-bottom: -1rem; // create overlap of header on image
+  }
+
+  .intro {
+
+    p {
+      max-width: columns(5);
+    }
+
+    .container {
+      padding-top: 7rem;
+      padding-bottom: 7rem;
+      background-size: contain;
+      background-position: right bottom;
     }
   }
 }
@@ -133,7 +153,11 @@ body {
 }
 
 .about-me {
-  background-color: $light-blue;
+  background: $light-blue;
+  background: $light-gradient;
+  box-shadow:
+    inset rgba($dark-blue, 0.3) 0 2px 8px,
+    inset rgba($dark-blue, 0.5) 0 -2px 8px;
   color: $lightest;
 
   a {
@@ -155,8 +179,21 @@ body {
 /* Page Header
 ================================================================================ */
 .page-header {
-  background-color: $light-blue;
+  background: $light-blue;
+  background: $light-gradient;
   color: $lightest;
   padding-top: 1rem;
+  padding-bottom: 2rem;
+  box-shadow:
+    inset rgba($dark-blue, 0.3) 0 2px 8px,
+    inset rgba($dark-blue, 0.5) 0 -2px 8px;
+
+  p {
+    margin: 0;
+  }
+}
+
+.page-content {
+  padding-top: 2rem;
   padding-bottom: 2rem;
 }
