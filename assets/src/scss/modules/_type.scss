@@ -12,8 +12,8 @@ body {
 
 p, ul, ol {
   font-size: #{$modular-scale-down2}rem;
-  line-height: $modular-scale-up4;
-  margin: 0 0 #{$modular-scale-up4}em 0;
+  line-height: $modular-scale-up3;
+  margin: 0 0 #{$modular-scale-up3}em 0;
   width: 100%;
 }
 
@@ -72,7 +72,10 @@ ol ul {
   margin-bottom: 0;
 }
 
-li { line-height: $modular-scale-up4; }
+li {
+  line-height: $modular-scale-up2;
+  margin-bottom: #{$modular-scale-down3}rem;
+}
 
 @media (min-width: 500px) {
 

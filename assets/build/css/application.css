@@ -373,8 +373,8 @@ body {
 
 p, ul, ol {
   font-size: 0.875rem;
-  line-height: 2;
-  margin: 0 0 2em 0;
+  line-height: 1.8;
+  margin: 0 0 1.8em 0;
   width: 100%; }
 
 strong {
@@ -432,7 +432,8 @@ ol ul {
   margin-bottom: 0; }
 
 li {
-  line-height: 2; }
+  line-height: 1.4375;
+  margin-bottom: 0.75rem; }
 
 @media (min-width: 500px) {
   p, ul, ol {
@@ -602,8 +603,8 @@ body {
 .page-header {
   background: #DDEB30;
   background: linear-gradient(to bottom, #DDEB30, #d2e216);
-  padding-top: 2%;
-  padding-bottom: 2rem;
+  padding-top: 3%;
+  padding-bottom: 4%;
   box-shadow: inset rgba(42, 50, 58, 0.2) 0 -2px 8px; }
   .page-header p {
     margin: 0; }
@@ -611,8 +612,8 @@ body {
 /* Page Content
 ================================================================================ */
 .page-content {
-  padding-top: 2rem;
-  padding-bottom: 2rem; }
+  padding-top: 4%;
+  padding-bottom: 4%; }
 
 .descriptions {
   list-style-type: none; }
