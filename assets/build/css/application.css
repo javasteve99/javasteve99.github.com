@@ -528,15 +528,22 @@ body {
 
 .global-nav ul {
   list-style-type: none;
-  margin: 0;
-  max-width: 100%;
-  line-height: 1.5; }
+  margin: 0 0 0 -0.25rem;
+  max-width: 100%; }
 .global-nav li {
   display: inline-block;
-  margin: 0 1rem 0 0;
+  margin: 0 0.75rem 0 0;
   font-weight: bold;
   font-weight: 700;
   font-size: 0.875rem; }
+.global-nav a {
+  display: inline-block;
+  line-height: 1.5;
+  padding: 0 0.25rem;
+  margin-bottom: 0.25rem;
+  border-color: #DDEB30; }
+  .global-nav a:hover {
+    border-color: #2A323A; }
 
 @media (min-width: 500px) {
   .global-banner h1 {
@@ -590,10 +597,6 @@ body {
   background: #DDEB30;
   background: linear-gradient(to bottom, #DDEB30, #d2e216);
   box-shadow: inset rgba(42, 50, 58, 0.1) 0 2px 8px, inset rgba(42, 50, 58, 0.2) 0 -2px 8px; }
-  .about-me a {
-    border-color: rgba(255, 255, 255, 0.2); }
-    .about-me a:hover {
-      border-color: #FFFFFF; }
 
 .contact ul {
   list-style-type: none; }

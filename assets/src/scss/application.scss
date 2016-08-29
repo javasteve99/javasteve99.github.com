@@ -56,17 +56,28 @@ body {
 .global-nav {
   ul {
     list-style-type: none;
-    margin: 0;
+    margin: 0 0 0 -0.25rem;
     max-width: 100%;
-    line-height: 1.5;
   }
 
   li {
     display: inline-block;
-    margin: 0 1rem 0 0;
+    margin: 0 0.75rem 0 0;
     font-weight: bold;
     font-weight: 700;
     font-size: #{$modular-scale-down2}rem;
+  }
+
+  a {
+    display: inline-block;
+    line-height: 1.5;
+    padding: 0 0.25rem;
+    margin-bottom: 0.25rem;
+    border-color: $light;
+
+    &:hover {
+      border-color: $dark;
+    }
   }
 }
 
@@ -152,14 +163,6 @@ body {
   box-shadow:
     inset rgba($dark, 0.1) 0 2px 8px,
     inset rgba($dark, 0.2) 0 -2px 8px;
-
-  a {
-    border-color: rgba($lightest, 0.2);
-
-    &:hover {
-      border-color: $lightest;
-    }
-  }
 }
 
 .contact {
