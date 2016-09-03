@@ -127,6 +127,7 @@ body {
 
     p {
       margin: 0;
+      max-width: 100%;
     }
   }
 }
@@ -139,13 +140,10 @@ body {
 
   .intro {
 
-    p {
-      max-width: columns(5);
-    }
-
     .container {
       padding-top: 10%;
       padding-bottom: 10%;
+      padding-right: 30%;
       background-size: 40%;
       background-position: right bottom;
     }
@@ -168,6 +166,12 @@ body {
 .contact {
   ul {
     list-style-type: none;
+  }
+}
+
+@media (min-width: 900px) {
+  .intro .container {
+    padding-right: 280px;
   }
 }
 
