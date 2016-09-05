@@ -379,7 +379,7 @@ p, ul, ol {
 
 strong {
   font-weight: bold;
-  font-weight: 700; }
+  font-weight: 400; }
 
 em {
   font-style: italic; }
@@ -399,7 +399,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
   font-weight: bold;
-  font-weight: 700; }
+  font-weight: 400; }
 
 h1 {
   font-size: 2.625rem; }
@@ -500,7 +500,11 @@ html {
 
 body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  background-color: #191e22; }
+
+main {
+  background-color: #FFFFFF; }
 
 .container {
   width: 100%;
@@ -534,7 +538,7 @@ body {
   display: inline-block;
   margin: 0 0.75rem 0 0;
   font-weight: bold;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 0.875rem; }
 .global-nav a {
   display: inline-block;
@@ -554,7 +558,7 @@ body {
   padding: 2% 0;
   background: #2A323A;
   background: linear-gradient(to bottom, #2A323A, #191e22);
-  box-shadow: inset black 0 2px 8px;
+  box-shadow: inset black 0 4px 8px -2px;
   color: #FFFFFF; }
   .global-footer p {
     margin: 0;

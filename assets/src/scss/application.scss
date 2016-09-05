@@ -20,7 +20,10 @@ html {
 body {
   margin: 0;
   padding: 0;
+  background-color: darken($dark, 8%); // fakes footer getting taller for short pages
 }
+
+main { background-color: $lightest; } // restores normal background color for page
 
 .container {
   width: 100%;
@@ -64,7 +67,7 @@ body {
     display: inline-block;
     margin: 0 0.75rem 0 0;
     font-weight: bold;
-    font-weight: 700;
+    font-weight: 400;
     font-size: #{$modular-scale-down2}rem;
   }
 
@@ -93,7 +96,7 @@ body {
   padding: 2% 0;
   background: $dark;
   background: $dark-gradient;
-  box-shadow: inset darken($dark, 50%) 0 2px 8px;
+  box-shadow: inset darken($dark, 50%) 0 4px 8px -2px;
   color: $lightest;
 
   p {
