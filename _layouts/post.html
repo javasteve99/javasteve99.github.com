@@ -12,10 +12,9 @@ layout: default
       <div class="page-content">
         <div class="container">
           {% if page.external-url %}
-          <p>This article is available at <a href="{{ page.external-url }}">{{ page.external-source }}</a>.</p>
-          {% else %}
-          {{ content }}
+          <p><em>This article was originally posted at <a href="{{ page.external-url }}">{{ page.external-source }}</a>.</em></p>
           {% endif %}
+          {{ content }}
         </div><!-- end of .container -->
       </div><!-- end of .article-content -->
     </article>
