@@ -41,12 +41,12 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 { font-size: #{$modular-scale-up6}rem; }
 
-h2 {
+.page-title {
   font-size: #{$modular-scale-up4}rem;
   line-height: $modular-scale-up2;
 }
 
-h3, h3.title {
+h2, .title {
   font-size: #{$modular-scale-up2}rem;
   line-height: $modular-scale-up2;
 
@@ -56,9 +56,9 @@ h3, h3.title {
   }
 }
 
-h4 { font-size: #{$modular-scale-base}rem; }
+h3 { font-size: #{$modular-scale-base}rem; }
 
-h5 { font-size: #{$modular-scale-down2}rem; }
+h4 { font-size: #{$modular-scale-down2}rem; }
 
 ul, ol {
   padding: 0;
@@ -83,15 +83,15 @@ li {
 
   h1 { font-size: #{$modular-scale-up7}rem; }
 
-  h2 { font-size: #{$modular-scale-up5}rem; }
+  .page-title { font-size: #{$modular-scale-up5}rem; }
 
-  h3, h3.title { font-size: #{$modular-scale-up3}rem;
+  h2, .title { font-size: #{$modular-scale-up3}rem;
     .source { font-size: #{$modular-scale-base}rem; }
   }
 
-  h4 { font-size: #{$modular-scale-up1}rem; }
+  h3 { font-size: #{$modular-scale-up1}rem; }
 
-  h5 { font-size: #{$modular-scale-base}rem; }
+  h4 { font-size: #{$modular-scale-base}rem; }
 }
 
 @media (min-width: 700px) {

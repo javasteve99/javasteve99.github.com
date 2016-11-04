@@ -6,7 +6,7 @@ area: work
 
     <header class="page-header">
       <div class="container">
-        <h2>Work</h2>
+        <h1 class="page-title">Work</h1>
         <p>I lead teams that create products users truly need, while driving meaningful improvement in our clients&rsquo; businesses. Here&rsquo;s a small sample of the projects I&rsquo;ve led over the last few years. </p>
       </div><!-- end of .container -->
     </header><!-- end of .page-header -->
@@ -15,7 +15,7 @@ area: work
         <ul class="descriptions">
           {% for work in site.work %}
           <li>
-            <h3 class="title"><a href="{{ work.url }}">{{ work.title }}</a></h3>
+            <h2 class="title"><a href="{{ work.url }}">{{ work.title }}</a></h2>
           </li>
           {% endfor %}
         </ul>

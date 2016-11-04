@@ -404,21 +404,21 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 2.625rem; }
 
-h2 {
+.page-title {
   font-size: 2rem;
   line-height: 1.4375; }
 
-h3, h3.title {
+h2, .title {
   font-size: 1.4375rem;
   line-height: 1.4375; }
-  h3 .source, h3.title .source {
+  h2 .source, .title .source {
     font-size: 1.125rem;
     display: block; }
 
-h4 {
+h3 {
   font-size: 1.25rem; }
 
-h5 {
+h4 {
   font-size: 0.875rem; }
 
 ul, ol {
@@ -442,18 +442,18 @@ li {
   h1 {
     font-size: 3rem; }
 
-  h2 {
+  .page-title {
     font-size: 2.25rem; }
 
-  h3, h3.title {
+  h2, .title {
     font-size: 1.8rem; }
-    h3 .source, h3.title .source {
+    h2 .source, .title .source {
       font-size: 1.25rem; }
 
-  h4 {
+  h3 {
     font-size: 1.3125rem; }
 
-  h5 {
+  h4 {
     font-size: 1.25rem; } }
 @media (min-width: 700px) {
   p,
