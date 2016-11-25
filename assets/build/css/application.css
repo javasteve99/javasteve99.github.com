@@ -616,7 +616,7 @@ main {
   padding-top: 3%;
   padding-bottom: 4%;
   box-shadow: inset rgba(42, 50, 58, 0.2) 0 -2px 8px; }
-  .page-header p {
+  .page-header p:last-child {
     margin: 0; }
 
 /* Page Content

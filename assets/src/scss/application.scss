@@ -188,7 +188,7 @@ main { background-color: $lightest; } // restores normal background color for pa
   padding-bottom: 4%;
   box-shadow: inset rgba($dark, 0.2) 0 -2px 8px;
 
-  p {
+  p:last-child {
     margin: 0;
   }
 }

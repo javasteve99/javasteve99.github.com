@@ -7,6 +7,9 @@ layout: default
         <div class="container">
           <h1 class="page-title">{{ page.title }}</h1>
           <p>{{ page.date | date: "%B %d, %Y" }}</p>
+          {% if page.lede %}
+          <p>{{ page.lede }}</p>
+          {% endif %}
         </div><!-- end of .container -->
       </header><!-- end of .article-header -->
       <div class="page-content">
