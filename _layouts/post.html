@@ -15,7 +15,7 @@ layout: default
       <div class="page-content">
         <div class="container">
           {% if page.external-url %}
-          <p><em>This article was originally posted at <a href="{{ page.external-url }}">{{ page.external-source }}</a>.</em></p>
+          <p><em>The original text of this article can be found at: <br><a href="{{ page.external-url }}">{{ page.external-url }}</a></em></p>
           {% endif %}
           {{ content }}
         </div><!-- end of .container -->
