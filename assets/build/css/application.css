@@ -373,8 +373,8 @@ body {
 
 p, ul, ol {
   font-size: 0.875rem;
-  line-height: 1.8;
-  margin: 0 0 1.8em 0;
+  line-height: 1.4375;
+  margin: 0 0 1.4375em 0;
   width: 100%; }
 
 strong {
@@ -406,20 +406,24 @@ h1 {
 
 .page-title {
   font-size: 2rem;
-  line-height: 1.4375; }
+  line-height: 1.3125; }
 
 h2, .title {
   font-size: 1.4375rem;
   line-height: 1.4375; }
   h2 .source, .title .source {
-    font-size: 1.125rem;
+    font-size: 0.875rem;
     display: block; }
 
 h3 {
-  font-size: 1.25rem; }
+  font-size: 1.25rem;
+  line-height: 1.8rem;
+  margin-bottom: 0.875rem; }
 
 h4 {
-  font-size: 0.875rem; }
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  margin-bottom: 0.875rem; }
 
 ul, ol {
   padding: 0;
@@ -435,23 +439,26 @@ li {
   line-height: 1.4375;
   margin-bottom: 0.75rem; }
 
+.bulleted-list li {
+  margin-left: 1em; }
+
 @media (min-width: 500px) {
   p, ul, ol {
-    font-size: 1.25rem; }
+    font-size: 1.25rem;
+    line-height: 1.8;
+    margin: 0 0 1.8em 0; }
 
   h1 {
     font-size: 3rem; }
 
   .page-title {
-    font-size: 2.25rem; }
+    font-size: 3rem; }
 
   h2, .title {
     font-size: 1.8rem; }
-    h2 .source, .title .source {
-      font-size: 1.25rem; }
 
   h3 {
-    font-size: 1.3125rem; }
+    font-size: 1.4375rem; }
 
   h4 {
     font-size: 1.25rem; } }
@@ -517,14 +524,14 @@ main {
 .global-banner {
   box-shadow: rgba(42, 50, 58, 0.2) 0 2px 8px;
   background-color: #FFFFFF;
-  padding: 2% 0 3% 0;
+  padding: 2% 0 2% 0;
   position: relative;
   z-index: 2; }
   .global-banner h1 {
-    font-size: 2.25rem;
+    font-size: 1.4375rem;
     line-height: 1.3125;
     text-decoration: none;
-    margin-bottom: 0.5rem; }
+    margin-bottom: 0; }
     .global-banner h1 a {
       border-bottom-color: transparent; }
       .global-banner h1 a:hover {
@@ -532,14 +539,15 @@ main {
 
 .global-nav ul {
   list-style-type: none;
-  margin: 0 0 0 -0.25rem;
+  margin: 0;
+  margin-left: -0.5rem;
   max-width: 100%; }
 .global-nav li {
   display: inline-block;
-  margin: 0 0.75rem 0 0;
+  margin: 0 0.25rem;
   font-weight: bold;
   font-weight: 400;
-  font-size: 0.875rem; }
+  font-size: 0.75rem; }
 .global-nav a {
   display: inline-block;
   line-height: 1.5;
@@ -551,7 +559,9 @@ main {
 
 @media (min-width: 500px) {
   .global-banner h1 {
-    font-size: 2.625rem; } }
+    font-size: 1.8rem; }
+  .global-banner .global-nav li {
+    font-size: 0.875rem; } }
 /* Global Footer
 ================================================================================ */
 .global-footer {
@@ -649,5 +659,24 @@ pre {
   margin: 0 0 2rem 0;
   box-shadow: rgba(42, 50, 58, 0.23) 0 2px 8px;
   padding: 0.5rem 1rem; }
+
+/* Experience Page
+================================================================================ */
+.experience section li {
+  font-size: 0.875rem; }
+
+.experience-section-title {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.075em;
+  margin-bottom: 1.125rem;
+  border-bottom: 2px solid #2A323A; }
+
+@media (min-width: 500px) {
+  .experience section li {
+    font-size: 1.125rem; }
+
+  .experience-section-title {
+    font-size: 1.125rem; } }
 
 /*# sourceMappingURL=application.css.map */

@@ -37,14 +37,14 @@ main { background-color: $lightest; } // restores normal background color for pa
 .global-banner {
   box-shadow: rgba($dark, 0.2) 0 2px 8px;
   background-color: $lightest;
-  padding: 2% 0 3% 0;
+  padding: 2% 0 2% 0;
   position: relative; z-index: 2; // make sure header shadow is over module below it
 
   h1 {
-    font-size: #{$modular-scale-up5}rem;
+    font-size: #{$modular-scale-up2}rem;
     line-height: $modular-scale-up1;
     text-decoration: none;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0;
 
     a {
       border-bottom-color: transparent;
@@ -59,16 +59,17 @@ main { background-color: $lightest; } // restores normal background color for pa
 .global-nav {
   ul {
     list-style-type: none;
-    margin: 0 0 0 -0.25rem;
+    margin: 0;
+    margin-left: -0.5rem;
     max-width: 100%;
   }
 
   li {
     display: inline-block;
-    margin: 0 0.75rem 0 0;
+    margin: 0 0.25rem;
     font-weight: bold;
     font-weight: 400;
-    font-size: #{$modular-scale-down2}rem;
+    font-size: #{$modular-scale-down3}rem;
   }
 
   a {
@@ -86,7 +87,12 @@ main { background-color: $lightest; } // restores normal background color for pa
 
 @media (min-width: 500px) {
   .global-banner {
-    h1 { font-size: #{$modular-scale-up6}rem; }
+
+    h1 { font-size: #{$modular-scale-up3}rem; }
+
+    .global-nav {
+      li { font-size: #{$modular-scale-down2}rem; }
+    }
   }
 }
 
@@ -237,4 +243,28 @@ pre {
   margin: 0 0 #{$modular-scale-up4}rem 0;
   box-shadow: rgba($dark, 0.23) 0 2px 8px;
   padding: 0.5rem 1rem;
+}
+
+
+/* Experience Page
+================================================================================ */
+.experience section li {
+  font-size: #{$modular-scale-down2}rem;
+}
+
+.experience-section-title {
+  font-size: #{$modular-scale-down2}rem;
+  text-transform: uppercase;
+  letter-spacing: 0.075em;
+  margin-bottom: #{$modular-scale-down1}rem;
+  border-bottom: 2px solid $dark-blue;
+}
+
+@media (min-width: 500px) {
+  .experience section li {
+    font-size: #{$modular-scale-down1}rem;
+  }
+  .experience-section-title {
+    font-size: #{$modular-scale-down1}rem;
+  }
 }

@@ -12,8 +12,8 @@ body {
 
 p, ul, ol {
   font-size: #{$modular-scale-down2}rem;
-  line-height: $modular-scale-up3;
-  margin: 0 0 #{$modular-scale-up3}em 0;
+  line-height: $modular-scale-up2;
+  margin: 0 0 #{$modular-scale-up2}em 0;
   width: 100%;
 }
 
@@ -43,7 +43,7 @@ h1 { font-size: #{$modular-scale-up6}rem; }
 
 .page-title {
   font-size: #{$modular-scale-up4}rem;
-  line-height: $modular-scale-up2;
+  line-height: $modular-scale-up1;
 }
 
 h2, .title {
@@ -51,14 +51,22 @@ h2, .title {
   line-height: $modular-scale-up2;
 
   .source {
-    font-size: #{$modular-scale-down1}rem;
+    font-size: #{$modular-scale-down2}rem;
     display: block;
   }
 }
 
-h3 { font-size: #{$modular-scale-base}rem; }
+h3 {
+  font-size: #{$modular-scale-base}rem;
+  line-height: #{$modular-scale-up3}rem;
+  margin-bottom: #{$modular-scale-down2}rem;
+}
 
-h4 { font-size: #{$modular-scale-down2}rem; }
+h4 {
+  font-size: #{$modular-scale-down2}rem;
+  line-height: #{$modular-scale-base}rem;
+  margin-bottom: #{$modular-scale-down2}rem;
+}
 
 ul, ol {
   padding: 0;
@@ -77,19 +85,25 @@ li {
   margin-bottom: #{$modular-scale-down3}rem;
 }
 
+.bulleted-list li {
+  margin-left: 1em;
+}
+
 @media (min-width: 500px) {
 
-  p, ul, ol { font-size: #{$modular-scale-base}rem; }
+  p, ul, ol {
+    font-size: #{$modular-scale-base}rem;
+    line-height: $modular-scale-up3;
+    margin: 0 0 #{$modular-scale-up3}em 0;
+  }
 
   h1 { font-size: #{$modular-scale-up7}rem; }
 
-  .page-title { font-size: #{$modular-scale-up5}rem; }
+  .page-title { font-size: #{$modular-scale-up7}rem; }
 
-  h2, .title { font-size: #{$modular-scale-up3}rem;
-    .source { font-size: #{$modular-scale-base}rem; }
-  }
+  h2, .title { font-size: #{$modular-scale-up3}rem; }
 
-  h3 { font-size: #{$modular-scale-up1}rem; }
+  h3 { font-size: #{$modular-scale-up2}rem; }
 
   h4 { font-size: #{$modular-scale-base}rem; }
 }
