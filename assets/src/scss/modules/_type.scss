@@ -24,11 +24,11 @@ cite { font-style: normal; }
 a {
   color: inherit;
   text-decoration: none;
-  border-bottom: 2px solid rgba($dark, 0.2);
-  transition: border-color 0.5s;
+  transition: all 0.5s;
+  background-image: linear-gradient(to bottom, transparent 70%, rgba($light, 0.6) 70%, rgba($light, 0.6) 90%, transparent 90%);
 
   &:hover {
-    border-color: $dark;
+    background-image: linear-gradient(to bottom, transparent 65%, $light 65%, $light 95%, transparent 95%);
   }
 }
 

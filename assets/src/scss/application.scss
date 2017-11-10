@@ -47,10 +47,10 @@ main { background-color: $lightest; } // restores normal background color for pa
     margin-bottom: 0;
 
     a {
-      border-bottom-color: transparent;
+      background-image: none;
 
       &:hover {
-        border-bottom-color: $dark;
+        background-image: linear-gradient(to bottom, transparent 65%, $light 65%, $light 95%, transparent 95%);
       }
     }
   }
@@ -77,10 +77,10 @@ main { background-color: $lightest; } // restores normal background color for pa
     line-height: 1.5;
     padding: 0 0.25rem;
     margin-bottom: 0.25rem;
-    border-color: $light;
+    background-image: linear-gradient(to bottom, transparent 60%, rgba($light, 0.6) 60%, rgba($light, 0.6) 80%, transparent 80%);
 
     &:hover {
-      border-color: $dark;
+      background-image: linear-gradient(to bottom, transparent 55%, $light 55%, $light 85%, transparent 85%);
     }
   }
 }
@@ -113,10 +113,10 @@ main { background-color: $lightest; } // restores normal background color for pa
   }
 
   a {
-    border-color: rgba($lightest, 0.2);
+    background-image: linear-gradient(to bottom, transparent 70%, rgba($lightest, 0.4) 70%, rgba($lightest, 0.4) 90%, transparent 90%);
 
     &:hover {
-      border-color: $lightest;
+      background-image: linear-gradient(to bottom, transparent 65%, rgba($lightest, 0.6) 65%, rgba($lightest, 0.6) 95%, transparent 95%);
     }
   }
 }
@@ -170,6 +170,14 @@ main { background-color: $lightest; } // restores normal background color for pa
   box-shadow:
     inset rgba($dark, 0.1) 0 2px 8px,
     inset rgba($dark, 0.2) 0 -2px 8px;
+
+  a {
+    background-image: linear-gradient(to bottom, transparent 70%, rgba($lightest, 0.5) 70%, rgba($lightest, 0.5) 90%, transparent 90%);
+
+    &:hover {
+      background-image: linear-gradient(to bottom, transparent 70%, rgba($lightest, 0.75) 70%, rgba($lightest, 0.75) 90%, transparent 90%);
+    }
+  }
 }
 
 .contact {
