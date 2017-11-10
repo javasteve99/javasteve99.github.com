@@ -363,7 +363,7 @@ textarea {
 
 /* Type Styles ================================================================================== */
 body {
-  font-family: "Merriweather", sans-serif;
+  font-family: "Merriweather Sans", sans-serif;
   font-size: 100%;
   line-height: 2;
   font-style: normal;
@@ -379,7 +379,7 @@ p, ul, ol {
 
 strong {
   font-weight: bold;
-  font-weight: 400; }
+  font-weight: 700; }
 
 em {
   font-style: italic; }
@@ -399,7 +399,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
   font-weight: bold;
-  font-weight: 400; }
+  font-weight: 700; }
 
 h1 {
   font-size: 2.625rem; }
@@ -545,8 +545,6 @@ main {
 .global-nav li {
   display: inline-block;
   margin: 0 0.25rem;
-  font-weight: bold;
-  font-weight: 400;
   font-size: 0.75rem; }
 .global-nav a {
   display: inline-block;
