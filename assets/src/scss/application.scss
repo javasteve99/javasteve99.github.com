@@ -75,7 +75,7 @@ main { background-color: $lightest; } // restores normal background color for pa
     line-height: 1.5;
     padding: 0 0.25rem;
     margin-bottom: 0.25rem;
-    background-image: linear-gradient(to bottom, transparent 60%, rgba($light, 0.6) 60%, rgba($light, 0.6) 80%, transparent 80%);
+    background-image: linear-gradient(to bottom, transparent 60%, $light 60%, $light 80%, transparent 80%);
 
     &:hover {
       background-image: linear-gradient(to bottom, transparent 55%, $light 55%, $light 85%, transparent 85%);
@@ -111,10 +111,10 @@ main { background-color: $lightest; } // restores normal background color for pa
   }
 
   a {
-    background-image: linear-gradient(to bottom, transparent 70%, rgba($lightest, 0.4) 70%, rgba($lightest, 0.4) 90%, transparent 90%);
+    background-image: linear-gradient(to bottom, transparent 70%, rgba($lightest, 0.6) 70%, rgba($lightest, 0.6) 90%, transparent 90%);
 
     &:hover {
-      background-image: linear-gradient(to bottom, transparent 65%, rgba($lightest, 0.6) 65%, rgba($lightest, 0.6) 95%, transparent 95%);
+      background-image: linear-gradient(to bottom, transparent 65%, rgba($lightest, 0.8) 65%, rgba($lightest, 0.8) 95%, transparent 95%);
     }
   }
 }
@@ -170,10 +170,10 @@ main { background-color: $lightest; } // restores normal background color for pa
     inset rgba($dark, 0.2) 0 -2px 8px;
 
   a {
-    background-image: linear-gradient(to bottom, transparent 70%, rgba($lightest, 0.5) 70%, rgba($lightest, 0.5) 90%, transparent 90%);
+    background-image: linear-gradient(to bottom, transparent 70%, rgba($lightest, 0.75) 70%, rgba($lightest, 0.75) 90%, transparent 90%);
 
     &:hover {
-      background-image: linear-gradient(to bottom, transparent 70%, rgba($lightest, 0.75) 70%, rgba($lightest, 0.75) 90%, transparent 90%);
+      background-image: linear-gradient(to bottom, transparent 70%, $lightest 70%, $lightest 90%, transparent 90%);
     }
   }
 }

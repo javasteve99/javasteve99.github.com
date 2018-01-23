@@ -391,7 +391,7 @@ a {
   color: inherit;
   text-decoration: none;
   transition: all 0.5s;
-  background-image: linear-gradient(to bottom, transparent 70%, rgba(221, 235, 48, 0.6) 70%, rgba(221, 235, 48, 0.6) 90%, transparent 90%); }
+  background-image: linear-gradient(to bottom, transparent 70%, #DDEB30 70%, #DDEB30 90%, transparent 90%); }
   a:hover {
     background-image: linear-gradient(to bottom, transparent 65%, #DDEB30 65%, #DDEB30 95%, transparent 95%); }
 
@@ -551,7 +551,7 @@ main {
   line-height: 1.5;
   padding: 0 0.25rem;
   margin-bottom: 0.25rem;
-  background-image: linear-gradient(to bottom, transparent 60%, rgba(221, 235, 48, 0.6) 60%, rgba(221, 235, 48, 0.6) 80%, transparent 80%); }
+  background-image: linear-gradient(to bottom, transparent 60%, #DDEB30 60%, #DDEB30 80%, transparent 80%); }
   .global-nav a:hover {
     background-image: linear-gradient(to bottom, transparent 55%, #DDEB30 55%, #DDEB30 85%, transparent 85%); }
 
@@ -574,9 +574,9 @@ main {
     line-height: 1.8;
     width: 100%; }
   .global-footer a {
-    background-image: linear-gradient(to bottom, transparent 70%, rgba(255, 255, 255, 0.4) 70%, rgba(255, 255, 255, 0.4) 90%, transparent 90%); }
+    background-image: linear-gradient(to bottom, transparent 70%, rgba(255, 255, 255, 0.6) 70%, rgba(255, 255, 255, 0.6) 90%, transparent 90%); }
     .global-footer a:hover {
-      background-image: linear-gradient(to bottom, transparent 65%, rgba(255, 255, 255, 0.6) 65%, rgba(255, 255, 255, 0.6) 95%, transparent 95%); }
+      background-image: linear-gradient(to bottom, transparent 65%, rgba(255, 255, 255, 0.8) 65%, rgba(255, 255, 255, 0.8) 95%, transparent 95%); }
 
 /* Home Page
 ================================================================================ */
@@ -610,9 +610,9 @@ main {
   background: linear-gradient(to bottom, #DDEB30, #d2e216);
   box-shadow: inset rgba(42, 50, 58, 0.1) 0 2px 8px, inset rgba(42, 50, 58, 0.2) 0 -2px 8px; }
   .about-me a {
-    background-image: linear-gradient(to bottom, transparent 70%, rgba(255, 255, 255, 0.5) 70%, rgba(255, 255, 255, 0.5) 90%, transparent 90%); }
+    background-image: linear-gradient(to bottom, transparent 70%, rgba(255, 255, 255, 0.75) 70%, rgba(255, 255, 255, 0.75) 90%, transparent 90%); }
     .about-me a:hover {
-      background-image: linear-gradient(to bottom, transparent 70%, rgba(255, 255, 255, 0.75) 70%, rgba(255, 255, 255, 0.75) 90%, transparent 90%); }
+      background-image: linear-gradient(to bottom, transparent 70%, #FFFFFF 70%, #FFFFFF 90%, transparent 90%); }
 
 .contact ul {
   list-style-type: none; }
