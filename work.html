@@ -16,10 +16,12 @@ area: work
         {% assign projects = site.work | sort: 'sortOrder' %}
         <ul class="descriptions">
           {% for project in projects %}
+          {% if project.indexed == true %}
           <li>
             <h2 class="title"><a href="{{ project.url }}">{{ project.title }}</a></h2>
             <p>{{ project.description }}</p>
           </li>
+          {% endif %}
           {% endfor %}
         </ul>
       </div><!-- end of .container -->
