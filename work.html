@@ -13,15 +13,13 @@ area: work
     <div class="page-content">
       <div class="container">
         <p><em>Most of my recent work is heavy on prototyping and testing. You'll get a better sense of my visual design abilities by looking at my <a href="http://dribbble.com/stevehickeydesign" target="_blank">Dribbble account</a>.</em></p>
-        {% assign projects = site.work | sort: 'sortOrder' %}
+        {% assign projects = site.work | where: "indexed", true | sort: 'sortOrder' %}
         <ul class="descriptions">
           {% for project in projects %}
-          {% if project.indexed == true %}
           <li>
             <h2 class="title"><a href="{{ project.url }}">{{ project.title }}</a></h2>
             <p>{{ project.description }}</p>
           </li>
-          {% endif %}
           {% endfor %}
         </ul>
       </div><!-- end of .container -->
