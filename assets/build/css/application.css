@@ -10,13 +10,15 @@ html {
   -ms-text-size-adjust: 100%;
   /* 2 */
   -webkit-text-size-adjust: 100%;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * Remove the margin in all browsers (opinionated).
  */
 body {
-  margin: 0; }
+  margin: 0;
+}
 
 /* HTML5 display definitions
    ========================================================================== */
@@ -38,7 +40,8 @@ nav,
 section,
 summary {
   /* 1 */
-  display: block; }
+  display: block;
+}
 
 /**
  * Add the correct display in IE 9-.
@@ -47,20 +50,23 @@ audio,
 canvas,
 progress,
 video {
-  display: inline-block; }
+  display: inline-block;
+}
 
 /**
  * Add the correct display in iOS 4-7.
  */
 audio:not([controls]) {
   display: none;
-  height: 0; }
+  height: 0;
+}
 
 /**
  * Add the correct vertical alignment in Chrome, Firefox, and Opera.
  */
 progress {
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
 /**
  * Add the correct display in IE 10-.
@@ -68,7 +74,8 @@ progress {
  */
 template,
 [hidden] {
-  display: none; }
+  display: none;
+}
 
 /* Links
    ========================================================================== */
@@ -76,7 +83,8 @@ template,
  * Remove the gray background on active links in IE 10.
  */
 a {
-  background-color: transparent; }
+  background-color: transparent;
+}
 
 /**
  * Remove the outline on focused links when they are also active or hovered
@@ -84,7 +92,8 @@ a {
  */
 a:active,
 a:hover {
-  outline-width: 0; }
+  outline-width: 0;
+}
 
 /* Text-level semantics
    ========================================================================== */
@@ -98,27 +107,31 @@ abbr[title] {
   text-decoration: underline;
   /* 2 */
   text-decoration: underline dotted;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
  */
 b,
 strong {
-  font-weight: inherit; }
+  font-weight: inherit;
+}
 
 /**
  * Add the correct font weight in Chrome, Edge, and Safari.
  */
 b,
 strong {
-  font-weight: bolder; }
+  font-weight: bolder;
+}
 
 /**
  * Add the correct font style in Android 4.3-.
  */
 dfn {
-  font-style: italic; }
+  font-style: italic;
+}
 
 /**
  * Correct the font size and margin on `h1` elements within `section` and
@@ -126,20 +139,23 @@ dfn {
  */
 h1 {
   font-size: 2em;
-  margin: 0.67em 0; }
+  margin: 0.67em 0;
+}
 
 /**
  * Add the correct background and color in IE 9-.
  */
 mark {
   background-color: #ff0;
-  color: #000; }
+  color: #000;
+}
 
 /**
  * Add the correct font size in all browsers.
  */
 small {
-  font-size: 80%; }
+  font-size: 80%;
+}
 
 /**
  * Prevent `sub` and `sup` elements from affecting the line height in
@@ -150,13 +166,16 @@ sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
 sub {
-  bottom: -0.25em; }
+  bottom: -0.25em;
+}
 
 sup {
-  top: -0.5em; }
+  top: -0.5em;
+}
 
 /* Embedded content
    ========================================================================== */
@@ -164,13 +183,15 @@ sup {
  * Remove the border on images inside links in IE 10-.
  */
 img {
-  border-style: none; }
+  border-style: none;
+}
 
 /**
  * Hide the overflow in IE.
  */
 svg:not(:root) {
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 /* Grouping content
    ========================================================================== */
@@ -185,13 +206,15 @@ samp {
   font-family: monospace, monospace;
   /* 1 */
   font-size: 1em;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * Add the correct margin in IE 8.
  */
 figure {
-  margin: 1em 40px; }
+  margin: 1em 40px;
+}
 
 /**
  * 1. Add the correct box sizing in Firefox.
@@ -203,7 +226,8 @@ hr {
   height: 0;
   /* 1 */
   overflow: visible;
-  /* 2 */ }
+  /* 2 */
+}
 
 /* Forms
    ========================================================================== */
@@ -214,13 +238,15 @@ button,
 input,
 select,
 textarea {
-  font: inherit; }
+  font: inherit;
+}
 
 /**
  * Restore the font weight unset by the previous rule.
  */
 optgroup {
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 /**
  * Show the overflow in IE.
@@ -231,7 +257,8 @@ button,
 input,
 select {
   /* 2 */
-  overflow: visible; }
+  overflow: visible;
+}
 
 /**
  * Remove the margin in Safari.
@@ -242,7 +269,8 @@ input,
 select,
 textarea {
   /* 1 */
-  margin: 0; }
+  margin: 0;
+}
 
 /**
  * Remove the inheritance of text transform in Edge, Firefox, and IE.
@@ -251,22 +279,25 @@ textarea {
 button,
 select {
   /* 1 */
-  text-transform: none; }
+  text-transform: none;
+}
 
 /**
  * Change the cursor in all browsers (opinionated).
  */
 button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-  cursor: pointer; }
+[type=button],
+[type=reset],
+[type=submit] {
+  cursor: pointer;
+}
 
 /**
  * Restore the default cursor to disabled elements unset by the previous rule.
  */
 [disabled] {
-  cursor: default; }
+  cursor: default;
+}
 
 /**
  * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
@@ -274,11 +305,12 @@ button,
  * 2. Correct the inability to style clickable types in iOS.
  */
 button,
-html [type="button"],
-[type="reset"],
-[type="submit"] {
+html [type=button],
+[type=reset],
+[type=submit] {
   -webkit-appearance: button;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * Remove the inner border and padding in Firefox.
@@ -286,14 +318,16 @@ html [type="button"],
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 /**
  * Restore the focus styles unset by the previous rule.
  */
 button:-moz-focusring,
 input:-moz-focusring {
-  outline: 1px dotted ButtonText; }
+  outline: 1px dotted ButtonText;
+}
 
 /**
  * Change the border, margin, and padding in all browsers (opinionated).
@@ -301,7 +335,8 @@ input:-moz-focusring {
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em; }
+  padding: 0.35em 0.625em 0.75em;
+}
 
 /**
  * 1. Correct the text wrapping in Edge and IE.
@@ -321,45 +356,51 @@ legend {
   padding: 0;
   /* 3 */
   white-space: normal;
-  /* 1 */ }
+  /* 1 */
+}
 
 /**
  * Remove the default vertical scrollbar in IE.
  */
 textarea {
-  overflow: auto; }
+  overflow: auto;
+}
 
 /**
  * 1. Add the correct box sizing in IE 10-.
  * 2. Remove the padding in IE 10-.
  */
-[type="checkbox"],
-[type="radio"] {
+[type=checkbox],
+[type=radio] {
   box-sizing: border-box;
   /* 1 */
   padding: 0;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
-  height: auto; }
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
 
 /**
  * Correct the odd appearance of search inputs in Chrome and Safari.
  */
-[type="search"] {
-  -webkit-appearance: textfield; }
+[type=search] {
+  -webkit-appearance: textfield;
+}
 
 /**
  * Remove the inner padding and cancel buttons in Chrome on OS X and
  * Safari on OS X.
  */
-[type="search"]::-webkit-search-cancel-button,
-[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none; }
+[type=search]::-webkit-search-cancel-button,
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
 
 /* Type Styles ================================================================================== */
 body {
@@ -369,104 +410,131 @@ body {
   font-style: normal;
   font-weight: light;
   font-weight: 300;
-  color: #2A323A; }
+  color: #2A323A;
+}
 
 p, ul, ol {
   font-size: 0.875rem;
   line-height: 1.4375;
   margin: 0 0 1.4375em 0;
-  width: 100%; }
+  width: 100%;
+}
 
 strong {
   font-weight: bold;
-  font-weight: 700; }
+  font-weight: 700;
+}
 
 em {
-  font-style: italic; }
+  font-style: italic;
+}
 
 cite {
-  font-style: normal; }
+  font-style: normal;
+}
 
 a {
   color: inherit;
   text-decoration: none;
   transition: all 0.5s;
-  background-image: linear-gradient(to bottom, transparent 70%, #DDEB30 70%, #DDEB30 90%, transparent 90%); }
-  a:hover {
-    background-image: linear-gradient(to bottom, transparent 65%, #DDEB30 65%, #DDEB30 95%, transparent 95%); }
+  background-image: linear-gradient(to bottom, transparent 70%, #DDEB30 70%, #DDEB30 90%, transparent 90%);
+}
+a:hover {
+  background-image: linear-gradient(to bottom, transparent 65%, #DDEB30 65%, #DDEB30 95%, transparent 95%);
+}
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
   font-weight: bold;
-  font-weight: 700; }
+  font-weight: 700;
+}
 
 h1 {
-  font-size: 2.625rem; }
+  font-size: 2.625rem;
+}
 
 .page-title {
   font-size: 2rem;
-  line-height: 1.3125; }
+  line-height: 1.3125;
+}
 
 h2, .title {
   font-size: 1.4375rem;
-  line-height: 1.4375; }
-  h2 .source, .title .source {
-    font-size: 0.875rem;
-    display: block; }
+  line-height: 1.4375;
+}
+h2 .source, .title .source {
+  font-size: 0.875rem;
+  display: block;
+}
 
 h3 {
   font-size: 1.25rem;
   line-height: 1.8rem;
-  margin-bottom: 0.875rem; }
+  margin-bottom: 0.875rem;
+}
 
 h4 {
   font-size: 0.875rem;
   line-height: 1.25rem;
-  margin-bottom: 0.875rem; }
+  margin-bottom: 0.875rem;
+}
 
 ul, ol {
   padding: 0;
-  margin: 0 0 2em 0; }
+  margin: 0 0 2em 0;
+}
 
 ul ul,
 ul ol,
 ol ol,
 ol ul {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+}
 
 li {
   line-height: 1.4375;
-  margin-bottom: 0.75rem; }
+  margin-bottom: 0.75rem;
+}
 
 .bulleted-list li {
-  margin-left: 1em; }
+  margin-left: 1em;
+}
 
 @media (min-width: 500px) {
   p, ul, ol {
     font-size: 1.25rem;
     line-height: 1.8;
-    margin: 0 0 1.8em 0; }
+    margin: 0 0 1.8em 0;
+  }
 
   h1 {
-    font-size: 3rem; }
+    font-size: 3rem;
+  }
 
   .page-title {
-    font-size: 3rem; }
+    font-size: 3rem;
+  }
 
   h2, .title {
-    font-size: 1.8rem; }
+    font-size: 1.8rem;
+  }
 
   h3 {
-    font-size: 1.4375rem; }
+    font-size: 1.4375rem;
+  }
 
   h4 {
-    font-size: 1.25rem; } }
+    font-size: 1.25rem;
+  }
+}
 @media (min-width: 700px) {
   p,
-  ul,
-  ol {
-    max-width: 85.20408%; } }
+ul,
+ol {
+    max-width: 85.2040816327%;
+  }
+}
 /* Code Styles ================================================================================== */
 code,
 pre {
@@ -484,40 +552,49 @@ pre {
   -webkit-hyphens: none;
   -moz-hyphens: none;
   -ms-hyphens: none;
-  hyphens: none; }
+  hyphens: none;
+}
 
 pre {
   display: block;
-  overflow-x: auto; }
-  pre.scrollable {
-    max-height: 20em;
-    overflow-y: scroll; }
-  pre::-webkit-scrollbar {
-    height: 0;
-    opacity: 0.5; }
+  overflow-x: auto;
+}
+pre.scrollable {
+  max-height: 20em;
+  overflow-y: scroll;
+}
+pre::-webkit-scrollbar {
+  height: 0;
+  opacity: 0.5;
+}
 
 /* Global Styles ================================================================================ */
 html {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 *, *:before, *:after {
-  box-sizing: inherit; }
+  box-sizing: inherit;
+}
 
 body {
   margin: 0;
   padding: 0;
-  background-color: #191e22; }
+  background-color: #191e22;
+}
 
 main {
-  background-color: #FFFFFF; }
+  background-color: #FFFFFF;
+}
 
 .container {
   width: 100%;
   max-width: 54.5rem;
   margin: 0 auto;
-  padding: 0 1rem; }
+  padding: 0 1rem;
+}
 
 /* Global Header
 ================================================================================ */
@@ -526,40 +603,51 @@ main {
   background-color: #FFFFFF;
   padding: 2% 0 2% 0;
   position: relative;
-  z-index: 2; }
-  .global-banner h1 {
-    font-size: 1.4375rem;
-    line-height: 1.3125;
-    text-decoration: none;
-    margin-bottom: 0; }
-    .global-banner h1 a {
-      background-image: none; }
-      .global-banner h1 a:hover {
-        background-image: linear-gradient(to bottom, transparent 65%, #DDEB30 65%, #DDEB30 95%, transparent 95%); }
+  z-index: 2;
+}
+.global-banner h1 {
+  font-size: 1.4375rem;
+  line-height: 1.3125;
+  text-decoration: none;
+  margin-bottom: 0;
+}
+.global-banner h1 a {
+  background-image: none;
+}
+.global-banner h1 a:hover {
+  background-image: linear-gradient(to bottom, transparent 65%, #DDEB30 65%, #DDEB30 95%, transparent 95%);
+}
 
 .global-nav ul {
   list-style-type: none;
   margin: 0;
   margin-left: -0.5rem;
-  max-width: 100%; }
+  max-width: 100%;
+}
 .global-nav li {
   display: inline-block;
   margin: 0 0.25rem;
-  font-size: 0.75rem; }
+  font-size: 0.75rem;
+}
 .global-nav a {
   display: inline-block;
   line-height: 1.5;
   padding: 0 0.25rem;
   margin-bottom: 0.25rem;
-  background-image: linear-gradient(to bottom, transparent 60%, #DDEB30 60%, #DDEB30 80%, transparent 80%); }
-  .global-nav a:hover {
-    background-image: linear-gradient(to bottom, transparent 55%, #DDEB30 55%, #DDEB30 85%, transparent 85%); }
+  background-image: linear-gradient(to bottom, transparent 60%, #DDEB30 60%, #DDEB30 80%, transparent 80%);
+}
+.global-nav a:hover {
+  background-image: linear-gradient(to bottom, transparent 55%, #DDEB30 55%, #DDEB30 85%, transparent 85%);
+}
 
 @media (min-width: 500px) {
   .global-banner h1 {
-    font-size: 1.8rem; }
+    font-size: 1.8rem;
+  }
   .global-banner .global-nav li {
-    font-size: 0.875rem; } }
+    font-size: 0.875rem;
+  }
+}
 /* Global Footer
 ================================================================================ */
 .global-footer {
@@ -567,16 +655,20 @@ main {
   background: #2A323A;
   background: linear-gradient(to bottom, #2A323A, #191e22);
   box-shadow: inset black 0 4px 8px -2px;
-  color: #FFFFFF; }
-  .global-footer p {
-    margin: 0;
-    font-size: 0.875rem;
-    line-height: 1.8;
-    width: 100%; }
-  .global-footer a {
-    background-image: linear-gradient(to bottom, transparent 70%, rgba(255, 255, 255, 0.6) 70%, rgba(255, 255, 255, 0.6) 90%, transparent 90%); }
-    .global-footer a:hover {
-      background-image: linear-gradient(to bottom, transparent 65%, rgba(255, 255, 255, 0.8) 65%, rgba(255, 255, 255, 0.8) 95%, transparent 95%); }
+  color: #FFFFFF;
+}
+.global-footer p {
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.8;
+  width: 100%;
+}
+.global-footer a {
+  background-image: linear-gradient(to bottom, transparent 70%, rgba(255, 255, 255, 0.6) 70%, rgba(255, 255, 255, 0.6) 90%, transparent 90%);
+}
+.global-footer a:hover {
+  background-image: linear-gradient(to bottom, transparent 65%, rgba(255, 255, 255, 0.8) 65%, rgba(255, 255, 255, 0.8) 95%, transparent 95%);
+}
 
 /* Home Page
 ================================================================================ */
@@ -586,40 +678,52 @@ main {
   background-image: url("../img/bio-photo.png");
   background-repeat: no-repeat;
   background-position: center bottom;
-  background-size: 70%; }
-  .intro .container p {
-    margin: 0;
-    max-width: 100%; }
+  background-size: 70%;
+}
+.intro .container p {
+  margin: 0;
+  max-width: 100%;
+}
 
 @media (min-width: 650px) {
   .home .global-banner {
-    margin-bottom: -3%; }
+    margin-bottom: -3%;
+  }
 
   .intro .container {
     padding-top: 10%;
     padding-bottom: 10%;
     padding-right: 30%;
     background-size: 40%;
-    background-position: right bottom; } }
+    background-position: right bottom;
+  }
+}
 .about-me,
 .contact {
-  padding: 4% 0 3% 0; }
+  padding: 4% 0 3% 0;
+}
 
 .about-me {
   background: #DDEB30;
   background: linear-gradient(to bottom, #DDEB30, #d2e216);
-  box-shadow: inset rgba(42, 50, 58, 0.1) 0 2px 8px, inset rgba(42, 50, 58, 0.2) 0 -2px 8px; }
-  .about-me a {
-    background-image: linear-gradient(to bottom, transparent 70%, rgba(255, 255, 255, 0.75) 70%, rgba(255, 255, 255, 0.75) 90%, transparent 90%); }
-    .about-me a:hover {
-      background-image: linear-gradient(to bottom, transparent 70%, #FFFFFF 70%, #FFFFFF 90%, transparent 90%); }
+  box-shadow: inset rgba(42, 50, 58, 0.1) 0 2px 8px, inset rgba(42, 50, 58, 0.2) 0 -2px 8px;
+}
+.about-me a {
+  background-image: linear-gradient(to bottom, transparent 70%, rgba(255, 255, 255, 0.75) 70%, rgba(255, 255, 255, 0.75) 90%, transparent 90%);
+}
+.about-me a:hover {
+  background-image: linear-gradient(to bottom, transparent 70%, #FFFFFF 70%, #FFFFFF 90%, transparent 90%);
+}
 
 .contact ul {
-  list-style-type: none; }
+  list-style-type: none;
+}
 
 @media (min-width: 900px) {
   .intro .container {
-    padding-right: 400px; } }
+    padding-right: 400px;
+  }
+}
 /* Page Header
 ================================================================================ */
 .page-header {
@@ -627,58 +731,74 @@ main {
   background: linear-gradient(to bottom, #DDEB30, #d2e216);
   padding-top: 3%;
   padding-bottom: 4%;
-  box-shadow: inset rgba(42, 50, 58, 0.2) 0 -2px 8px; }
-  .page-header p:last-child {
-    margin: 0; }
+  box-shadow: inset rgba(42, 50, 58, 0.2) 0 -2px 8px;
+}
+.page-header p:last-child {
+  margin: 0;
+}
 
 /* Page Content
 ================================================================================ */
 .page-content {
   padding-top: 4%;
-  padding-bottom: 4%; }
+  padding-bottom: 4%;
+}
 
 .descriptions {
-  list-style-type: none; }
-  .descriptions p {
-    margin: 0; }
-  .descriptions li {
-    margin-bottom: 2rem; }
+  list-style-type: none;
+}
+.descriptions p {
+  margin: 0;
+}
+.descriptions li {
+  margin-bottom: 2rem;
+}
 
 figure {
   margin: 0 0 2rem 0;
-  box-shadow: rgba(42, 50, 58, 0.2) 0 2px 8px; }
-  figure img {
-    display: block;
-    width: 100%;
-    max-width: 100%; }
-  figure figcaption {
-    padding: 1rem; }
-    figure figcaption p {
-      margin: 0;
-      font-size: 0.875rem; }
+  box-shadow: rgba(42, 50, 58, 0.2) 0 2px 8px;
+}
+figure img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+figure figcaption {
+  padding: 1rem;
+}
+figure figcaption p {
+  margin: 0;
+  font-size: 0.875rem;
+}
 
 pre {
   margin: 0 0 2rem 0;
   box-shadow: rgba(42, 50, 58, 0.23) 0 2px 8px;
-  padding: 0.5rem 1rem; }
+  padding: 0.5rem 1rem;
+}
 
 /* Experience Page
 ================================================================================ */
 .experience section li {
-  font-size: 0.875rem; }
+  font-size: 0.875rem;
+}
 
 .experience-section-title {
   font-size: 0.875rem;
   text-transform: uppercase;
   letter-spacing: 0.075em;
   margin-bottom: 1.125rem;
-  border-bottom: 2px solid #2A323A; }
+  border-bottom: 2px solid #2A323A;
+}
 
 @media (min-width: 500px) {
   .experience section li {
-    font-size: 1.125rem; }
+    font-size: 1.125rem;
+  }
 
   .experience-section-title {
-    font-size: 1.125rem; } }
+    font-size: 1.125rem;
+  }
+}
 
 /*# sourceMappingURL=application.css.map */
