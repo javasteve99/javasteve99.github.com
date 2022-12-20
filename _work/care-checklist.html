@@ -13,9 +13,9 @@ indexed: true
 
 <p>When I worked at Virgin Pulse the pitch was that we were a workplace wellbeing platform that incentivized employees to engage in healthy habits to improve their health outcomes and lower healthcare spend. Over the course of my time there we aspired to be thought of more by client HR departments as essential inputs to the healthcare component of that pitch.</p>
 
-<p>One of our first efforts was around a problem described as "gaps in care". Simply put, people frequently miss the preventive care that helps them stay far ahead of expensive health problems (annual physicals, flu shots, dental appointments, etc). They are covered by insurance, low cost, and immensely preventive.</p>
+<p>One of our first efforts was around a problem described as <a href="https://www.springbuk.com/blogs/what-is-gap-in-care" target="_blank">gaps in care</a>. Simply put, people frequently miss the recommended preventive care that helps them stay far ahead of expensive health problems (annual physicals, flu shots, dental appointments, etc). They are covered by insurance, low cost, and immensely preventive.</p>
 
-<p>Getting users to make these appointments into a habit could lower personal healthcare spend and that of <em>self-insured</em> employers. These are employers which take on the cost of the benefits, using the insurance company for admin. They have a direct incentive to limit costs, and gaps in care are considered to be pretty low-hanging fruit. Proving we could improve health and reduce spend would be the first step in shifting our value proposition.</p>
+<p>Getting users to make these appointments into a habit could lower personal healthcare spend and that of <a href="https://www.verywellhealth.com/what-is-self-insured-health-insurance-and-how-is-it-regulated-4688567" target="_blank">self-insured employers</a>. These are employers which take on the cost of the benefits, using the insurance company for admin. They have a direct incentive to limit costs, and gaps in care are considered to be pretty low-hanging fruit. Proving we could improve health and reduce spend would be the first step in shifting our value proposition.</p>
 
 <p>Through an acquisition we became able to read insurance events for self-insured companys that allowed it. This capability would power our solution.</p>
 
@@ -23,7 +23,21 @@ indexed: true
 
 <p>A major concern was whether or not the feature was thought to be creepy. Users would be getting alerts about things they probably didn't think we should be able to know about. At the time we were designing this feature there had been many prominent data breaches and we worried the sensitivity of this information would be top of mind for users.</p>
 
+<figure>
+  <img src="/assets/build/img/work/care-checklist-survey-questions.png" alt="An image of slides from my presentation on a member survey conducted during discovery on this feature." />
+  <figcaption>
+    <p>These are some question results showing how members felt about what we dubbed the "creepy problem" during our discovery research. You can see the <a href="/assets/build/img/work/Gaps-In-Care-Member-Survey-Analysis.pdf" target="_blank">full presentation here.</a></p>
+  </figcaption>
+</figure>
+
 <p>User interviews showed us that while users had a general concern about security and their data, most had a positive reaction to being placed in control of that data and consenting to how it would be used. </p>
+
+<figure>
+  <img src="/assets/build/img/work/care-checklist-interview-themes.png" alt="An image of slides from my presentation on member interviews conducted during discovery on this feature." />
+  <figcaption>
+    <p>These are some themes and ideas developed from interviewing members. You can see the <a href="/assets/build/img/work/Gaps-In-Care-Member-Interview-Learnings.pdf" target="_blank">full presentation here.</a></p>
+  </figcaption>
+</figure>
 
 <h2>Reframing the Problem</h2>
 
@@ -33,17 +47,26 @@ indexed: true
 
 <h2>Proposed Approach</h2>
 
+<figure>
+  <img src="/assets/build/img/work/care-checklist-approach-presentation.png" alt="An image of slides from my presentation on our proposed design approach." />
+  <figcaption>
+    <p>These are some slides from my presentation on the proposed design approach. You can see the <a href="/assets/build/img/work/Gaps-In-Care-Approach-r2.pdf" target="_blank">full presentation here.</a></p>
+  </figcaption>
+</figure>
+
 <p>I advocated for designing the feature with a focus on "privacy first", something I advocated to be rolled out across similar products as Virgin Pulse moved further towards healthcare. Users should never be uncertain about their privacy as the platform changed from a game to something more vital.</p>
 
 <p>When activated, the feature would not surface any data or knowledge of events to a user the first time. Instead it would explain the feature, our security approach, and their options. Users would be allowed to opt-in to the feature and explore their concerns about their data further. It was stated directly to users that their employers could not see or monitor this information, and they could keep the feature off if they were concerned.</p>
 
 <p>Using insurance data we would identify if and when employees had engaged in regular annual preventive care and chronic condition care, create reminders for that care, surface the reminders at intervals appropriate to their insurance coverage, and reward them for following through using the existing program rewards structure. At every point of contact we would look for opportunities to remind users their data was safe and give them access to control over the use of the data.</p>
 
+<p>I sold this solution by putting together a video of a pretend usability session <a href="/assets/build/img/work/my-care-plan-demo.mp4" download>(link will download video file)</a> with a user running through the new feature for the first time. The script I used was drawn from imagined responses based on our user interview feedback and the first draft of the solution we were proposing. While this was obviously staged, it turned out to be a compelling solution to selling the vision to product leadership, and they bought into the approach enthusiastically.</p>
+
 <h2>Design Solution</h2>
 
 <p>Discovery led me to an initial solution based on two main parts of the experience: the feature introduction flow, and the screening and rewards flow.</p>
 
-<p>The feature introduction focused on the health and financial benefits to the participant, how seriously we took security and privacy, and introducing them to the controls they would have over their data.</p>
+<p>The feature introduction focused on the health and financial benefits to the member, how seriously we took security and privacy, and introducing them to the controls they would have over their data.</p>
 
 <p><a href="/assets/build/prototypes/care-checklist-intro-security" target="_blank">Click here for the feature intro and security prototype</a>.</p>
 
@@ -51,7 +74,7 @@ indexed: true
   <img src="/assets/build/img/work/care-checklist-security.png" alt="An image of various mobile screens in the security flow." />
 </figure>
 
-<p>Screening and rewards focused on using insurance data to notify participants of gaps at the right time and asking them to confirm their participation. Confirmation would produce points in the app's rewards game, and move the participant towards fully checking off their health goals for the year.</p>
+<p>Screening and rewards focused on using insurance data to notify members of gaps at the right time and asking them to confirm their participation. Confirmation would produce points in the app's rewards game, and move the member towards fully checking off their health goals for the year.</p>
 
 <p><a href="/assets/build/prototypes/care-checklist-screenings-rewards" target="_blank">Click here for the screening and rewards prototype</a>.</p>
 
