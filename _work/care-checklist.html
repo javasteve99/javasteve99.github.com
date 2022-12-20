@@ -11,58 +11,67 @@ indexed: true
 
 <h2>Problem</h2>
 
+<p>When I worked at Virgin Pulse the pitch was that we were a workplace wellbeing platform that incentivized employees to engage in healthy habits to improve their health outcomes and lower healthcare spend. Over the course of my time there we aspired to be thought of more by client HR departments as essential inputs to the healthcare component of that pitch.</p>
+
+<p>One of our first efforts was around a problem described as "gaps in care". Simply put, people frequently miss the preventive care that helps them stay far ahead of expensive health problems (annual physicals, flu shots, dental appointments, etc). They are covered by insurance, low cost, and immensely preventive.</p>
+
+<p>Getting users to make these appointments into a habit could lower personal healthcare spend and that of <em>self-insured</em> employers. These are employers which take on the cost of the benefits, using the insurance company for admin. They have a direct incentive to limit costs, and gaps in care are considered to be pretty low-hanging fruit. Proving we could improve health and reduce spend would be the first step in shifting our value proposition.</p>
+
+<p>Through an acquisition we became able to read insurance events for self-insured companys that allowed it. This capability would power our solution.</p>
+
 <h2>Discovery</h2>
+
+<p>A major concern was whether or not the feature was thought to be creepy. Users would be getting alerts about things they probably didn't think we should be able to know about. At the time we were designing this feature there had been many prominent data breaches and we worried the sensitivity of this information would be top of mind for users.</p>
+
+<p>User interviews showed us that while users had a general concern about security and their data, most had a positive reaction to being placed in control of that data and consenting to how it would be used. </p>
 
 <h2>Reframing the Problem</h2>
 
+<p>The business problem was pretty directly about saving money for our customers, but the feature was thought by the business strategists to be one simple enough that we would certainly solve that problem. As the discovery and design lead for the work I wanted to make sure the product team focused on users and privacy. Users needs to see the benefit for them (better health and lower costs) and understand their privacy was safe (their employers could not see the health events in the feature).</p>
+
+<p>Furthermore, to fit into our product cleanly the feature had to be organized around incentives and creating healthy habits. We hypothesized this would help it be more successful since it would feel less like it had come out of left field.</p>
+
 <h2>Proposed Approach</h2>
 
-<h2>Designing a Solution</h2>
+<p>I advocated for designing the feature with a focus on "privacy first", something I advocated to be rolled out across similar products as Virgin Pulse moved further towards healthcare. Users should never be uncertain about their privacy as the platform changed from a game to something more vital.</p>
 
-<h2>Impact</h2>
+<p>When activated, the feature would not surface any data or knowledge of events to a user the first time. Instead it would explain the feature, our security approach, and their options. Users would be allowed to opt-in to the feature and explore their concerns about their data further. It was stated directly to users that their employers could not see or monitor this information, and they could keep the feature off if they were concerned.</p>
 
-<h2>Lessons Learned</h2>
+<p>Using insurance data we would identify if and when employees had engaged in regular annual preventive care and chronic condition care, create reminders for that care, surface the reminders at intervals appropriate to their insurance coverage, and reward them for following through using the existing program rewards structure. At every point of contact we would look for opportunities to remind users their data was safe and give them access to control over the use of the data.</p>
 
-<h2>Background</h2>
+<h2>Design Solution</h2>
 
-<p>Virgin Pulse is a workplace wellbeing platform that incentivizes employees to engage in healthy habits to improve their health outcomes and lower healthcare spend. While there I worked on the alpha version of the Care Checklist. The goal of the feature was seemingly simple: get users to keep up with the preventive and chronic care that would help them stay healthy. But this is healthcare, and nothing is simple... </p>
+<p>Discovery led me to an initial solution based on two main parts of the experience: the feature introduction flow, and the screening and rewards flow.</p>
 
-<h2>Challenge 1: Knowing What Users Need To Do and Getting Them To Do It</h2>
+<p>The feature introduction focused on the health and financial benefits to the participant, how seriously we took security and privacy, and introducing them to the controls they would have over their data.</p>
 
-<p>Prior to this feature Virgin Pulse's platform was based on the premise that getting users to engage in daily healthy habits was an avenue towards longer-term health. But they aspired to move beyond personal fitness and towards healthcare.</p>
-
-<p>The program was often purchased for client company employees alongside their insurance offerings. Through an acquisition Virgin Pulse became able to read insurance events for self-insured client companys that allowed the configuration. The question became what to do with that capability.</p>
-
-<p>We decided to tackle something known as "gaps in care", ie people missing the regular care that helps them stay far ahead of eventual health problems. Things like annual physicals, flu shots and dental appointments are usually well covered by insurance, relatively low cost, and have the power to prevent future problems. And they're supposed to be habitual, which was the Virgin Pulse platform's secret sauce.</p>
-
-<h3>Solution</h3>
-
-<figure>
-  <img src="/assets/build/img/work/care-checklist-screenings-rewards.png" alt="An image of various mobile screens in the care confirmation and reward process." />
-</figure>
-
-<p>By using allowed insurance data we could identify if and when employees had engaged in regular annual preventive care and chronic condition care, create reminders for that care, surface the reminders at intervals appropriate to their insurance coverage, and reward them for following through using the existing program rewards structure.</p>
-
-<p><a href="/assets/build/prototypes/care-checklist-screenings-rewards" target="_blank">Click here for the screening and rewards prototype</a>.</p>
-
-<h2>Challenge 2: The Creepy Factor</h2>
-
-<p>One major concern was whether or not users would find the feature to be "creepy". All of a sudden they would be getting alerts about things they probably didn't think we should be able to know about. At the time we were designing this feature there had been many prominent data breaches and we worried the sensitivity of this information would be top of mind for users.</p>
-
-<h3>Solution</h3>
+<p><a href="/assets/build/prototypes/care-checklist-intro-security" target="_blank">Click here for the feature intro and security prototype</a>.</p>
 
 <figure>
   <img src="/assets/build/img/work/care-checklist-security.png" alt="An image of various mobile screens in the security flow." />
 </figure>
 
-<p>A series of user interviews showed us that while users had a general concern about security and their data being used against them, most had a positive reaction to being put in control of that data and consenting to how it would be used. We ended up designing the feature with an eye towards "privacy first", an approach I advocated to be rolled out across similar products as Virgin Pulse moved further towards healthcare.</p>
+<p>Screening and rewards focused on using insurance data to notify participants of gaps at the right time and asking them to confirm their participation. Confirmation would produce points in the app's rewards game, and move the participant towards fully checking off their health goals for the year.</p>
 
-<p>When activated, the feature would not surface any data or knowledge of events to a user the first time. Instead it would explain the feature, our security approach, and their options. Users would be allowed to opt-in to the feature and explore their concerns about their data further. It was made clear to users that their employers could not see or monitor this information, and they could keep the feature off if they were concerned.</p>
+<p><a href="/assets/build/prototypes/care-checklist-screenings-rewards" target="_blank">Click here for the screening and rewards prototype</a>.</p>
 
-<p><a href="/assets/build/prototypes/care-checklist-intro-security" target="_blank">Click here for the feature intro and security prototype</a>.</p>
+<figure>
+  <img src="/assets/build/img/work/care-checklist-screenings-rewards.png" alt="An image of various mobile screens in the care confirmation and reward process." />
+</figure>
 
-<h2>Final Thoughts</h2>
+<h2>Impact & Lessons Learned</h2>
 
-<p>This project afforded me a fairly unique opportunity: to lead research, concepting and execution through every step as the primary responsible party. The feature was assumed to be "easy" when first started due to the data from the acquired company that would make it possible. I was largely left to my own devices to create it, and chose to do extensive user research, background research, and strategy definition rather than go along with the expectation that I would just "toss a few screens together". I also worked closely with the company's privacy lawyer to understand the legal ramifications of what we were proposing, and with security and privacy experts.</p>
+<p>This project afforded me the opportunity to lead research, concepting and execution through every step as the primary responsible person. The feature was assumed to be "easy" when I first started due to the data from the acquired company that would make it possible. I was largely left to my own devices to conceive it, and chose to do extensive user research, background research, and strategy definition rather than go along with the origial expectation that I would just "toss a few screens together". I also worked closely with the company's privacy lawyer to understand the legal ramifications of what we were proposing, and with security and privacy experts.</p>
 
-<p>My research and presentations were key in revealing to the company that this was going to be a much bigger swing than ultimately estimated, and in moving resources to bear on the problem. My strategy work and user research also moved the product org towards considering the feature from a privacy-first standpoint, something I was particularly proud of. Unfortunately, I left the company before the feature was launched, but my understanding from speaking with people who were there after me was that other features were approached with the same concerns due to the research I had done.</p>
+<p>My research and presentations were key in revealing to the company that this was going to be a much bigger swing than ultimately estimated, and in moving resources to the problem. My strategy work and user research also shifted the product org towards considering the feature and the platform through a privacy-first lens, something I am particularly proud of.</p>
+
+<p> Unfortunately, I left the company before the feature was launched. However in speaking with former coworkers and seeing how the company's messaging and features have shifted since I left it's apparent that my work laid a crucial foundation. Privacy and control messaging is visible throughout features with advanced data utilization and the idea of closing care gaps seems to be integrated across features rather than constrained within the original feature design.</p>
+
+<figure>
+  <img src="/assets/build/img/work/care-checklist-future-prompts.png" alt="An image of a more recent feature incorporating the gaps in care concept." />
+  <figcaption>
+    <p>This is a screen from the current iteration of the app showing gaps in care prompts incorporated into direct coaching. This image is <em>not</em> my work, just a demonstration of the feature's evolution and impact beyond my work.</p>
+  </figcaption>
+</figure>
+
+<p>As the first feature in Virgin Pulse's migration towards healthcare engagement and navigation my work seems to have set a good tone for what has followed.</p>
