@@ -3,11 +3,31 @@
 // Color scheme
 $dark-blue:           #2A323A;
 $light-green:         #DDEB30;
+$bi-pink:             #D60270;
+$bi-purple:           #9B4F96;
+$bi-blue:             #0038A8;
 $lightest:            #FFFFFF;
-$dark:                $dark-blue;
-$light:               $light-green;
-$dark-gradient:       linear-gradient(to bottom, $dark, darken($dark, 8%));
-$light-gradient:      linear-gradient(to bottom, $light, darken($light, 7%));
+
+// default theme
+$dark:                     $dark-blue;
+$light:                    $light-green;
+$dark-gradient:            linear-gradient(to bottom, $dark, darken($dark, 8%));
+$light-gradient:           linear-gradient(to bottom, $light, darken($light, 7%));
+$top-box-shadow:           rgba($dark, 0.15) 0 2px 8px;
+$bottom-box-shadow:        rgba($dark, 0.15) 0 -2px 8px;
+$light-bg-link-line:       linear-gradient(to bottom, transparent 70%, $light 70%, $light 90%, transparent 90%);
+$light-bg-link-line-hover: linear-gradient(to bottom, transparent 65%, $light 65%, $light 95%, transparent 95%);
+$mid-bg-link-line:         linear-gradient(to bottom, transparent 70%, rgba($lightest, 0.7) 70%, rgba($lightest, 0.7) 90%, transparent 90%);
+$mid-bg-link-line-hover:   linear-gradient(to bottom, transparent 65%, rgba($lightest, 0.8) 65%, rgba($lightest, 0.8) 95%, transparent 95%);
+$dark-bg-link-line:        linear-gradient(to bottom, transparent 70%, rgba($lightest, 0.3) 70%, rgba($lightest, 0.3) 90%, transparent 90%);
+$dark-bg-link-line-hover:  linear-gradient(to bottom, transparent 65%, rgba($lightest, 0.4) 65%, rgba($lightest, 0.4) 95%, transparent 95%);
+
+// bi theme 
+$bi-gradient:                 linear-gradient(160deg, $bi-pink 25%, $bi-purple 50%, $bi-blue 75%);
+$bi-light-bg-link-line:       linear-gradient(to bottom, transparent 70%, rgba($bi-purple, 0.3) 70%, rgba($bi-purple, 0.3) 90%, transparent 90%);
+$bi-light-bg-link-line-hover: linear-gradient(to bottom, transparent 65%, rgba($bi-purple, 0.3) 65%, rgba($bi-purple, 0.3) 95%, transparent 95%);
+
+// Other effects
 
 // Modular Scale : 16 @ 1.618 and 23 @ 1.618
 $modular-scale-up11:  5.25;   // 84px

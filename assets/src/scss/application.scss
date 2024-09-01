@@ -20,10 +20,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: darken($dark, 8%); // fakes footer getting taller for short pages
 }
-
-main { background-color: $lightest; } // restores normal background color for page
 
 .container {
   width: 100%;
@@ -35,8 +32,6 @@ main { background-color: $lightest; } // restores normal background color for pa
 /* Global Header
 ================================================================================ */
 .global-banner {
-  box-shadow: rgba($dark, 0.2) 0 2px 8px;
-  background-color: $lightest;
   padding: 2% 0 2% 0;
   position: relative; z-index: 2; // make sure header shadow is over module below it
 
@@ -45,14 +40,6 @@ main { background-color: $lightest; } // restores normal background color for pa
     line-height: $modular-scale-up1;
     text-decoration: none;
     margin-bottom: 0;
-
-    a {
-      background-image: none;
-
-      &:hover {
-        background-image: linear-gradient(to bottom, transparent 65%, $light 65%, $light 95%, transparent 95%);
-      }
-    }
   }
 }
 
@@ -75,11 +62,6 @@ main { background-color: $lightest; } // restores normal background color for pa
     line-height: 1.5;
     padding: 0 0.25rem;
     margin-bottom: 0.25rem;
-    background-image: linear-gradient(to bottom, transparent 60%, $light 60%, $light 80%, transparent 80%);
-
-    &:hover {
-      background-image: linear-gradient(to bottom, transparent 55%, $light 55%, $light 85%, transparent 85%);
-    }
   }
 }
 
@@ -98,24 +80,12 @@ main { background-color: $lightest; } // restores normal background color for pa
 ================================================================================ */
 .global-footer {
   padding: 2% 0;
-  background: $dark;
-  background: $dark-gradient;
-  box-shadow: inset darken($dark, 50%) 0 4px 8px -2px;
-  color: $lightest;
 
   p {
     margin: 0;
     font-size: #{$modular-scale-down2}rem;
     line-height: $modular-scale-up3;
     width: 100%;
-  }
-
-  a {
-    background-image: linear-gradient(to bottom, transparent 70%, rgba($lightest, 0.6) 70%, rgba($lightest, 0.6) 90%, transparent 90%);
-
-    &:hover {
-      background-image: linear-gradient(to bottom, transparent 65%, rgba($lightest, 0.8) 65%, rgba($lightest, 0.8) 95%, transparent 95%);
-    }
   }
 }
 
@@ -162,22 +132,6 @@ main { background-color: $lightest; } // restores normal background color for pa
   padding: 4% 0 3% 0;
 }
 
-.about-me {
-  background: $light;
-  background: $light-gradient;
-  box-shadow:
-    inset rgba($dark, 0.1) 0 2px 8px,
-    inset rgba($dark, 0.2) 0 -2px 8px;
-
-  a {
-    background-image: linear-gradient(to bottom, transparent 70%, rgba($lightest, 0.75) 70%, rgba($lightest, 0.75) 90%, transparent 90%);
-
-    &:hover {
-      background-image: linear-gradient(to bottom, transparent 70%, $lightest 70%, $lightest 90%, transparent 90%);
-    }
-  }
-}
-
 .contact {
   ul {
     list-style-type: none;
@@ -194,11 +148,8 @@ main { background-color: $lightest; } // restores normal background color for pa
 /* Page Header
 ================================================================================ */
 .page-header {
-  background: $light;
-  background: $light-gradient;
   padding-top: 3%;
   padding-bottom: 4%;
-  box-shadow: inset rgba($dark, 0.2) 0 -2px 8px;
 
   p:last-child {
     margin: 0;
@@ -227,7 +178,6 @@ main { background-color: $lightest; } // restores normal background color for pa
 
 figure {
   margin: 0 0 #{$modular-scale-up4}rem 0;
-  box-shadow: rgba($dark, 0.2) 0 2px 8px;
 
   img {
     display: block;
@@ -247,7 +197,6 @@ figure {
 
 pre {
   margin: 0 0 #{$modular-scale-up4}rem 0;
-  box-shadow: rgba($dark, 0.23) 0 2px 8px;
   padding: 0.5rem 1rem;
 }
 
@@ -273,4 +222,36 @@ pre {
   .experience-section-title {
     font-size: #{$modular-scale-down1}rem;
   }
+}
+
+/* Themes
+================================================================================ */
+
+body { background-color: darken($dark, 8%); } // fakes footer getting taller for short pages
+main { background-color: $lightest; } // restores normal background color for page
+body { color: $dark; }
+a { color: inherit; text-decoration: none; transition: all 0.5s; }
+figure, pre { box-shadow: $top-box-shadow; }
+.global-banner { box-shadow: $top-box-shadow; background-color: $lightest; }
+
+.theme-default {
+  a {                   background-image: $light-bg-link-line; &:hover { background-image: $light-bg-link-line-hover } }
+  .global-banner h1 a { background-image: none;                &:hover { background-image: $light-bg-link-line-hover } }
+  .global-nav a {       background-image: $light-bg-link-line; &:hover { background-image: $light-bg-link-line-hover } }
+  .global-footer {      background: $dark; background: $dark-gradient; box-shadow: inset $top-box-shadow; color: $lightest; }
+  .global-footer a {    background-image: $dark-bg-link-line;  &:hover { background-image: $dark-bg-link-line-hover; } }
+  .about-me {           background: $light; background: $light-gradient; box-shadow: inset $top-box-shadow, inset $bottom-box-shadow; }
+  .about-me a {         background-image: $mid-bg-link-line;   &:hover { background-image: $mid-bg-link-line-hover; } }
+  .page-header {        background: $light; background: $light-gradient; box-shadow: inset $bottom-box-shadow; }
+}
+
+.theme-bi {
+  a {                   background-image: $bi-light-bg-link-line; &:hover { background-image: $bi-light-bg-link-line-hover } }
+  .global-banner h1 a { background-image: none;                   &:hover { background-image: $bi-light-bg-link-line-hover } }
+  .global-nav a {       background-image: $bi-light-bg-link-line; &:hover { background-image: $bi-light-bg-link-line-hover } }
+  .global-footer {      background: $dark; background: $dark-gradient; box-shadow: inset $top-box-shadow; color: $lightest; }
+  .global-footer a {    background-image: $dark-bg-link-line;     &:hover { background-image: $dark-bg-link-line-hover; } }
+  .about-me {           background: $bi-purple; background: $bi-gradient; box-shadow: inset $top-box-shadow, inset $bottom-box-shadow; color: $lightest; }
+  .about-me a {         background-image: $dark-bg-link-line;     &:hover { background-image: $dark-bg-link-line-hover; } }
+  .page-header {        bbackground: $bi-purple; background: $bi-gradient; box-shadow: inset $bottom-box-shadow; color: $lightest; }
 }

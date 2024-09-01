@@ -385,7 +385,6 @@ body {
   font-style: normal;
   font-weight: light;
   font-weight: 300;
-  color: #2A323A;
 }
 
 p, ul, ol {
@@ -406,16 +405,6 @@ em {
 
 cite {
   font-style: normal;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-  transition: all 0.5s;
-  background-image: linear-gradient(to bottom, transparent 70%, #DDEB30 70%, #DDEB30 90%, transparent 90%);
-}
-a:hover {
-  background-image: linear-gradient(to bottom, transparent 65%, #DDEB30 65%, #DDEB30 95%, transparent 95%);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -552,11 +541,6 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: #191e22;
-}
-
-main {
-  background-color: #FFFFFF;
 }
 
 .container {
@@ -569,8 +553,6 @@ main {
 /* Global Header
 ================================================================================ */
 .global-banner {
-  box-shadow: rgba(42, 50, 58, 0.2) 0 2px 8px;
-  background-color: #FFFFFF;
   padding: 2% 0 2% 0;
   position: relative;
   z-index: 2;
@@ -580,12 +562,6 @@ main {
   line-height: 1.3125;
   text-decoration: none;
   margin-bottom: 0;
-}
-.global-banner h1 a {
-  background-image: none;
-}
-.global-banner h1 a:hover {
-  background-image: linear-gradient(to bottom, transparent 65%, #DDEB30 65%, #DDEB30 95%, transparent 95%);
 }
 
 .global-nav ul {
@@ -604,10 +580,6 @@ main {
   line-height: 1.5;
   padding: 0 0.25rem;
   margin-bottom: 0.25rem;
-  background-image: linear-gradient(to bottom, transparent 60%, #DDEB30 60%, #DDEB30 80%, transparent 80%);
-}
-.global-nav a:hover {
-  background-image: linear-gradient(to bottom, transparent 55%, #DDEB30 55%, #DDEB30 85%, transparent 85%);
 }
 
 @media (min-width: 500px) {
@@ -622,22 +594,12 @@ main {
 ================================================================================ */
 .global-footer {
   padding: 2% 0;
-  background: #2A323A;
-  background: linear-gradient(to bottom, #2A323A, #191e22);
-  box-shadow: inset black 0 4px 8px -2px;
-  color: #FFFFFF;
 }
 .global-footer p {
   margin: 0;
   font-size: 0.875rem;
   line-height: 1.8;
   width: 100%;
-}
-.global-footer a {
-  background-image: linear-gradient(to bottom, transparent 70%, rgba(255, 255, 255, 0.6) 70%, rgba(255, 255, 255, 0.6) 90%, transparent 90%);
-}
-.global-footer a:hover {
-  background-image: linear-gradient(to bottom, transparent 65%, rgba(255, 255, 255, 0.8) 65%, rgba(255, 255, 255, 0.8) 95%, transparent 95%);
 }
 
 /* Home Page
@@ -672,18 +634,6 @@ main {
   padding: 4% 0 3% 0;
 }
 
-.about-me {
-  background: #DDEB30;
-  background: linear-gradient(to bottom, #DDEB30, #d2e216);
-  box-shadow: inset rgba(42, 50, 58, 0.1) 0 2px 8px, inset rgba(42, 50, 58, 0.2) 0 -2px 8px;
-}
-.about-me a {
-  background-image: linear-gradient(to bottom, transparent 70%, rgba(255, 255, 255, 0.75) 70%, rgba(255, 255, 255, 0.75) 90%, transparent 90%);
-}
-.about-me a:hover {
-  background-image: linear-gradient(to bottom, transparent 70%, #FFFFFF 70%, #FFFFFF 90%, transparent 90%);
-}
-
 .contact ul {
   list-style-type: none;
 }
@@ -696,11 +646,8 @@ main {
 /* Page Header
 ================================================================================ */
 .page-header {
-  background: #DDEB30;
-  background: linear-gradient(to bottom, #DDEB30, #d2e216);
   padding-top: 3%;
   padding-bottom: 4%;
-  box-shadow: inset rgba(42, 50, 58, 0.2) 0 -2px 8px;
 }
 .page-header p:last-child {
   margin: 0;
@@ -725,7 +672,6 @@ main {
 
 figure {
   margin: 0 0 2rem 0;
-  box-shadow: rgba(42, 50, 58, 0.2) 0 2px 8px;
 }
 figure img {
   display: block;
@@ -742,7 +688,6 @@ figure figcaption p {
 
 pre {
   margin: 0 0 2rem 0;
-  box-shadow: rgba(42, 50, 58, 0.23) 0 2px 8px;
   padding: 0.5rem 1rem;
 }
 
@@ -767,6 +712,130 @@ pre {
   .experience-section-title {
     font-size: 1.125rem;
   }
+}
+/* Themes
+================================================================================ */
+body {
+  background-color: #191e22;
+}
+
+main {
+  background-color: #FFFFFF;
+}
+
+body {
+  color: #2A323A;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+figure, pre {
+  box-shadow: rgba(42, 50, 58, 0.15) 0 2px 8px;
+}
+
+.global-banner {
+  box-shadow: rgba(42, 50, 58, 0.15) 0 2px 8px;
+  background-color: #FFFFFF;
+}
+
+.theme-default a {
+  background-image: linear-gradient(to bottom, transparent 70%, #DDEB30 70%, #DDEB30 90%, transparent 90%);
+}
+.theme-default a:hover {
+  background-image: linear-gradient(to bottom, transparent 65%, #DDEB30 65%, #DDEB30 95%, transparent 95%);
+}
+.theme-default .global-banner h1 a {
+  background-image: none;
+}
+.theme-default .global-banner h1 a:hover {
+  background-image: linear-gradient(to bottom, transparent 65%, #DDEB30 65%, #DDEB30 95%, transparent 95%);
+}
+.theme-default .global-nav a {
+  background-image: linear-gradient(to bottom, transparent 70%, #DDEB30 70%, #DDEB30 90%, transparent 90%);
+}
+.theme-default .global-nav a:hover {
+  background-image: linear-gradient(to bottom, transparent 65%, #DDEB30 65%, #DDEB30 95%, transparent 95%);
+}
+.theme-default .global-footer {
+  background: #2A323A;
+  background: linear-gradient(to bottom, #2A323A, #191e22);
+  box-shadow: inset rgba(42, 50, 58, 0.15) 0 2px 8px;
+  color: #FFFFFF;
+}
+.theme-default .global-footer a {
+  background-image: linear-gradient(to bottom, transparent 70%, rgba(255, 255, 255, 0.3) 70%, rgba(255, 255, 255, 0.3) 90%, transparent 90%);
+}
+.theme-default .global-footer a:hover {
+  background-image: linear-gradient(to bottom, transparent 65%, rgba(255, 255, 255, 0.4) 65%, rgba(255, 255, 255, 0.4) 95%, transparent 95%);
+}
+.theme-default .about-me {
+  background: #DDEB30;
+  background: linear-gradient(to bottom, #DDEB30, #d2e216);
+  box-shadow: inset rgba(42, 50, 58, 0.15) 0 2px 8px, inset rgba(42, 50, 58, 0.15) 0 -2px 8px;
+}
+.theme-default .about-me a {
+  background-image: linear-gradient(to bottom, transparent 70%, rgba(255, 255, 255, 0.7) 70%, rgba(255, 255, 255, 0.7) 90%, transparent 90%);
+}
+.theme-default .about-me a:hover {
+  background-image: linear-gradient(to bottom, transparent 65%, rgba(255, 255, 255, 0.8) 65%, rgba(255, 255, 255, 0.8) 95%, transparent 95%);
+}
+.theme-default .page-header {
+  background: #DDEB30;
+  background: linear-gradient(to bottom, #DDEB30, #d2e216);
+  box-shadow: inset rgba(42, 50, 58, 0.15) 0 -2px 8px;
+}
+
+.theme-bi a {
+  background-image: linear-gradient(to bottom, transparent 70%, rgba(155, 79, 150, 0.3) 70%, rgba(155, 79, 150, 0.3) 90%, transparent 90%);
+}
+.theme-bi a:hover {
+  background-image: linear-gradient(to bottom, transparent 65%, rgba(155, 79, 150, 0.3) 65%, rgba(155, 79, 150, 0.3) 95%, transparent 95%);
+}
+.theme-bi .global-banner h1 a {
+  background-image: none;
+}
+.theme-bi .global-banner h1 a:hover {
+  background-image: linear-gradient(to bottom, transparent 65%, rgba(155, 79, 150, 0.3) 65%, rgba(155, 79, 150, 0.3) 95%, transparent 95%);
+}
+.theme-bi .global-nav a {
+  background-image: linear-gradient(to bottom, transparent 70%, rgba(155, 79, 150, 0.3) 70%, rgba(155, 79, 150, 0.3) 90%, transparent 90%);
+}
+.theme-bi .global-nav a:hover {
+  background-image: linear-gradient(to bottom, transparent 65%, rgba(155, 79, 150, 0.3) 65%, rgba(155, 79, 150, 0.3) 95%, transparent 95%);
+}
+.theme-bi .global-footer {
+  background: #2A323A;
+  background: linear-gradient(to bottom, #2A323A, #191e22);
+  box-shadow: inset rgba(42, 50, 58, 0.15) 0 2px 8px;
+  color: #FFFFFF;
+}
+.theme-bi .global-footer a {
+  background-image: linear-gradient(to bottom, transparent 70%, rgba(255, 255, 255, 0.3) 70%, rgba(255, 255, 255, 0.3) 90%, transparent 90%);
+}
+.theme-bi .global-footer a:hover {
+  background-image: linear-gradient(to bottom, transparent 65%, rgba(255, 255, 255, 0.4) 65%, rgba(255, 255, 255, 0.4) 95%, transparent 95%);
+}
+.theme-bi .about-me {
+  background: #9B4F96;
+  background: linear-gradient(160deg, #D60270 25%, #9B4F96 50%, #0038A8 75%);
+  box-shadow: inset rgba(42, 50, 58, 0.15) 0 2px 8px, inset rgba(42, 50, 58, 0.15) 0 -2px 8px;
+  color: #FFFFFF;
+}
+.theme-bi .about-me a {
+  background-image: linear-gradient(to bottom, transparent 70%, rgba(255, 255, 255, 0.3) 70%, rgba(255, 255, 255, 0.3) 90%, transparent 90%);
+}
+.theme-bi .about-me a:hover {
+  background-image: linear-gradient(to bottom, transparent 65%, rgba(255, 255, 255, 0.4) 65%, rgba(255, 255, 255, 0.4) 95%, transparent 95%);
+}
+.theme-bi .page-header {
+  bbackground: #9B4F96;
+  background: linear-gradient(160deg, #D60270 25%, #9B4F96 50%, #0038A8 75%);
+  box-shadow: inset rgba(42, 50, 58, 0.15) 0 -2px 8px;
+  color: #FFFFFF;
 }
 
 /*# sourceMappingURL=application.css.map */

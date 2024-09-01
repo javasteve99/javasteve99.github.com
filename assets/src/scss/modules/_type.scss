@@ -7,7 +7,6 @@ body {
   font-style: normal;
   font-weight: light;
   font-weight: 300;
-  color: $dark;
 }
 
 p, ul, ol {
@@ -20,17 +19,6 @@ p, ul, ol {
 strong { font-weight: bold; font-weight: 700; }
 em { font-style: italic; }
 cite { font-style: normal; }
-
-a {
-  color: inherit;
-  text-decoration: none;
-  transition: all 0.5s;
-  background-image: linear-gradient(to bottom, transparent 70%, $light 70%, $light 90%, transparent 90%);
-
-  &:hover {
-    background-image: linear-gradient(to bottom, transparent 65%, $light 65%, $light 95%, transparent 95%);
-  }
-}
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
