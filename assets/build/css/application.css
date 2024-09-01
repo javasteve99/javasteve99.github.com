@@ -1,16 +1,12 @@
-/* Import modules =============================================================================== */
-/*! normalize.css v4.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Import modules =============================================================================== */ /*! normalize.css v4.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
  * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
  */
 html {
-  font-family: sans-serif;
-  /* 1 */
-  -ms-text-size-adjust: 100%;
-  /* 2 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
 }
 
 /**
@@ -38,8 +34,7 @@ main,
 menu,
 nav,
 section,
-summary {
-  /* 1 */
+summary { /* 1 */
   display: block;
 }
 
@@ -102,12 +97,9 @@ a:hover {
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
 abbr[title] {
-  border-bottom: none;
-  /* 1 */
-  text-decoration: underline;
-  /* 2 */
-  text-decoration: underline dotted;
-  /* 2 */
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -203,10 +195,8 @@ code,
 kbd,
 pre,
 samp {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /**
@@ -221,12 +211,9 @@ figure {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  box-sizing: content-box;
-  /* 1 */
-  height: 0;
-  /* 1 */
-  overflow: visible;
-  /* 2 */
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
 }
 
 /* Forms
@@ -255,8 +242,7 @@ optgroup {
  */
 button,
 input,
-select {
-  /* 2 */
+select { /* 2 */
   overflow: visible;
 }
 
@@ -267,8 +253,7 @@ select {
 button,
 input,
 select,
-textarea {
-  /* 1 */
+textarea { /* 1 */
   margin: 0;
 }
 
@@ -277,8 +262,7 @@ textarea {
  * 1. Remove the inheritance of text transform in Firefox.
  */
 button,
-select {
-  /* 1 */
+select { /* 1 */
   text-transform: none;
 }
 
@@ -308,8 +292,7 @@ button,
 html [type=button],
 [type=reset],
 [type=submit] {
-  -webkit-appearance: button;
-  /* 2 */
+  -webkit-appearance: button; /* 2 */
 }
 
 /**
@@ -345,18 +328,12 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  box-sizing: border-box;
-  /* 1 */
-  color: inherit;
-  /* 2 */
-  display: table;
-  /* 1 */
-  max-width: 100%;
-  /* 1 */
-  padding: 0;
-  /* 3 */
-  white-space: normal;
-  /* 1 */
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
 }
 
 /**
@@ -372,10 +349,8 @@ textarea {
  */
 [type=checkbox],
 [type=radio] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
 }
 
 /**
@@ -507,31 +482,26 @@ li {
     line-height: 1.8;
     margin: 0 0 1.8em 0;
   }
-
   h1 {
     font-size: 3rem;
   }
-
   .page-title {
     font-size: 3rem;
   }
-
   h2, .title {
     font-size: 1.8rem;
   }
-
   h3 {
     font-size: 1.4375rem;
   }
-
   h4 {
     font-size: 1.25rem;
   }
 }
 @media (min-width: 700px) {
   p,
-ul,
-ol {
+  ul,
+  ol {
     max-width: 85.2040816327%;
   }
 }
@@ -689,7 +659,6 @@ main {
   .home .global-banner {
     margin-bottom: -3%;
   }
-
   .intro .container {
     padding-top: 10%;
     padding-bottom: 10%;
@@ -795,7 +764,6 @@ pre {
   .experience section li {
     font-size: 1.125rem;
   }
-
   .experience-section-title {
     font-size: 1.125rem;
   }
