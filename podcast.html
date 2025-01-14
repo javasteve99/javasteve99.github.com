@@ -15,8 +15,8 @@ area: podcast
         {% assign podcasts = site.podcast | sort: 'date' | reverse %}
         <ul class="descriptions">
           {% for podcast in podcasts %}
-          <li>
-            <h2 class="title"><a href="{{ podcast.external-url }}">{{ podcast.title }}</a></h2>
+          <li id="{{ podcast.page-id }}">
+            <h2 class="title"><a href="#{{ podcast.page-id }}">{{ podcast.title }}</a></h2>
             <audio controls src="{{ podcast.audio-src }}">
               <a href="{{ podcast.audio-src }}">Download episode audio</a>
             </audio>
