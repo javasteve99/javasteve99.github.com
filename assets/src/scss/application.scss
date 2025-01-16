@@ -200,6 +200,7 @@ pre {
   padding: 0.5rem 1rem;
 }
 
+:target { border-radius: 3px; padding: 0.5rem; }
 
 /* Experience Page
 ================================================================================ */
@@ -236,6 +237,7 @@ figure, pre { box-shadow: $top-box-shadow; }
 
 .theme-default {
   a {                   background-image: $light-bg-link-line; &:hover { background-image: $light-bg-link-line-hover } }
+  :target {             outline: 3px solid rgba($light-green, .5); }
   .global-banner h1 a { background-image: none;                &:hover { background-image: $light-bg-link-line-hover } }
   .global-nav a {       background-image: $light-bg-link-line; &:hover { background-image: $light-bg-link-line-hover } }
   .global-footer {      background: $dark; background: $dark-gradient; box-shadow: inset $top-box-shadow; color: $lightest; }
@@ -247,6 +249,7 @@ figure, pre { box-shadow: $top-box-shadow; }
 
 .theme-bi {
   a {                   background-image: $bi-light-bg-link-line; &:hover { background-image: $bi-light-bg-link-line-hover } }
+  :target {             outline: 3px solid rgba($bi-purple, .5); }
   .global-banner h1 a { background-image: none;                   &:hover { background-image: $bi-light-bg-link-line-hover } }
   .global-nav a {       background-image: $bi-light-bg-link-line; &:hover { background-image: $bi-light-bg-link-line-hover } }
   .global-footer {      background: $dark; background: $dark-gradient; box-shadow: inset $top-box-shadow; color: $lightest; }
