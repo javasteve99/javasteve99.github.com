@@ -73,7 +73,7 @@ li {
   margin-bottom: #{$modular-scale-down3}rem;
 }
 
-.bulleted-list li {
+.bulleted-list li, .ordered-list li {
   margin-left: 1em;
 }
 

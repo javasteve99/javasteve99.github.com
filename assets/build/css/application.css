@@ -461,7 +461,7 @@ li {
   margin-bottom: 0.75rem;
 }
 
-.bulleted-list li {
+.bulleted-list li, .ordered-list li {
   margin-left: 1em;
 }
 
@@ -691,9 +691,9 @@ pre {
   padding: 0.5rem 1rem;
 }
 
-:target { 
-  border-radius: 3px; 
-  padding: 0.5rem; 
+:target {
+  border-radius: 3px;
+  padding: 0.5rem;
 }
 
 /* Experience Page
@@ -754,7 +754,7 @@ figure, pre {
   background-image: linear-gradient(to bottom, transparent 65%, #DDEB30 65%, #DDEB30 95%, transparent 95%);
 }
 .theme-default :target {
-  outline: 3px solid rgba(221, 235, 48, .5);
+  outline: 3px solid rgba(221, 235, 48, 0.5);
 }
 .theme-default .global-banner h1 a {
   background-image: none;
@@ -804,7 +804,7 @@ figure, pre {
   background-image: linear-gradient(to bottom, transparent 65%, rgba(155, 79, 150, 0.3) 65%, rgba(155, 79, 150, 0.3) 95%, transparent 95%);
 }
 .theme-bi :target {
-  outline: 3px solid rgba(155, 79, 150, .5);
+  outline: 3px solid rgba(155, 79, 150, 0.5);
 }
 .theme-bi .global-banner h1 a {
   background-image: none;
