@@ -97,10 +97,10 @@ body {
   .container {
     padding-top: 3%;
     padding-bottom: 65%;
-    background-image: url("../img/bio-photo.png");
+    background-image: url("../img/bio-photo.jpg");
     background-repeat: no-repeat;
     background-position: center bottom;
-    background-size: 70%;
+    background-size: 65%;
 
     p {
       margin: 0;
@@ -112,7 +112,7 @@ body {
 @media (min-width: 650px) {
 
   .home .global-banner {
-    margin-bottom: -3%; // create overlap of header on image
+    //margin-bottom: -3%; // create overlap of header on image
   }
 
   .intro {
@@ -121,7 +121,7 @@ body {
       padding-top: 10%;
       padding-bottom: 10%;
       padding-right: 30%;
-      background-size: 40%;
+      background-size: 35%;
       background-position: right bottom;
     }
   }
