@@ -208,6 +208,10 @@ pre {
   font-size: #{$modular-scale-down2}rem;
 }
 
+.experience section p {
+  margin-bottom: #{$modular-scale-up1}rem;
+}
+
 .experience-section-title {
   font-size: #{$modular-scale-down2}rem;
   text-transform: uppercase;
@@ -219,6 +223,9 @@ pre {
 @media (min-width: 500px) {
   .experience section li {
     font-size: #{$modular-scale-down1}rem;
+  }
+  .experience section p {
+    margin-bottom: #{$modular-scale-up2}rem;
   }
   .experience-section-title {
     font-size: #{$modular-scale-down1}rem;

@@ -699,6 +699,10 @@ pre {
   font-size: 0.875rem;
 }
 
+.experience section p {
+  margin-bottom: 1.3125rem;
+}
+
 .experience-section-title {
   font-size: 0.875rem;
   text-transform: uppercase;
@@ -710,6 +714,9 @@ pre {
 @media (min-width: 500px) {
   .experience section li {
     font-size: 1.125rem;
+  }
+  .experience section p {
+    margin-bottom: 1.4375rem;
   }
   .experience-section-title {
     font-size: 1.125rem;
